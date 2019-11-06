@@ -1,0 +1,491 @@
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- BootstrapValidator CSS -->
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+<style>
+     html, body {
+       overflow-x: hidden;
+       background:#f4f9fd;
+       
+     }
+.freebirdHeaderMast {
+    background-image: url(https://lh3.googleusercontent.com/vtd5p2LEiP6qCXfICvNAwqbpQSPNdTrOmaK3_W9TWTAvzTtrWIJTC4VVwY6VHAKIrzCmJSchvw=w1048);
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 1);
+}
+.header{
+ border: 10px solid; 
+ border-color: rgb(1, 134, 179);
+ border-left:hidden;
+ border-right:hidden;
+ border-top:hidden;
+ box-shadow: 10px 10px 5px #aaaaaa;
+ padding-top:0px;
+ margin-top:0px;
+ padding-bottom:40px;
+ background:#e0edf9;
+ z-index: 20;
+ position:fixed; 
+ width: 100%;
+ }
+ .content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.freebirdFormviewerViewFormBanner {
+    height: 200px;
+}
+.freebirdAccentBackground {
+    background-color: rgb(1, 134, 179);
+    color: rgba(255, 255, 255, 1);
+}
+.freebirdMaterialIconIconEl {
+    direction: ltr;
+    text-align: left;
+    height: 24px;
+    overflow: hidden;
+    width: 24px;
+    display: inline-block;
+    position: relative;
+    overflow:hidden;
+}
+.freebirdDarkIconOnThemedBackground {
+    display: none;
+}
+.freebirdMaterialIconIconImage {
+    position: absolute;
+}
+.freebird-qp-icon-edit-pencil-b {
+    left: 0;
+    top: -1008px;
+}
+.freebirdFormviewerViewFormContentWrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    flex-direction: column;
+    background:#f4f9fd;
+    border-style: hidden;
+    border-width:0;
+}
+.freebirdFormviewerViewCenteredContent {
+
+    margin: auto;
+    width: 910px;
+}
+
+.freebirdFormviewerViewFormCard {
+    margin-bottom: 48px;
+  /* -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    padding-bottom: 6px;*/
+    word-wrap: break-word;
+    margin-top: 180px;
+    /*border-radius:25px;*/
+    background:#f4f9fd;
+    border-style: hidden;
+    border-width:0px 0px;
+}
+.freebirdFormviewerViewAccentBanner {
+    height: 8px;
+}
+.freebirdAccentBackground {
+    background-color: rgb(1, 134, 179);
+    color: rgba(255, 255, 255, 1);
+}.freebirdFormviewerViewFormContent {
+    color: rgba(0,0,0,.87);
+    padding: 30px 0;
+}
+.freebirdFormviewerViewNoPadding {
+    padding: 0;
+}
+.freebirdFormviewerViewHeaderHeader {
+    margin-bottom: 0px;
+}
+.freebirdFormviewerViewHeaderTitleRow {
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-pack: justify;
+    justify-content: space-between;
+}
+.freebirdFormviewerViewHeaderTitle {
+    box-sizing: border-box;
+    font-size: 34px;
+    line-height: 135%;
+    max-width: 100%;
+    min-width: 0%;
+    padding-top:100px;
+}
+.freebirdCommonViewSecurequizSecureQuizBannerContainer {
+    background-color: #f9f9f9;
+}
+.freebirdDisclaimerColor{
+    color: rgba(0, 0, 0, 0.66);
+}
+.freebirdFormviewerViewFooterDisclaimer {
+    font: 400 12px Tahoma,sans-serif;
+    margin: 25px 0;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: normal;
+    font-family: Tahoma,sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 25%;
+    border: 0.3px solid;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.question{
+    padding-top:20px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    font-size-adjust: 0.58;
+    padding-left: 25px;
+    padding-right: 9px;
+    font-size: 25px;
+    line-height: 1.8;
+    font-family: Tahoma,sans-serif;
+    color:rgb(1, 134, 179);
+}
+.com{
+    box-sizing: border-box;
+    font-size-adjust: 0.58;
+    padding-left: 5px;
+    padding-top: 25px;
+    padding-right: 9px;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Tahoma,sans-serif;
+    color:rgb(1, 134, 179);
+}
+.other{
+     overflow: hidden;
+     white-space: nowrap;
+     box-sizing: border-box;
+     
+    font-size-adjust: 0.58;
+    font-weight: normal;
+    font-family: Tahoma,sans-serif;
+    /*color:rgb(1, 134, 179);*/
+}
+.interline{
+    display: inline-block;
+}
+.button {
+    background-color: #e6e6e6; /* Grey */
+    border: none;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttonPosition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type=submit] {
+    background-color: #e6e6e6; /* Grey */
+    border: none;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+ul.check li { 
+  padding-left:25px;
+  padding-top:10px;
+  border: 1px transparent solid; 
+  display:inline-block;
+  width:20em;
+}
+ul.checkDue li { 
+  padding-left:25px;
+  padding-top:10px;
+  border: 1px transparent solid; 
+  display:inline-block;
+  width:30em;
+}
+ul.checkSub li { 
+  padding-left:25px;
+  padding-top:7px;
+  border: 1px transparent solid; 
+  display: inline-block;
+  padding-top:20px;
+}
+ul.check1 li { 
+  padding-top:7px;
+  border: 1px transparent solid;
+  display:inline-block;
+  width:17em;
+}
+.commentStyle{
+  padding-left:21px;
+  border-bottom-style: dashed;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom-width: 2px;
+}
+.dropdown-menu > li > .dropdown-menu-item {
+   clear: both;
+    color: #333;
+    display: block;
+    padding: 3px 20px;
+    white-space: normal;
+    margin: 5px 0;
+    width: 100%;
+    padding-bottom:5px;
+    padding-right:5px;
+    text-align: left;
+    text-decoration: none;
+    word-wrap: break-word;
+    outline: none;
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+}
+.dropdown-menu > li:hover .dropdown-menu-item,
+.dropdown-menu > li:focus .dropdown-menu-item{
+    background-color: #f5f5f5;
+    color: #262625;
+}
+.dropdown-menu > li > .dropdown-menu-item.checkbox {
+    margin: 12;
+    padding-right:12px;
+    font-weight: normal;
+}
+.dropdown-menu > li > .dropdown-menu-item.checkbox input {
+    display: none;
+}
+ul.check2 li { 
+ padding-left:25px;
+  padding-top:7px;
+  border: 1px transparent solid; 
+  display:block;
+  width: 35em;
+}
+.toggle-menu{
+  font-size:18px;
+  color:#618685;
+  text-align:center;
+  border: 1px solid;
+  /*box-shadow: 5px 10px 18px #888888;*/
+  width:100%;
+  padding: 8px;
+}
+.toggle-text{
+  padding: 5px 0;
+  border: 1px solid;
+ }
+ .session{
+ border-radius: 25px;
+ width: 910px;
+ border: 1px solid; 
+ border-color: #f2f2f2;
+ box-shadow: 12px 12px 10px #aaaaaa;
+ padding-bottom: 40px;
+ padding-left: 20px;
+ background: #fff;
+ }
+ .form-group:hover .box{
+  zoom: 1;
+  filter: alpha(opacity=45);
+  opacity: 0.45;
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+}
+.form-group .box:hover{
+  /*box-shadow: 3px 3px 15px #666;
+  border-radius: 25px;
+  border-color:rgb(1, 134, 179);
+  /*background: #e0edf9;*/
+  border-style:hidden;
+  color: black;
+  cursor: pointer;
+  
+  /*Opacity*/
+  zoom: 1;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+ .sep{
+  border:none;
+  padding: 10px;
+  margin-top:10px;
+ }
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+.quantumWizButtonPaperbuttonEl {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.moji {
+  font-size: 8em;
+  text-align: center;
+}
+.inputImage {
+  width: 100%;
+  margin: 0 10px;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+}
+.smile {
+  font-weight: bold;
+  color: #5fcf80;
+}
+.fine {
+  color: tomato;
+}
+textarea:focus {
+    background-color: #e0edf9;
+}
+input[type="range"]::-moz-range-track {
+  padding: 0 30px;
+  height:5px;
+  background: repeating-linear-gradient(to right, 
+    #ccc,
+    #ccc 10%, 
+    #000 10%, 
+    #000 11%, 
+    #ccc 11%, 
+    #ccc 20%);
+}
+input[type="range"]::-webkit-range-track {
+  padding: 0 30px;
+  height:5px;
+  background: repeating-linear-gradient(to right, 
+    #ccc,
+    #ccc 10%, 
+    #000 10%, 
+    #000 11%, 
+    #ccc 11%, 
+    #ccc 20%);
+}
+.SplashBox{
+  border: 1px solid;
+  margin: auto;
+    width: 600px;
+   -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.37);
+    padding-bottom: 6px;
+    word-wrap: break-word;
+    margin-top: 180px;
+    border-radius:25px;
+    background: #fff;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+input[type=text]:focus{
+  background-color: rgb(1, 134, 179,0.15);
+}
+</style>
+
+
+
