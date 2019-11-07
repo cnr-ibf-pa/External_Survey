@@ -1,9 +1,9 @@
 function init() {
-
 let client = new jso.JSO({
 	providerID: "HBP",
 	client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
-    authorization: "https://services.humanbrainproject.eu/oidc/authorize",
+  redirect_uri: "https://stefysp.github.io/External_Survey/",
+  authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
 
   try {
