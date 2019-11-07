@@ -1,10 +1,9 @@
-let client = new jso.JSO({
+  let client = new jso.JSO({
   providerID: "HBP",
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://stefysp.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
-
 
 function init() {
   try {
@@ -43,4 +42,5 @@ $.ajax({
        
 
 init();
+
 
