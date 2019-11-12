@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+.SplashBox{
+	border: 1px solid;
+	margin: auto;
+    width: 700px;
+   -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    padding-bottom: 6px;
+    word-wrap: break-word;
+    margin-top: 180px;
+    border-radius:25px;
+    background: #fff;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.logo{
+	text-align: right; 
+	padding-right: 20px; 
+	padding-top: 10px;
+}
+.TextStyle{
+	text-align: center; 
+	font-weight: normal;
+	font-family: Tahoma,sans-serif;
+}
+p{
+	padding-top: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	font-family: Tahoma,sans-serif;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: #008CBA; 
+    border: 2px solid #008CBA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button2 {
+    background-color: white; 
+    color: #008CBA; 
+    border: 2px solid #008CBA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+    
+.input1{
+
+}
+</style>
+
+
