@@ -20,7 +20,7 @@ console.log(authorization)
 	
 authorization.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
-document.getElementById("hbp-token").innerHTML = session.access_token;
+//document.getElementById("hbp-token").innerHTML = session.access_token;
 	
 console.log(header);
 	
@@ -33,7 +33,7 @@ $.ajax({
     method: 'GET',
     success: function(data){
 	    console.log(data.id);
-        document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
+        //document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
 	document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
