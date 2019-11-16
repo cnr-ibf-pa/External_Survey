@@ -304,6 +304,7 @@ ul.checkSub li {
   border: 1px transparent solid; 
   display: inline-block;
   padding-top:20px;
+  width:55em;
 }
 ul.check1 li { 
   padding-top:7px;

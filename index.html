@@ -236,6 +236,44 @@
           <div class="session">
            <h3 class="question">8. Which tools do you use most frequently?</h3>
            <ul style="padding-left:25px;display: inline-block;padding-top:20px;">
+             <!--Inserire nella tabella-->
+              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MolecularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 295px;border-radius:25px;">Molecular Level&ensp;<span class="caret"></span></a>
+               <div class="collapse" id="MolecularLevel">
+                <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants
+              <input type="checkbox" id="q827" value="Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Calculate the electrostatic potential of a protein from its atomic structure
+              <input type="checkbox" id="q828" value="Calculate the electrostatic potential of a protein from its atomic structure">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Predict protein interaction surface with the ARDOCK server
+              <input type="checkbox" id="q829" value="Predict protein interaction surface with the ARDOCK server">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Preparing a protein to run an atomistic Molecular Dynamics simulation
+              <input type="checkbox" id="q830" value="Preparing a protein to run an atomistic Molecular Dynamics simulation">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Small molecule force field parameterization for atomistic Molecular Dynamics simulations
+              <input type="checkbox" id="q831" value="Small molecule force field parameterization for atomistic Molecular Dynamics simulations">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation
+              <input type="checkbox" id="q832" value="Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation">
+              <span class="checkmark"></span>
+          </label></li>
+                 </ul>
+             </div>
+            <!--Inserire in tabella-->
+              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SubcellularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 288px;border-radius:25px;">Subcellular Level&ensp;<span class="caret"></span></a>
+               <div class="collapse" id="SubcellularLevel">
+                <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">KappaNEURON demonstration
+              <input type="checkbox" id="q826" value="KappaNEURON demonstration">
+              <span class="checkmark"></span>
+             </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#TraceAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 300px;border-radius:25px;">Trace Analysis&ensp;<span class="caret"></span></a>
                <div class="collapse" id="TraceAnalysis">
                 <ul class="check2" style=" padding-top:20px;padding-bottom: 10px;"> 
@@ -272,7 +310,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 264.5px;border-radius:25px;">Single Circuit Building&ensp;<span class="caret"></span></a>
                <div class="collapse" id="SingleCircuitBuilding">
-                <ul class="check2"> 
+                <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">hodgkin-huxley neuron builder
               <input type="checkbox" id="q87" value="hodgkin-huxley neuron builder">
               <span class="checkmark"></span>
@@ -327,7 +365,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicioExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 217.5px;border-radius:25px;">Small Cell In Silicio Experiments&ensp;<span class="caret"></span></a>
              <div class="collapse" id="SmallCellInSilicioExperiments">
-               <ul class="check2"> 
+               <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">configure and run a small circuit using preconfigured HBP model and data
               <input type="checkbox" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
               <span class="checkmark"></span>
@@ -349,7 +387,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#ModelValidation"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 292px;border-radius:25px;">Model Validation&ensp;<span class="caret"></span></a>
                <div class="collapse" id="ModelValidation">
-                <ul class="check2"> 
+                <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">validation framework demo (walkthrough)
               <input type="checkbox" id="q820" value="validation framework demo (walkthrough)">
               <span class="checkmark"></span>
@@ -403,14 +441,6 @@
                                 <input type="checkbox" id="check2" name="q92" value="jureca">
                                 <span class="checkmark"></span>
                               </label></li>
-                              <li><label class="container" style="font-size:16px;padding-left: 50px;">juron
-                                <input type="checkbox" id="check3" name="q93" value="juron">
-                                <span class="checkmark"></span>
-                              </label></li>
-                              <li><label class="container" style="font-size:16px;padding-left: 50px;">julia
-                                <input type="checkbox" id="check4" name="q94" value="julia">
-                                <span class="checkmark"></span>
-                              </label></li>
                               <li><label class="container" style="font-size:16px;padding-left: 50px;">piz daint
                                 <input type="checkbox"  id="check5" name="q95" value="piz daint">
                                 <span class="checkmark"></span>
@@ -446,7 +476,15 @@
         <div class="box">
            <div class="session">
            <h3 class="question">11. Which use cases are more important for your work?</h3>
-           <ul class="check2" style=" padding-top:20px;padding-bottom: 5px;"> 
+           <ul class="check2" style=" padding-top:20px;padding-bottom: 5px;">
+            <li><label class="container" style="padding-left: 50px;">Molecular Level <!--Inserire in tabella-->
+              <input type="checkbox" id="q1120" value="Molecular Level">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="padding-left: 50px;">Subcellular Level <!--Inserire in tabella-->
+              <input type="checkbox" id="q1110" value="Subcellular Level">
+              <span class="checkmark"></span>
+          </label></li> 
           <li><label class="container" style="padding-left: 50px;">Trace Analysis
               <input type="checkbox" id="q111" value="Trace Analysis">
               <span class="checkmark"></span>
@@ -518,6 +556,26 @@
        </div>
 
         <div class="sep"></div>
+
+        <div class="box">
+           <div class="session">
+           <h3 class="question">14. Prova check</h3>
+           <ul class="check2" style=" padding-top:20px;padding-bottom: 5px;">
+            <li><label class="container" style="padding-left: 50px;">Opzione 1 <!--Inserire in tabella-->
+              <input type="checkbox" id="q141" value="Opzione 1">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="padding-left: 50px;">Opzione 2 <!--Inserire in tabella-->
+              <input type="checkbox" id="q142" value="Opzione 2">
+              <span class="checkmark"></span>
+          </label></li> 
+          <li><label class="container" style="padding-left: 50px;">Opzione 3
+              <input type="checkbox" id="q143" value="Opzione 3">
+              <span class="checkmark"></span>
+          </label></li>
+      </ul>
+  </div>
+</div>
 <center>
 <input class="quantumWizButtonPaperbuttonEl button" style="background:#008CBA;color: white;margin-left: 50px;" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
 </center>
