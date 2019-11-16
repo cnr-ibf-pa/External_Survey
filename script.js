@@ -189,6 +189,8 @@ function postContactToGoogle() {
 
     // Question 14
     var x141=document.getElementById("q141").onchange = function() {var x141=checkMenu("q141"); return x141;};
+    var x142=document.getElementById("q142").onchange = function() {var x142=checkMenu("q142"); return x142;};
+    var x143=document.getElementById("q143").onchange = function() {var x143=checkMenu("q143"); return x143;};
 
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScrkqvArLDFhmdaOfO-3KnlLxk3GxARuQnO107fQE1Qbp8fdg/formResponse",
