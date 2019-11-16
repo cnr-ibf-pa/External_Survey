@@ -191,15 +191,15 @@ function postContactToGoogle() {
     
 
 var checkboxes = document.getElementsByName('prova');
-var vals = "";
+var vals = [];
 for (var i=0, n=checkboxes.length;i<n;i++) 
 {
     if (checkboxes[i].checked) 
     {
-        vals += ","+checkboxes[i].value;
+        vals.push(checkboxes[i].value);
     }
 }
-if (vals) vals = vals.substring(1);
+//if (vals) vals = vals.substring(1);
 
 console.log(vals);
 
