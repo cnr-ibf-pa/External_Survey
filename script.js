@@ -189,12 +189,6 @@ function postContactToGoogle() {
     //UserID
     var userId=$('#hbp-user-id').val();
 
-    // Question 14
-    var checkq14 = document.getElementsByName('prova');
-    var vals=find_answer(checkq14);
-
-	console.log("Opzioni val:",vals);
-
 
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScrkqvArLDFhmdaOfO-3KnlLxk3GxARuQnO107fQE1Qbp8fdg/formResponse",
