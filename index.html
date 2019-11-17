@@ -236,23 +236,59 @@
           <div class="session">
            <h3 class="question">8. Which tools do you use most frequently?</h3>
            <ul style="padding-left:25px;display: inline-block;padding-top:20px;">
+           	<a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MolecularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 295px;border-radius:25px;">Molecular Level&ensp;<span class="caret"></span></a>
+               <div class="collapse" id="MolecularLevel">
+                <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants
+              <input type="checkbox" name="MLevel" id="q827" value="Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Calculate the electrostatic potential of a protein from its atomic structure
+              <input type="checkbox" name="MLevel" id="q828" value="Calculate the electrostatic potential of a protein from its atomic structure">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Predict protein interaction surface with the ARDOCK server
+              <input type="checkbox" name="MLevel" id="q829" value="Predict protein interaction surface with the ARDOCK server">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Preparing a protein to run an atomistic Molecular Dynamics simulation
+              <input type="checkbox" name="MLevel" id="q830" value="Preparing a protein to run an atomistic Molecular Dynamics simulation">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Small molecule force field parameterization for atomistic Molecular Dynamics simulations
+              <input type="checkbox" name="MLevel" id="q831" value="Small molecule force field parameterization for atomistic Molecular Dynamics simulations">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation
+              <input type="checkbox" name="MLevel" id="q832" value="Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation">
+              <span class="checkmark"></span>
+          </label></li>
+                 </ul>
+             </div>
+              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SubcellularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 288px;border-radius:25px;">Subcellular Level&ensp;<span class="caret"></span></a>
+               <div class="collapse" id="SubcellularLevel">
+                <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+          <li><label class="container" style="font-size:16px;padding-left: 50px;">KappaNEURON demonstration
+              <input type="checkbox" name="SLevel" id="q826" value="KappaNEURON demonstration">
+              <span class="checkmark"></span>
+             </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#TraceAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 300px;border-radius:25px;">Trace Analysis&ensp;<span class="caret"></span></a>
                <div class="collapse" id="TraceAnalysis">
                 <ul class="check2" style=" padding-top:20px;padding-bottom: 10px;"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">feature extraction
-              <input type="checkbox" id="q81" value="feature extraction">
+              <input type="checkbox" name="TAnalysis" id="q81" value="feature extraction">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">synaptic events fitting
-              <input type="checkbox" id="q82" value="synaptic events fitting">
+              <input type="checkbox" name="TAnalysis" id="q82" value="synaptic events fitting">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">synaptic events fitting with user model
-              <input type="checkbox" id="q83" value="synaptic events fitting with user model">
+              <input type="checkbox" name="TAnalysis" id="q83" value="synaptic events fitting with user model">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">synaptic events fitting with user data
-              <input type="checkbox" id="q84" value="synaptic events fitting with user data">
+              <input type="checkbox" name="TAnalysis" id="q84" value="synaptic events fitting with user data">
               <span class="checkmark"></span>
           </label></li>
                  </ul>
@@ -261,11 +297,11 @@
                <div class="collapse" id="MorphologyAnalysis">
                 <ul class="check" style="padding-top:7px;"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">morphology analysis
-              <input type="checkbox" id="q85" value="morphology analysis">
+              <input type="checkbox" name="MAnalysis" id="q85" value="morphology analysis">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">morphology visualization
-              <input type="checkbox" id="q86" value="morphology visualization">
+              <input type="checkbox"  name="MAnalysis" id="q86" value="morphology visualization">
               <span class="checkmark"></span>
           </label></li>
                  </ul>
@@ -274,31 +310,31 @@
                <div class="collapse" id="SingleCircuitBuilding">
                 <ul class="check2"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">hodgkin-huxley neuron builder
-              <input type="checkbox" id="q87" value="hodgkin-huxley neuron builder">
+              <input type="checkbox" name="CSBuilding" id="q87" value="hodgkin-huxley neuron builder">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">rebuild an existing single hippocampal cell model
-              <input type="checkbox" id="q88" value="rebuild an existing single hippocampal cell model">
+              <input type="checkbox" name="CSBuilding" id="q88" value="rebuild an existing single hippocampal cell model">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">build your own single hippocampal cell model using HBP data
-              <input type="checkbox" id="q89" value="build your own single hippocampal cell model using HBP data">
+              <input type="checkbox" name="CSBuilding" id="q89" value="build your own single hippocampal cell model using HBP data">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">optimize a cerebellar granule cell model composed by a single section
-              <input type="checkbox" id="q810" value="optimize a cerebellar granule cell model composed by a single section">
+              <input type="checkbox" name="CSBuilding" id="q810" value="optimize a cerebellar granule cell model composed by a single section">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">optimize a cerebellar granule cell multicompartmental model
-              <input type="checkbox" id="q811" value="optimize a cerebellar granule cell multicompartmental model">
+              <input type="checkbox" name="CSBuilding" id="q811" value="optimize a cerebellar granule cell multicompartmental model">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">simulation and validation of a mouse Purkinje cell multicompartmental model
-              <input type="checkbox" id="q812" value="simulation and validation of a mouse Purkinje cell multicompartmental model">
+              <input type="checkbox" name="CSBuilding" id="q812" value="simulation and validation of a mouse Purkinje cell multicompartmental model">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">optimize a striatal fast-spiking interneuron
-              <input type="checkbox" id="q813" value="optimize a striatal fast-spiking interneuron">
+              <input type="checkbox" name="CSBuilding" id="q813" value="optimize a striatal fast-spiking interneuron">
               <span class="checkmark"></span>
           </label></li>
                  </ul>
@@ -307,11 +343,11 @@
              <div class="collapse" id="CircuitBuilding">
                <ul class="check" style="padding-top:7px;"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">cells placement
-              <input type="checkbox" id="q814" value="cells placement">
+              <input type="checkbox" name="CBuilding" id="q814" value="cells placement">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">connectome
-              <input type="checkbox" id="q815" value="connectome">
+              <input type="checkbox" name="CBuilding" id="q815" value="connectome">
               <span class="checkmark"></span>
           </label></li>
                 </ul>
@@ -320,7 +356,7 @@
              <div class="collapse" id="SingleCellInSilicioExperiments">
                <ul class="check2"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">single cell in silicio experiments under current clamp
-              <input type="checkbox" id="q816" value="single cell in silicio experiments under current clamp">
+              <input type="checkbox" name="SingleCSE" id="q816" value="single cell in silicio experiments under current clamp">
               <span class="checkmark"></span>
           </label></li>
                 </ul>
@@ -329,7 +365,7 @@
              <div class="collapse" id="SmallCellInSilicioExperiments">
                <ul class="check2"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">configure and run a small circuit using preconfigured HBP model and data
-              <input type="checkbox" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
+              <input type="checkbox" name="SmallCSE" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
               <span class="checkmark"></span>
           </label></li>
                 </ul>
@@ -338,11 +374,11 @@
              <div class="collapse" id="BrainAreaCircuitInSilicioExperiments">
                <ul class="check" style="padding-top:7px;"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">hippocampus
-              <input type="checkbox" id="q818" value="hippocampus">
+              <input type="checkbox" name="BACSE" id="q818" value="hippocampus">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">cerebellum
-              <input type="checkbox" id="q819" value="cerebellum">
+              <input type="checkbox" name="BACSE" id="q819" value="cerebellum">
               <span class="checkmark"></span>
           </label></li>
                 </ul>
@@ -351,23 +387,23 @@
                <div class="collapse" id="ModelValidation">
                 <ul class="check2"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">validation framework demo (walkthrough)
-              <input type="checkbox" id="q820" value="validation framework demo (walkthrough)">
+              <input type="checkbox" name="MValidation" id="q820" value="validation framework demo (walkthrough)">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">basal ganglia -BluePyOpt optimized model validation-multiple HOF
-              <input type="checkbox" id="q821" value="basal ganglia -BluePyOpt optimized model validation-multiple HOF">
+              <input type="checkbox" name="MValidation" id="q821" value="basal ganglia -BluePyOpt optimized model validation-multiple HOF">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">basal ganglia morphology validation
-              <input type="checkbox" id="q822" value="basal ganglia morphology validation">
+              <input type="checkbox" name="MValidation" id="q822" value="basal ganglia morphology validation">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">generic - BluePyOpt optimized model validation
-              <input type="checkbox" id="q823" value="generic - BluePyOpt optimized model validation">
+              <input type="checkbox" name="MValidation" id="q823" value="generic - BluePyOpt optimized model validation">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="font-size:16px;padding-left: 50px;">hippocampus single cell - BluePyOpt optimized model validation
-              <input type="checkbox" id="q824" value="hippocampus single cell - BluePyOpt optimized model validation">
+              <input type="checkbox" name="MValidation" id="q824" value="hippocampus single cell - BluePyOpt optimized model validation">
               <span class="checkmark"></span>
           </label></li>
                  </ul>
@@ -376,7 +412,7 @@
              <div class="collapse" id="HighlyIntegratedWorkflows">
                <ul class="check2"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">hodgkin-huxley neuron builder
-              <input type="checkbox" id="q825" value="hodgkin-huxley neuron builder">
+              <input type="checkbox" name="HIW" id="q825" value="hodgkin-huxley neuron builder">
               <span class="checkmark"></span>
           </label></li>
                 </ul>
@@ -396,27 +432,19 @@
                           <label style="font-size: 20px;font-family: sans-serif;font-weight: normal;">Select which system you did use:</label>
                           <ul class="check1">
                             <li><label class="container" style="font-size:16px;padding-left: 50px;">NSG
-                                <input type="checkbox" id="check1" name="q91" value="NSG">
+                                <input type="checkbox" id="check1" name="question9" value="NSG">
                                 <span class="checkmark"></span>
                               </label></li>
                               <li><label class="container" style="font-size:16px;padding-left: 50px;">jureca
-                                <input type="checkbox" id="check2" name="q92" value="jureca">
-                                <span class="checkmark"></span>
-                              </label></li>
-                              <li><label class="container" style="font-size:16px;padding-left: 50px;">juron
-                                <input type="checkbox" id="check3" name="q93" value="juron">
-                                <span class="checkmark"></span>
-                              </label></li>
-                              <li><label class="container" style="font-size:16px;padding-left: 50px;">julia
-                                <input type="checkbox" id="check4" name="q94" value="julia">
+                                <input type="checkbox" id="check2" name="question9" value="jureca">
                                 <span class="checkmark"></span>
                               </label></li>
                               <li><label class="container" style="font-size:16px;padding-left: 50px;">piz daint
-                                <input type="checkbox"  id="check5" name="q95" value="piz daint">
+                                <input type="checkbox"  id="check5" name="question9" value="piz daint">
                                 <span class="checkmark"></span>
                               </label></li>
                               <li><label class="container" style="font-size:16px;padding-left: 50px;">marconi
-                                <input type="checkbox" id="check6" name="q96" value="marconi">
+                                <input type="checkbox" id="check6" name="question9" value="marconi">
                                 <span class="checkmark"></span>
                               </label></li>
                               </ul>
@@ -446,41 +474,49 @@
         <div class="box">
            <div class="session">
            <h3 class="question">11. Which use cases are more important for your work?</h3>
-           <ul class="check2" style=" padding-top:20px;padding-bottom: 5px;"> 
+           <ul class="check2" style=" padding-top:20px;padding-bottom: 5px;">
+           <li><label class="container" style="padding-left: 50px;">Molecular Level 
+              <input type="checkbox" name="question11" id="q1120" value="Molecular Level">
+              <span class="checkmark"></span>
+          </label></li>
+          <li><label class="container" style="padding-left: 50px;">Subcellular Level
+              <input type="checkbox" name="question11" id="q1110" value="Subcellular Level">
+              <span class="checkmark"></span>
+          </label></li>  
           <li><label class="container" style="padding-left: 50px;">Trace Analysis
-              <input type="checkbox" id="q111" value="Trace Analysis">
+              <input type="checkbox" name="question11" id="q111" value="Trace Analysis">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Morphology Analysis
-              <input type="checkbox" id="q112" value="Morphology Analysis">
+              <input type="checkbox" name="question11" id="q112" value="Morphology Analysis">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Single Circuit Building
-              <input type="checkbox" id="q113" value="Single Circuit Building">
+              <input type="checkbox" name="question11" id="q113" value="Single Circuit Building">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Circuit Building
-              <input type="checkbox" id="q114" value="Circuit Building">
+              <input type="checkbox" name="question11" id="q114" value="Circuit Building">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Single Cell In Silicio Experiments
-              <input type="checkbox" id="q115" value="Single Cell In Silicio Experiments">
+              <input type="checkbox" name="question11" id="q115" value="Single Cell In Silicio Experiments">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Small Circuit In Silicio Experiments
-              <input type="checkbox" id="q116" value="Small Circuit In Silicio Experiments">
+              <input type="checkbox" name="question11" id="q116" value="Small Circuit In Silicio Experiments">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Brain Area Circuit In Silicio Experiments
-              <input type="checkbox" id="q117" value="Brain Area Circuit In Silicio Experiments">
+              <input type="checkbox" name="question11" id="q117" value="Brain Area Circuit In Silicio Experiments">
               <span class="checkmark"></span>
           </label></li>
                     <li><label class="container" style="padding-left: 50px;">Model Validation
-              <input type="checkbox" id="q118" value="Model Validation">
+              <input type="checkbox" name="question11" id="q118" value="Model Validation">
               <span class="checkmark"></span>
           </label></li>
                      <li><label class="container" style="padding-left: 50px;">Highly Integrated Workflows
-              <input type="checkbox" id="q119" value="Highly Integrated Workflows">
+              <input type="checkbox" name="question11" id="q119" value="Highly Integrated Workflows">
               <span class="checkmark"></span>
           </label></li>
            </ul>
