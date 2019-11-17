@@ -89,7 +89,7 @@ function find_answer(checkboxes){
 		for (var i=0, n=checkboxes.length;i<n;i++) {
     		if (checkboxes[i].checked){
         		//vals.push(checkboxes[i].value);
-        		vals +='\t'+checkboxes[i].value;
+        		vals +=', '+checkboxes[i].value;
     		}
 		}
 		if (vals) vals = vals.substring(1);
