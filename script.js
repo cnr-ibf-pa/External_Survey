@@ -96,3 +96,14 @@ function find_answer(checkboxes){
 		if (vals) vals = vals.substring(1);
 		return vals;
    	}
+
+function Check_TopUrl(){
+  if(window == top){
+    console.log(window);
+    console.log(top);
+  }
+  else{
+    $('#inside').show();
+  }
+}
+function Check_TopUrl();

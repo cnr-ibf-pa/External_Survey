@@ -151,7 +151,6 @@ function WhereIs(){
   else{
     console.log(window);
     console.log(top);
-    $('#inside').show();
     init();
   }
 }
