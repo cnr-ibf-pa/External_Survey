@@ -7,7 +7,7 @@ function init() {
   redirect_uri: "https://stefysp.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
-  console.log("check",data.id);
+
   try {
     client.callback();
   } catch (e) {
