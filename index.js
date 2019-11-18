@@ -7,6 +7,7 @@ let client = new jso.JSO({
 
 
 function init() {
+
   try {
     client.callback();
   } catch (e) {
@@ -43,10 +44,12 @@ $.ajax({
 	   
 function WhereIs(){
   if(window == top){
-    console.log("fuori", window.top);
+    console.log(window);
+    console.log(top);
   }
   else{
-    console.log("dentro", top);
+    console.log(window);
+    console.log(top);
     init();}
 }
 
