@@ -44,10 +44,10 @@ $.ajax({
 function WhereIs(){
   if(window == top){
     console.log("fuori", window.top);
-    init();
   }
   else{
-    console.log("dentro", top);}
+    console.log("dentro", top);
+    init();}
 }
 
 WhereIs();
