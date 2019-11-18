@@ -41,14 +41,29 @@ $.ajax({
 	 return authorization;
 }
 
-function WhereIs(){
+/*function WhereIs(){
 if(window.location.href.includes("https://collab.humanbrainproject.eu/#/collab")){
        console.log("sono dentro");
        }
        else{
        console.log("sono fuori");
        }
-   }		   
+   }*/		   
+function WhereIs(){
+  if (window.top!=window.self){
+    console.log("iframe",window.location.hostname);
+    console.log("parent",window.top);}
+  else{
+    console.log("sono dentro");
+    }
+  if(window == top){
+    console.log("sono fuori", window.top);
+    console.log("sempre fuori", window.parent);}
+  else{
+    console.log("dentro top", top);
+    console.log("dentro parent", window.location); 
+      }
+} 
 
-WhereIs();
 init();
+WhereIs();
