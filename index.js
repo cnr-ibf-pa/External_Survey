@@ -50,19 +50,10 @@ if(window.location.href.includes("https://collab.humanbrainproject.eu/#/collab")
        }
    }*/		   
 function WhereIs(){
-  if (window.top!=window.self){
-    console.log("iframe",window.location.hostname);
-    console.log("parent",window.top);}
-  else{
-    console.log("sono dentro");
-    }
   if(window == top){
-    console.log("sono fuori", window.top);
-    console.log("sempre fuori", window.parent);}
+    console.log("fuori", window.top);}
   else{
-    console.log("dentro top", top);
-    console.log("dentro parent", window.location); 
-      }
+    console.log("dentro", top);}
 } 
 
 init();
