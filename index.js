@@ -52,5 +52,8 @@ function WhereIs(){
     console.log(top);
     init();}
 }
+if (window.location.href.indexOf("https://collab.humanbrainproject.eu/#/collab/") > -1) {
+      console.log("dentro collab");
+    }
 
 WhereIs();
