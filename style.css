@@ -308,9 +308,10 @@ ul.checkSub li {
 }
 ul.check1 li { 
   padding-top:7px;
+  padding-left:0px;
   border: 1px transparent solid;
   display:inline-block;
-  width:17em;
+  width:10em;
 }
 .commentStyle{
   padding-left:21px;
