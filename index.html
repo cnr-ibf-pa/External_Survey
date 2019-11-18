@@ -11,6 +11,7 @@
    <script type="text/javascript" src="script.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
   <base target="_top">
   </script>
@@ -274,7 +275,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#TraceAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 300px;border-radius:25px;">Trace Analysis&ensp;<span class="caret"></span></a>
                <div class="collapse" id="TraceAnalysis">
-                <ul class="check2" style=" padding-top:20px;padding-bottom: 10px;"> 
+                <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">feature extraction
               <input type="checkbox" name="TAnalysis" id="q81" value="feature extraction">
               <span class="checkmark"></span>
@@ -308,7 +309,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 264.5px;border-radius:25px;">Single Circuit Building&ensp;<span class="caret"></span></a>
                <div class="collapse" id="SingleCircuitBuilding">
-                <ul class="check2"> 
+                <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">hodgkin-huxley neuron builder
               <input type="checkbox" name="CSBuilding" id="q87" value="hodgkin-huxley neuron builder">
               <span class="checkmark"></span>
@@ -354,7 +355,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCellInSilicioExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 215px;border-radius:25px;">Single Cell In Silicio Experiments&ensp;<span class="caret"></span></a>
              <div class="collapse" id="SingleCellInSilicioExperiments">
-               <ul class="check2"> 
+               <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">single cell in silicio experiments under current clamp
               <input type="checkbox" name="SingleCSE" id="q816" value="single cell in silicio experiments under current clamp">
               <span class="checkmark"></span>
@@ -363,7 +364,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicioExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 217.5px;border-radius:25px;">Small Cell In Silicio Experiments&ensp;<span class="caret"></span></a>
              <div class="collapse" id="SmallCellInSilicioExperiments">
-               <ul class="check2"> 
+               <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">configure and run a small circuit using preconfigured HBP model and data
               <input type="checkbox" name="SmallCSE" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
               <span class="checkmark"></span>
@@ -385,7 +386,7 @@
              </div>
              <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#ModelValidation"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 292px;border-radius:25px;">Model Validation&ensp;<span class="caret"></span></a>
                <div class="collapse" id="ModelValidation">
-                <ul class="check2"> 
+                <ul class="checkSub"> 
           <li><label class="container" style="font-size:16px;padding-left: 50px;">validation framework demo (walkthrough)
               <input type="checkbox" name="MValidation" id="q820" value="validation framework demo (walkthrough)">
               <span class="checkmark"></span>
@@ -430,7 +431,7 @@
               <span class="checkmark"></span>
                         <div id="menu" style="display:none;">
                           <label style="font-size: 20px;font-family: sans-serif;font-weight: normal;">Select which system you did use:</label>
-                          <ul class="check1">
+                          <ul class="check">
                             <li><label class="container" style="font-size:16px;padding-left: 50px;">NSG
                                 <input type="checkbox" id="check1" name="question9" value="NSG">
                                 <span class="checkmark"></span>
