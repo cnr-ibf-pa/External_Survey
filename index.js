@@ -149,9 +149,10 @@ function WhereIs(){
     document.getElementById('inside').style.display='none';
   }
   else{
+    init();
     document.getElementById('outside').style.display='none';
     document.getElementById('inside').style.display='block';
-    init();
+    
   }
 }
 WhereIs();
