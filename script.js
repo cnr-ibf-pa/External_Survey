@@ -1,5 +1,134 @@
 
+$(document).ready(function () {
+    //question n°1
+    $("#qs11")[0].checked=false;
+    $("#qs12")[0].checked=false;
+    $("#qs13")[0].checked=false;
+    $("#qs14")[0].checked=false;
+    $("#qs15")[0].checked=false;
+    $("#qs16")[0].checked=false;
 
+    //question n°3
+    $("#qs31")[0].checked=false;
+    $("#qs32")[0].checked=false;
+    $("#qs33")[0].checked=false;
+    $("#qs34")[0].checked=false;
+    $("#c3")[0].value='';
+
+    //question n°4
+    $("#qs41")[0].checked=false;
+    $("#qs42")[0].checked=false;
+    $("#qs43")[0].checked=false;
+    $("#qs44")[0].checked=false;
+    $("#c4")[0].value='';
+
+    //question n°5
+    $("#qs51")[0].checked=false;
+    $("#qs52")[0].checked=false;
+    $("#qs53")[0].checked=false;
+    $("#qs54")[0].checked=false;
+    $("#c5")[0].value='';
+
+    //question n°6
+    $("#qs61")[0].checked=false;
+    $("#qs62")[0].checked=false;
+    $("#qs63")[0].checked=false;
+    $("#qs64")[0].checked=false;
+    $("#c6")[0].value='';
+
+    //question n°7
+    $("#qs71")[0].checked=false;
+    $("#qs72")[0].checked=false;
+    $("#qs73")[0].checked=false;
+    $("#c7")[0].value='';
+
+
+    //question n°8
+    //Molecular Level
+    $("#q827")[0].checked=false;
+    $("#q828")[0].checked=false;
+    $("#q829")[0].checked=false;
+    $("#q830")[0].checked=false;
+    $("#q831")[0].checked=false;
+    $("#q832")[0].checked=false;
+
+    //Subcellular Level
+    $("#q826")[0].checked=false;
+
+    //Trace Analysis
+    $("#q81")[0].checked=false;
+    $("#q82")[0].checked=false;
+    $("#q83")[0].checked=false;
+    $("#q84")[0].checked=false;
+
+    //Morphology Analysis
+    $("#q85")[0].checked=false;
+    $("#q86")[0].checked=false;
+
+    //Single Circuit Building
+    $("#q87")[0].checked=false;
+    $("#q88")[0].checked=false;
+    $("#q89")[0].checked=false;
+    $("#q810")[0].checked=false;
+    $("#q811")[0].checked=false;
+    $("#q812")[0].checked=false;
+    $("#q813")[0].checked=false;
+
+    //>Circuit Building
+    $("#q814")[0].checked=false;
+    $("#q815")[0].checked=false;
+
+    //Single Cell In Silicio Experiments
+    $("#q816")[0].checked=false;
+
+    //Small Cell In Silicio Experiments
+    $("#q817")[0].checked=false;
+
+    //Brain Area Circuit In Silicio Experiments
+    $("#q818")[0].checked=false;
+    $("#q819")[0].checked=false;
+
+    //Model Validation
+    $("#q820")[0].checked=false;
+    $("#q821")[0].checked=false;
+    $("#q822")[0].checked=false;
+    $("#q823")[0].checked=false;
+    $("#q824")[0].checked=false;
+
+    //Highly Integrated Workflows
+    $("#q825")[0].checked=false;
+
+    //question n°9
+    $("#qs91")[0].checked=false;
+    $("#check1")[0].checked=false;
+    $("#check2")[0].checked=false;
+    $("#check5")[0].checked=false;
+    $("#check6")[0].checked=false;
+    $("#qs92")[0].checked=false;
+
+    //question n°10
+    $("#q10")[0].value='';
+    //question n°11
+    $("#qs111")[0].checked=false;
+    $("#qs112")[0].checked=false;
+    $("#qs113")[0].checked=false;
+    $("#qs114")[0].checked=false;
+    $("#qs115")[0].checked=false;
+    $("#qs116")[0].checked=false;
+    $("#qs117")[0].checked=false;
+    $("#qs118")[0].checked=false;
+    $("#qs119")[0].checked=false;
+    $("#qs1110")[0].checked=false;
+    $("#qs1111")[0].checked=false;
+
+    //question n°12
+    $("#qs121")[0].checked=false;
+    $("#qs122")[0].checked=false;
+
+    //question n°13
+    $("#q13")[0].value='';
+
+});
 function checkMenu(id){
           var r81=document.getElementById(id);
           if($("#"+id).is(':checked')) {
