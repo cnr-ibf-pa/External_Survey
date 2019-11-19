@@ -147,6 +147,7 @@ function WhereIs(){
   if(window == top){
     document.getElementById('outside').style.display='block';
     document.getElementById('inside').style.display='none';
+     console.log(window.self);
   }
   else{
     document.getElementById('outside').style.display='none';
