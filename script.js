@@ -1,4 +1,4 @@
-/*
+
 $(document).ready(function () {
     //question n°1
     $("#qs11")[0].checked=false;
@@ -130,7 +130,7 @@ $(document).ready(function () {
     //question n°13
     $("#q13")[0].value='';
 
-});*/
+});
 function checkMenu(id){
           var r81=document.getElementById(id);
           if($("#"+id).is(':checked')) {

@@ -152,7 +152,6 @@ function WhereIs(){
     init();
     document.getElementById('outside').style.display='none';
     document.getElementById('inside').style.display='block';
-    
   }
 }
 WhereIs();
