@@ -106,4 +106,4 @@ function Check_TopUrl(){
     $('#inside').show();
   }
 }
-function Check_TopUrl();
+Check_TopUrl();
