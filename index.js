@@ -145,12 +145,12 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window == top){
-    console.log(window);
-    console.log(top);
+    document.getElementById('outside').style.display='block';
+    document.getElementById('inside').style.display='none';
   }
   else{
-    console.log(window);
-    console.log(top);
+    document.getElementById('outside').style.display='none';
+    document.getElementById('inside').style.display='block';
     init();
   }
 }

@@ -1,3 +1,4 @@
+
 function checkMenu(id){
           var r81=document.getElementById(id);
           if($("#"+id).is(':checked')) {
@@ -94,19 +95,3 @@ function find_answer(checkboxes){
 		if (vals) vals = vals.substring(1);
 		return vals;
    	}
-
-function Check_TopUrl(){
-  if(window == top){
-    console.log(window);
-    console.log(top);
-  }
-  else{
-    var x = document.getElementById("inside");
-    if (x.style.display === "none") {
-    x.style.display = "block";
-    } else {
-    x.style.display = "none";
-    }
-  }
-}
-Check_TopUrl();
