@@ -68,8 +68,6 @@ function hide(){
          document.getElementById('menu').style.display ='none';
          document.getElementById("check1").checked = false;
          document.getElementById("check2").checked = false;
-         document.getElementById("check3").checked = false;
-         document.getElementById("check4").checked = false;
          document.getElementById("check5").checked = false;
          document.getElementById("check6").checked = false;
 }
@@ -103,7 +101,8 @@ function Check_TopUrl(){
     console.log(top);
   }
   else{
-    $('#inside').show();
+    $("#inside").show();
+    console.log('mostra bottone');
   }
 }
 Check_TopUrl();
