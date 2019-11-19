@@ -101,8 +101,12 @@ function Check_TopUrl(){
     console.log(top);
   }
   else{
-    $("#inside").show();
-    console.log('mostra bottone');
+    var x = document.getElementById("inside");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+    } else {
+    x.style.display = "none";
+    }
   }
 }
 Check_TopUrl();
