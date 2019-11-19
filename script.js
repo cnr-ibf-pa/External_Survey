@@ -1,4 +1,4 @@
-
+/*
 $(document).ready(function () {
     //question n°1
     $("#qs11")[0].checked=false;
@@ -8,6 +8,8 @@ $(document).ready(function () {
     $("#qs15")[0].checked=false;
     $("#qs16")[0].checked=false;
 
+    //questio n°2
+    $('#q2').val=0;
     //question n°3
     $("#qs31")[0].checked=false;
     $("#qs32")[0].checked=false;
@@ -128,7 +130,7 @@ $(document).ready(function () {
     //question n°13
     $("#q13")[0].value='';
 
-});
+});*/
 function checkMenu(id){
           var r81=document.getElementById(id);
           if($("#"+id).is(':checked')) {
