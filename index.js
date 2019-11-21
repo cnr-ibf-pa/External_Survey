@@ -46,21 +46,10 @@ function find_answer(checkboxes){
 
         for (var i=0, n=checkboxes.length;i<n;i++) {
             if (checkboxes[i].checked){
-                //vals.push(checkboxes[i].value);
                 vals +='\n'+checkboxes[i].value;
             }
         }
         if (vals) vals = vals.substring(1);
-        return vals;
-    }
-    function find_answerArray(checkboxes){
-        var vals =[];
-
-        for (var i=0, n=checkboxes.length;i<n;i++) {
-            if (checkboxes[i].checked){
-                vals.push(checkboxes[i].value);
-            }
-        }
         return vals;
     }
 
