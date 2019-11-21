@@ -41,6 +41,28 @@ $.ajax({
 }); 
 	 return authorization;
 }
+function find_answer(checkboxes){
+        var vals = "";
+
+        for (var i=0, n=checkboxes.length;i<n;i++) {
+            if (checkboxes[i].checked){
+                //vals.push(checkboxes[i].value);
+                vals +='\n'+checkboxes[i].value;
+            }
+        }
+        if (vals) vals = vals.substring(1);
+        return vals;
+    }
+    function find_answerArray(checkboxes){
+        var vals =[];
+
+        for (var i=0, n=checkboxes.length;i<n;i++) {
+            if (checkboxes[i].checked){
+                vals.push(checkboxes[i].value);
+            }
+        }
+        return vals;
+    }
 
 function postContactToGoogle() {
       //Question n°1
@@ -135,13 +157,20 @@ function postContactToGoogle() {
     //UserID
     var userId=$('#hbp-user-id').val();
 
+    //Question n°8 split
+    //Molecular_Level
+    var ML1=document.getElementById("q827").onchange = function() {var ML1=checkMenu("q827"); return ML1;};
+    var ML2=document.getElementById("q828").onchange = function() {var ML2=checkMenu("q828"); return ML2;};
+    var ML3=document.getElementById("q829").onchange = function() {var ML3=checkMenu("q829"); return ML3;};
 
+    
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScrkqvArLDFhmdaOfO-3KnlLxk3GxARuQnO107fQE1Qbp8fdg/formResponse",
-      data:{"entry_2141102757":q1,"entry_1729822952":output,"entry_45035854":q3,"entry_441286483":c3,"entry_640263239":q4,"entry_1649417599":c4,"entry_2061316548":q5,"entry_2109633509":c5,"entry_1375495796":q6,"entry_2068203809":c6,"entry_833030924":q7,"entry_1771949641":c7,"entry_1103050806":MLevel,"entry_598021954":SLevel,"entry_1908334161":TAnalysis,"entry_192619608":MAnalysis,"entry_890913335":CSBuilding,"entry_2123397204":CBuilding,"entry_1756343296":SingleCSE,"entry_238455488":SmallCSE,"entry_1337809265":BACSE,"entry_1445287737":MValidation,"entry_482587187":HIW,"entry_447457858":question9,"entry_1374176472":q10,"entry_397120109":question11,"entry_1425954529":q12,"entry_1297381760":q13,"entry_1866933738":userId},
+      data:{"entry_2141102757":q1,"entry_1729822952":output,"entry_45035854":q3,"entry_441286483":c3,"entry_640263239":q4,"entry_1649417599":c4,"entry_2061316548":q5,"entry_2109633509":c5,"entry_1375495796":q6,"entry_2068203809":c6,"entry_833030924":q7,"entry_1771949641":c7,"entry_1103050806":MLevel,"entry_598021954":SLevel,"entry_1908334161":TAnalysis,"entry_192619608":MAnalysis,"entry_890913335":CSBuilding,"entry_2123397204":CBuilding,"entry_1756343296":SingleCSE,"entry_238455488":SmallCSE,"entry_1337809265":BACSE,"entry_1445287737":MValidation,"entry_482587187":HIW,"entry_447457858":question9,"entry_1374176472":q10,"entry_397120109":question11,"entry_1425954529":q12,"entry_1297381760":q13,"entry_1866933738":userId,"entry_1475675254":ML1,"entry_71213678":ML2,"entry_1160820923":ML3},
       type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
       });
     }
+
 
 function WhereIs(){
   if(window == top){
