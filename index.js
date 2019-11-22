@@ -82,12 +82,12 @@ function postContactToGoogle() {
 
     //Question n°6
     var r6 = document.getElementsByName('q6');
-    var q6=getValueRadio(r5);
+    var q6=getValueRadio(r6);
     var c6 = $('#c6').val();
 
     //Question n°7
     var r7 = document.getElementsByName('q7');
-    var q7=getValueRadio(r5);
+    var q7=getValueRadio(r7);
     var c7 = $('#c7').val();
 
     //Question n°8
