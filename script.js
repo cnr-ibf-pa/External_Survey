@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+function start() {
     //question n°1
     $("#qs11")[0].checked=false;
     $("#qs12")[0].checked=false;
@@ -130,7 +130,17 @@ $(document).ready(function () {
     //question n°13
     $("#q13")[0].value='';
 
-});
+}
+
+function end(){
+  if(window == top){
+    document.getElementById('outside').style.display='block';
+    document.getElementById('inside').style.display='none';
+  }else{
+    document.getElementById('outside').style.display='none';
+    document.getElementById('inside').style.display='block';}
+}
+
 function checkMenu(id){
           var r81=document.getElementById(id);
           if($("#"+id).is(':checked')) {

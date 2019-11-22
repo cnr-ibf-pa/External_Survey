@@ -162,14 +162,8 @@ function postContactToGoogle() {
 
 
 function WhereIs(){
-  if(window == top){
-    document.getElementById('outside').style.display='block';
-    document.getElementById('inside').style.display='none';
-  }
-  else{
+  if(window != top){
     init();
-    document.getElementById('outside').style.display='none';
-    document.getElementById('inside').style.display='block';
   }
 }
 WhereIs();
