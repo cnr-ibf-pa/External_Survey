@@ -199,7 +199,8 @@ function postContactToGoogle() {
     var MV3=document.getElementById("q822").onchange=function(){var MV3=checkMenu("q822"); return MV3;};
     var MV4=document.getElementById("q823").onchange=function(){var MV4=checkMenu("q823"); return MV4;};
     var MV5=document.getElementById("q824").onchange=function(){var MV5=checkMenu("q824"); return MV5;};
-
+    //Highly integrated workflow
+    var HIW1=document.getElementById("q825").onchange=function(){var HIW1=checkMenu("q825"); return HIW1;};
     //NSG
     var NSG=document.getElementById("check1").onchange=function(){var NSG=checkMenu("check1"); return NSG;};
     //JURECA
@@ -220,10 +221,12 @@ function postContactToGoogle() {
     var F_BACISE=document.getElementById("qs119").onchange=function(){var F_BACISE=checkMenu("qs119"); return F_BACISE;};
     var F_MV=document.getElementById("qs1110").onchange=function(){var F_ML=checkMenu("qs1110"); return F_ML;};
     var F_HIW=document.getElementById("qs1111").onchange=function(){var F_HIW=checkMenu("qs1111"); return F_HIW;};
+
     
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScFXH_d30T8hw2yBSfigGywzv2UpUcN9BqfUdOtiG69XX-iWQ/formResponse",
-      data:{"entry_587568546":q1,"entry_1167509473":output,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,"entry_155614927":c4,"entry_449077188":q5,"entry_905444161":c5,"entry_1976011584":q6,"entry_1828737890":c6,
+      data:{"entry_587568546":q1,"entry_1167509473":output,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,
+      "entry_155614927":c4,"entry_449077188":q5,"entry_905444161":c5,"entry_1976011584":q6,"entry_1828737890":c6,
       "entry_180333328":q7,"entry_871783456":c7,"entry_1693291241":MLevel,"entry_2037577938":SLevel,"entry_850321543":TAnalysis,
       "entry_196612701":MAnalysis,"entry_340839207":CSBuilding,"entry_1600241950":CBuilding,"entry_210607341":SingleCSE,
       "entry_1067961165":SmallCSE,"entry_597633461":BACSE,"entry_2010265622":MValidation,"entry_1449786897":HIW,
@@ -237,7 +240,7 @@ function postContactToGoogle() {
       "entry_363719983":MV3,"entry_840494516":MV4,"entry_1006444071":MV5,"entry_1691163079":NSG,"entry_1556173154":jureca,
       "entry_1527194443":pizD,"entry_152105565":marconi,"entry_825970456":F_ML,"entry_1973597846":F_SM,"entry_389249447":F_TA,
       "entry_275038741":F_MA,"entry_569020820":F_SCB,"entry_2060872419":F_CB,"entry_1738577912":F_SCISE,"entry_1692693658":F_SmCISE,
-      "entry_1545394113":F_BACISE,"entry_1064567374":F_MV,"entry_650601249":F_HIW},
+      "entry_1545394113":F_BACISE,"entry_1064567374":F_MV,"entry_650601249":F_HIW,"entry_459518937":HIW1},
       type:"POST",dataType:"xml",statusCode: {0:function() { 
         window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
       });
