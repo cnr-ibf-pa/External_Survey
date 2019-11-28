@@ -6,6 +6,11 @@ let client = new jso.JSO({
 	authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
 
+$( window ).on( "load", function() {
+    console.log( "window loaded" );
+    WhereIs();
+});
+
 function init() {
 
   try {
@@ -251,7 +256,9 @@ function WhereIs(){
   if(window != top){
     console.log('sono dentro wheris');
     init();
+  }else{
+    console.log("sono fuori");
   }
 }
-WhereIs();
+//WhereIs();
 
