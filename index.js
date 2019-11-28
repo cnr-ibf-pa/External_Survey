@@ -40,6 +40,7 @@ $.ajax({
     success: function(data){
 	    console.log(data.id);
         //document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
+        console.log(data.id);
 	document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
