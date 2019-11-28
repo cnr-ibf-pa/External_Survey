@@ -6,10 +6,10 @@ let client = new jso.JSO({
 	authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
 
-$( window ).on( "load", function() {
+/*$( window ).on( "load", function() {
     console.log( "window loaded" );
     WhereIs();
-});
+});*/
 
 function init() {
 
@@ -27,7 +27,7 @@ console.log(authorization)
 authorization.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
 //document.getElementById("hbp-token").innerHTML = session.access_token;
-	
+
 console.log(header);
 	
 $.ajax({
@@ -261,5 +261,5 @@ function WhereIs(){
     console.log("sono fuori");
   }
 }
-//WhereIs();
+WhereIs();
 
