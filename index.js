@@ -254,7 +254,7 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window != top){
-    console.log('sono dentro wheris');
+    console.log('sono dentro');
     init();
   }else{
     console.log("sono fuori");
