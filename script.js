@@ -141,6 +141,12 @@ function end(){
     document.getElementById('inside').style.display='block';}
 }
 
+function closeWindow() {
+  //netscape.security.PrivilegeManager.enablePrivilege(”UniversalBrowserWrite”);
+  window.open('','_parent','');
+  window.close();
+}
+
 function checkMenu(id){
           var r81=document.getElementById(id);
           if($("#"+id).is(':checked')) {
