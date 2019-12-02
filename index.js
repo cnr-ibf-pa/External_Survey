@@ -2,13 +2,11 @@
     providerID: "HBP",
     client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
     redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
-    authorization: "https://services.humanbrainproject.eu/oidc/authorize"
-    //scopes: { request: ["https://services.humanbrainproject.eu/oidc/profile","https://services.humanbrainproject.eu/oidc/hbp.users"]}
+    authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
 
 function init() {
-
-  try {
+    try {
     client.callback();
   } catch (e) {
     console.warn('Issue decoding the token');
@@ -16,14 +14,15 @@ function init() {
 
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
 var authorization = client.getToken();
-	
+    
 console.log(authorization)
-	
+    
 authorization.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
-
+//document.getElementById("hbp-token").innerHTML = session.access_token;
+    
 console.log(header);
-	
+    
 $.ajax({
     url: USER_API,
     headers: {
@@ -32,12 +31,13 @@ $.ajax({
     },
     method: 'GET',
     success: function(data){
-	    console.log(data.id);
-	document.getElementById("hbp-user-id").innerHTML = data.id;
+        console.log(data.id);
+        //document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
+    document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
 }); 
-	 return authorization;
+     return authorization;
 }
 
 function find_answer(checkboxes){
@@ -232,8 +232,6 @@ function postContactToGoogle() {
       type:"POST",dataType:"xml",statusCode: {0:function() { 
         window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
       });
-
-     //window.open("thankyou.html","_self");
     }
 
 function WhereIs(){
