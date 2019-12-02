@@ -238,11 +238,10 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window != top){
-    var currentUser = getCurrentUser();
-    console.log(currentUser);
+    console.log("inside");
     init();
   }else{
-    console.log("sono fuori");
+    console.log("outside");
   }
 }
 WhereIs();
