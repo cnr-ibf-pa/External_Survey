@@ -1,12 +1,13 @@
 
-let client = new jso.JSO({
-	providerID: "HBP",
-	client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
-	redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
-	authorization: "https://services.humanbrainproject.eu/oidc/authorize",
-})
-
 function init() {
+
+    var client = new jso.JSO({
+    providerID: "HBP",
+    client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
+    redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
+    authorization: "https://services.humanbrainproject.eu/oidc/authorize",
+    scopes: { request: ["https://services.humanbrainproject.eu/oidc/profile","https://services.humanbrainproject.eu/oidc/hbp.users"]}
+})
 
   try {
     client.callback();
@@ -21,7 +22,6 @@ console.log(authorization)
 	
 authorization.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
-//document.getElementById("hbp-token").innerHTML = session.access_token;
 
 console.log(header);
 	
@@ -34,7 +34,6 @@ $.ajax({
     method: 'GET',
     success: function(data){
 	    console.log(data.id);
-        //document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
 	document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
@@ -52,18 +51,7 @@ function find_answer(checkboxes){
         if (vals) vals = vals.substring(1);
         return vals;
     }
-function find_answer_array(checkboxes){
-        //var vals = {};
-        var vals=[];
-    
-        for (var i=0, n=checkboxes.length;i<n;i++) {
-            if (checkboxes[i].checked){
-                //vals[i]=checkboxes[i].value;
-                vals.push(checkboxes[i].value);
-            }
-        }
-        return vals;
-    }
+
 function postContactToGoogle() {
       //Question n°1
     var radios = document.getElementsByName('q1');
@@ -250,7 +238,8 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window != top){
-    console.log('sono dentro');
+    var currentUser = getCurrentUser();
+    console.log(currentUser);
     init();
   }else{
     console.log("sono fuori");
