@@ -9,7 +9,7 @@ function start() {
     $("#qs16")[0].checked=false;
 
     //questio n°2
-    $('#q2').val=0;
+    $("#q2")[0].value=0;
     //question n°3
     $("#qs31")[0].checked=false;
     $("#qs32")[0].checked=false;
@@ -129,6 +129,7 @@ function start() {
 
     //question n°13
     $("#q13")[0].value='';
+
 
 }
 
