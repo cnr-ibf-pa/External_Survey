@@ -6,14 +6,15 @@
   redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })
-  
+
 function init() {
   try {
     client.callback();
   } catch (e) {
     console.warn('Issue decoding the token');
   }
-
+//Update the token when will last less than 3 minutes
+//client.updateToken(180);
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
 var authorization = client.getToken();
     
@@ -245,5 +246,7 @@ function WhereIs(){
     console.log("outside");
   }
 }
-WhereIs();
+$(document).ready(function () {
+    WhereIs();
+});
 
