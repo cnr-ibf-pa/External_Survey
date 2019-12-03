@@ -234,7 +234,7 @@ function postContactToGoogle() {
       type:"POST",dataType:"xml",statusCode: {0:function() { 
         window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
       });
-    //client.wipeTokens();
+    client.wipeTokens();
     }
 
 function WhereIs(){
