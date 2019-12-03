@@ -1,5 +1,7 @@
 
-  let client = new jso.JSO({
+  
+function init() {
+let client = new jso.JSO({
   providerID: "HBP",
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
@@ -7,7 +9,6 @@
   scopes: { request: ["https://services.humanbrainproject.eu/oidc/profile"]}
 })
 
-function init() {
   try {
     client.callback();
   } catch (e) {
@@ -242,7 +243,6 @@ function WhereIs(){
   if(window != top){
     console.log("inside");
     init();
-    client.wipeTokens();
   }else{
     console.log("outside");
   }
