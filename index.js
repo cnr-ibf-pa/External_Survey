@@ -40,7 +40,6 @@ $.ajax({
     }
 });
 }); 
-    client.wipeTokens();
     return authorization;
 }
 
@@ -243,6 +242,7 @@ function WhereIs(){
   if(window != top){
     console.log("inside");
     init();
+    client.wipeTokens();
   }else{
     console.log("outside");
   }
