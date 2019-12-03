@@ -3,8 +3,8 @@ let client = new jso.JSO({
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
-  scopes: { request: ["https://services.humanbrainproject.eu/oidc/profile"]}
 })  
+
 function init() {
   try {
     client.callback();
