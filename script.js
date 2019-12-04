@@ -132,7 +132,7 @@ function start() {
 
 
 }
-
+/*
 function end(){
   if(window == top){
     document.getElementById('outside').style.display='block';
@@ -140,13 +140,7 @@ function end(){
   }else{
     document.getElementById('outside').style.display='none';
     document.getElementById('inside').style.display='block';}
-}
-
-function closeWindow() {
-  //netscape.security.PrivilegeManager.enablePrivilege(”UniversalBrowserWrite”);
-  window.open('','_parent','');
-  window.close();
-}
+}*/
 
 function checkMenu(id){
           var r81=document.getElementById(id);

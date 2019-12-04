@@ -3,28 +3,21 @@ let client = new jso.JSO({
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
-  lifetime: 300,
 })  
 
 function init() {
-
-var auth={};
-console.log(client);
 
   try {
     client.callback();
   } catch (e) {
     console.warn('Issue decoding the token');
   }
-//Update the token when will last less than 3 minutes
-//client.updateToken(180);
+
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
-auth = client.getToken();
-console.log(auth);
-    
+var auth = client.getToken();
+
 auth.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
-//document.getElementById("hbp-token").innerHTML = session.access_token;
 
 
 $.ajax({
@@ -35,9 +28,7 @@ $.ajax({
     },
     method: 'GET',
     success: function(data){
-        console.log(data.id);
-        console.log(data);
-        //document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
+        console.log(data.id);      
     document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
@@ -242,12 +233,9 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window != top){
-    console.log("inside");
     init();
-  }else{
-    console.log("outside");
-  }
 }
+
 $(document).ready(function () {
     WhereIs();
 });
