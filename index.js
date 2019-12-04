@@ -14,15 +14,14 @@ function init() {
 //Update the token when will last less than 3 minutes
 //client.updateToken(180);
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
-var authorization = client.getToken();
-    
-console.log(authorization)
+var auth = client.getToken();
+  
+console.log(auth)
     
 authorization.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
-//document.getElementById("hbp-token").innerHTML = session.access_token;
-    
-console.log(header);
+document.getElementById("hbp-token").innerHTML = session.access_token;
+
     
 $.ajax({
     url: USER_API,
@@ -38,7 +37,7 @@ $.ajax({
     }
 });
 }); 
-    return authorization;
+    return auth;
 }
 
 
@@ -239,7 +238,9 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     console.log("inside");
-    init();
+    var a=init();
+    console.log(a);
+    console.log(authorization);
   }else{
     console.log("outside");
   }
