@@ -7,7 +7,9 @@ let client = new jso.JSO({
 
 function init() {
 
+var auth={};
 console.log(client);
+console.log("init",auth);
   try {
     client.callback();
   } catch (e) {
@@ -16,8 +18,7 @@ console.log(client);
 //Update the token when will last less than 3 minutes
 //client.updateToken(180);
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
-var auth = client.getToken();
-console.log(type(auth));
+auth = client.getToken();
 console.log(auth);
     
 auth.then((session) => {
