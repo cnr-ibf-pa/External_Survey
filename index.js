@@ -6,6 +6,8 @@ let client = new jso.JSO({
 })  
 
 function init() {
+
+console.log(client);
   try {
     client.callback();
   } catch (e) {
@@ -15,13 +17,13 @@ function init() {
 //client.updateToken(180);
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
 var auth = client.getToken();
-  
-console.log(auth)
+console.log(type(auth));
+console.log(auth);
     
 auth.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
-document.getElementById("hbp-token").innerHTML = session.access_token;
-
+//document.getElementById("hbp-token").innerHTML = session.access_token;
+console.log(session.access_token);
     
 $.ajax({
     url: USER_API,
@@ -240,7 +242,6 @@ function WhereIs(){
     console.log("inside");
     var a=init();
     console.log(a);
-    console.log(authorization);
   }else{
     console.log("outside");
   }
