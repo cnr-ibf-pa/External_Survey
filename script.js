@@ -198,6 +198,7 @@ function getOption(v){
         const div = document.querySelector('.moji');
         const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
         div.textContent = mojis[v.value];
+        console.log(v.value);
         return v.value;
 }
         
