@@ -234,8 +234,8 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
+    }
 }
-
 $(document).ready(function () {
     WhereIs();
 });
