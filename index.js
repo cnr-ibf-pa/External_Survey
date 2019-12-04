@@ -3,14 +3,14 @@ let client = new jso.JSO({
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/External_Survey/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
-  lifetime: 600,
+  lifetime: 300,
 })  
 
 function init() {
 
 var auth={};
 console.log(client);
-console.log("init",auth);
+
   try {
     client.callback();
   } catch (e) {
@@ -25,8 +25,8 @@ console.log(auth);
 auth.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
 //document.getElementById("hbp-token").innerHTML = session.access_token;
-console.log(session.access_token);
-    
+
+
 $.ajax({
     url: USER_API,
     headers: {
@@ -36,6 +36,7 @@ $.ajax({
     method: 'GET',
     success: function(data){
         console.log(data.id);
+        console.log(data);
         //document.getElementById("hbp-user-data").innerHTML = JSON.stringify(data);
     document.getElementById("hbp-user-id").innerHTML = data.id;
     }
