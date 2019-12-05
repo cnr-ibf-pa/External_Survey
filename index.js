@@ -28,7 +28,7 @@ $.ajax({
     },
     method: 'GET',
     success: function(data){
-        console.log(data.id);      
+        //console.log(data.id);      
     document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
@@ -58,10 +58,12 @@ function postContactToGoogle() {
     }
     //Question n°2
     var slider = document.getElementById("q2");
-        var output = slider.value;
+    var output = slider.value;
         slider.oninput = function() {
       output = this.value;
     }
+    
+    //console.log($("#q2")[0].value);
     //Question n°3
     var r3 = document.getElementsByName('q3');
     var q3=getValueRadio(r3);

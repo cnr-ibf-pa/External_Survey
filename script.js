@@ -9,6 +9,7 @@ function start() {
     $("#qs16")[0].checked=false;
 
     //questio n°2
+    //console.log($("#q2")[0].value);
     $("#q2")[0].value=0;
     //question n°3
     $("#qs31")[0].checked=false;
@@ -198,7 +199,6 @@ function getOption(v){
         const div = document.querySelector('.moji');
         const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
         div.textContent = mojis[v.value];
-        console.log(v.value);
         return v.value;
 }
         
