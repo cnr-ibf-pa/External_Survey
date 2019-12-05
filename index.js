@@ -27,9 +27,8 @@ $.ajax({
         'Content-Type':'application/json'
     },
     method: 'GET',
-    success: function(data){
-        //console.log(data.id);      
-    document.getElementById("hbp-user-id").innerHTML = data.id;
+    success: function(data){     
+        document.getElementById("hbp-user-id").innerHTML = data.id;
     }
 });
 }); 
@@ -38,16 +37,24 @@ $.ajax({
 
 
 function find_answer(checkboxes){
-        var vals = "";
+    var vals = "";
 
-        for (var i=0, n=checkboxes.length;i<n;i++) {
-            if (checkboxes[i].checked){
-                vals +='\n'+checkboxes[i].value;
-            }
-        }
-        if (vals) vals = vals.substring(1);
-        return vals;
+    for (var i=0, n=checkboxes.length;i<n;i++) {
+        if (checkboxes[i].checked){
+            vals +='\n'+checkboxes[i].value;}
     }
+    if (vals) vals = vals.substring(1);
+        return vals;
+}
+
+
+var slider = document.getElementById("q2");
+    var output = slider.value;
+     slider.oninput = function() {
+      output = this.value;
+    }
+console.log(output);
+
 
 function postContactToGoogle() {
       //Question n°1
@@ -56,14 +63,15 @@ function postContactToGoogle() {
     if(q1=='other'){
       q1=$('#other').val();
     }
+
     //Question n°2
     var slider = document.getElementById("q2");
     var output = slider.value;
-        slider.oninput = function() {
+    /*
+      slider.oninput = function() {
       output = this.value;
-    }
-    
-    //console.log($("#q2")[0].value);
+    }*/
+
     //Question n°3
     var r3 = document.getElementsByName('q3');
     var q3=getValueRadio(r3);
@@ -208,8 +216,7 @@ function postContactToGoogle() {
     var F_BACISE=document.getElementById("qs119").onchange=function(){var F_BACISE=checkMenu("qs119"); return F_BACISE;};
     var F_MV=document.getElementById("qs1110").onchange=function(){var F_ML=checkMenu("qs1110"); return F_ML;};
     var F_HIW=document.getElementById("qs1111").onchange=function(){var F_HIW=checkMenu("qs1111"); return F_HIW;};
-
-    
+ 
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScFXH_d30T8hw2yBSfigGywzv2UpUcN9BqfUdOtiG69XX-iWQ/formResponse",
       data:{"entry_587568546":q1,"entry_1167509473":output,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,
@@ -231,13 +238,13 @@ function postContactToGoogle() {
       type:"POST",dataType:"xml",statusCode: {0:function() { 
         window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
       });
-    }
+}
 
 function WhereIs(){
   if(window != top){
-    init();
-    }
+    init();}
 }
+
 $(document).ready(function () {
     WhereIs();
 });
