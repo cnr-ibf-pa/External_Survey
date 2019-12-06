@@ -20,18 +20,29 @@
     <div>
       <div class="header" id="myHeader">
         <div class="freebirdFormviewerViewFormBanner freebirdHeaderMast">
-          <h1 style="padding-left: 25px;font-size: 70px;font-family: Tahoma,sans-serif;padding-top:50px;overflow: hidden;white-space: nowrap;">Brain Simulation Platform</h1>
+          <h1 style="padding-left: 25px;font-size: 70px;font-family: Tahoma,sans-serif;padding-top:35px;overflow: hidden;white-space: nowrap;">Brain Simulation Platform</h1>
           <div>
-            <h2 style="padding-left: 25px;font-family: Tahoma,sans-serif; padding-top:54px;color:black; overflow: hidden;white-space: nowrap;"> User Survey</h2> 
+            <h2 style="padding-left: 25px;font-family: Tahoma,sans-serif; padding-top:20px;color:black; overflow: hidden;white-space: nowrap;"> User Survey</h2> 
+            <div style="padding-top: 0px;">
+              <div class="progress">
+                <div id="step_bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10"
+                      aria-valuemin="0" aria-valuemax="100" style="width:14.28%; background:#008CBA;">
+                      step 1 of 7
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
                
-      <div class="sep" style="margin-top:78px;"></div>          
+      <div class="sep" style="margin-top:44px;"></div>          
         <div class="freebirdFormviewerViewCenteredContent">
           <div class="freebirdFormviewerViewFormCard">
             <form  action="#" method="POST" style="border-style: hidden;">
               <div id="genericForm" class="form-group">
+              <!--****************   Step 1   *******************-->
+              <div id="step1">
+                
                 <div class="box" >
                   <div class="session">
                     <h3 class="question">1. How did you first learn about the Brain Simulation Platform (BSP)?</h3>
@@ -78,7 +89,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="sep"></div>
+                <center>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="first_next" onclick="step2();" value="Next"/>
+                </center>  
+              </div>
+
+              <!--****************   Step 2   *******************-->
+              <div id="step2" style="display: none;">
                 <div class="box">
                   <div class="session">
                     <h3 class="question">3. How do you find the platform?</h3>
@@ -133,7 +150,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="sep"></div>
+                <center>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="second_back" onclick="step1();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="second_next" onclick="step3();" value="Next"/>
+                </center>  
+              </div>
+            </div>
+
+              <!--****************   Step 3   *******************-->
+              <div id="step3" style="display: none;">
                 <div class="box">
                   <div class="session">
                     <h3 class="question">5. How clear is the guidebook?</h3>
@@ -161,7 +186,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="sep"></div>
            
                 <div class="box">
@@ -190,9 +214,15 @@
                       <textarea id="c6" rows="2" cols="100" placeholder="your comment..."></textarea>
                     </div>
                   </div>
+                  <center>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="third_back" onclick="step2();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="third_next" onclick="step4();" value="Next"/>
+                </center> 
                 </div>
+              </div>
 
-                <div class="sep"></div>
+              <!--****************   Step 4   *******************-->
+              <div id="step4" style="display: none;">
            
                 <div class="box">
                   <div class="session">
@@ -340,17 +370,17 @@
                               </label></li>
                         </ul>
                       </div>
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCellInSilicioExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 215px;border-radius:25px;">Single Cell In Silicio Experiments&ensp;<span class="caret"></span></a>
-                      <div class="collapse" id="SingleCellInSilicioExperiments">
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 215px;border-radius:25px;">Single Cell In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <div class="collapse" id="SingleCellInSilicoExperiments">
                         <ul class="checkSub"> 
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">single cell in silicio experiments under current clamp
-                                <input type="checkbox" name="SingleCSE" id="q816" value="single cell in silicio experiments under current clamp">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">single cell in silico experiments under current clamp
+                                <input type="checkbox" name="SingleCSE" id="q816" value="single cell in silico experiments under current clamp">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicioExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 217.5px;border-radius:25px;">Small Cell In Silicio Experiments&ensp;<span class="caret"></span></a>
-                      <div class="collapse" id="SmallCellInSilicioExperiments">
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 217.5px;border-radius:25px;">Small Cell In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <div class="collapse" id="SmallCellInSilicoExperiments">
                         <ul class="checkSub"> 
                           <li><label class="container" style="font-size:16px;padding-left: 50px;">configure and run a small circuit using preconfigured HBP model and data
                                 <input type="checkbox" name="SmallCSE" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
@@ -358,8 +388,8 @@
                               </label></li>
                         </ul>
                       </div>
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicioExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 183px;border-radius:25px;">Brain Area Circuit In Silicio Experiments&ensp;<span class="caret"></span></a>
-                      <div class="collapse" id="BrainAreaCircuitInSilicioExperiments">
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 183px;border-radius:25px;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <div class="collapse" id="BrainAreaCircuitInSilicoExperiments">
                         <ul class="check" style="padding-top:7px;"> 
                           <li><label class="container" style="font-size:16px;padding-left: 50px;">hippocampus
                                 <input type="checkbox" name="BACSE" id="q818" value="hippocampus">
@@ -405,10 +435,16 @@
                               </label></li>
                         </ul>
                       </div>
-                    </ul> 
+                    </ul>
                   </div>
-                  <div class="sep"></div>
-        
+                </div>
+                <center>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="fourth_back" onclick="step3();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="fouth_next" onclick="step5();" value="Next"/>
+                </center>
+              </div>
+                <!--****************   Step 5   *******************-->
+                <div id="step5" style="display: none;">    
                   <div class="box">
                     <div class="session">
                       <h3 class="question">9. Do you use any HPC system?</h3>
@@ -456,9 +492,14 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="sep"></div>
-        
+                  <center>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="fifth_back" onclick="step4();" value="Back"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="fifth_next" onclick="step6();" value="Next"/>
+                  </center>
+              </div>
+                   
+                <!--****************   Step 6   *******************-->
+                <div id="step6" style="display: none;">
                   <div class="box">
                     <div class="session">
                       <h3 class="question">11. Which use cases are more important for your work?</h3>
@@ -487,16 +528,16 @@
                               <input type="checkbox" id="qs116"name="question11"value="Circuit Building">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container" style="padding-left: 50px;">Single Cell In Silicio Experiments
-                              <input type="checkbox" id="qs117" name="question11" value="Single Cell In Silicio Experiments">
+                        <li><label class="container" style="padding-left: 50px;">Single Cell In Silico Experiments
+                              <input type="checkbox" id="qs117" name="question11" value="Single Cell In Silico Experiments">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container" style="padding-left: 50px;">Small Circuit In Silicio Experiments
-                              <input type="checkbox" id="qs118" name="question11"value="Small Circuit In Silicio Experiments">
+                        <li><label class="container" style="padding-left: 50px;">Small Circuit In Silico Experiments
+                              <input type="checkbox" id="qs118" name="question11"value="Small Circuit In Silico Experiments">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container" style="padding-left: 50px;">Brain Area Circuit In Silicio Experiments
-                              <input type="checkbox" id="qs119"name="question11"value="Brain Area Circuit In Silicio Experiments">
+                        <li><label class="container" style="padding-left: 50px;">Brain Area Circuit In Silico Experiments
+                              <input type="checkbox" id="qs119"name="question11"value="Brain Area Circuit In Silico Experiments">
                               <span class="checkmark"></span>
                             </label></li>
                         <li><label class="container" style="padding-left: 50px;">Model Validation
@@ -510,9 +551,13 @@
                       </ul>
                     </div>
                   </div>
-          
-                  <div class="sep"></div>
-         
+                  <center>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="sixth_back" onclick="step5();" value="Back"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="sixth_next" onclick="step7();" value="Next"/>
+                  </center>
+                </div>
+                 <!--****************   Step 7   *******************-->  
+                <div id="step7" style="display: none;">
                   <div class="box">
                     <div class="session">
                       <h3 class="question">12. Would do you recommend the BSP to a friend or colleague?</h3>
@@ -539,11 +584,14 @@
                       </div>
                     </div>
                   </div>
-                </div>
                 <center>
-                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;margin-left: 50px;" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="seventh_back" onclick="step6();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
                 </center>
+            </div>
             </form>
+            </div>
+          </div>
       <textarea id="hbp-user-id" style="display: none;"></textarea>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

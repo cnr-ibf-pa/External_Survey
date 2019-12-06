@@ -115,13 +115,13 @@ function postContactToGoogle() {
     //Circuit Building
     var check6 = document.getElementsByName('CBuilding');
     var CBuilding=find_answer(check6);
-    //Single Cell In Silicio Experiments
+    //Single Cell In Silico Experiments
     var check7 = document.getElementsByName('SingleCSE');
     var SingleCSE=find_answer(check7);    
-    //Small Cell In Silicio Experiments
+    //Small Cell In Silico Experiments
     var check8 = document.getElementsByName('SmallCSE');
     var SmallCSE=find_answer(check8);     
-    //Brain Area Circuit In Silicio Experiments
+    //Brain Area Circuit In Silico Experiments
     var check9 = document.getElementsByName('BACSE');
     var BACSE=find_answer(check9); 
     //Model Validation
@@ -181,11 +181,11 @@ function postContactToGoogle() {
     //Circuit Building
     var CB1=document.getElementById("q814").onchange = function() {var CB1=checkMenu("q814"); return CB1;};
     var CB2=document.getElementById("q815").onchange = function() {var CB2=checkMenu("q815"); return CB2;};
-    //Single Cell In Silicio Experiments
+    //Single Cell In Silico Experiments
     var SCISE1=document.getElementById("q816").onchange = function() {var SCISE1=checkMenu("q816"); return SCISE1;};
-    //Small Cell In Silicio Experiments
+    //Small Cell In Silico Experiments
     var SmCISE1=document.getElementById("q817").onchange = function() {var SmCISE1=checkMenu("q817"); return SmCISE1;};
-    //Brain Area Circuit In Silicio Experiments
+    //Brain Area Circuit In Silico Experiments
     var BACISE1=document.getElementById("q818").onchange = function() {var BACISE1=checkMenu("q818"); return BACISE1;};
     var BACISE2=document.getElementById("q819").onchange = function() {var BACISE2=checkMenu("q819"); return BACISE2;};
     //Model Validation

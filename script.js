@@ -1,4 +1,3 @@
-
 function start() {
     //question n°1
     $("#qs11")[0].checked=false;
@@ -24,7 +23,6 @@ function start() {
     $("#qs43")[0].checked=false;
     $("#qs44")[0].checked=false;
     $("#c4")[0].value='';
-
     //question n°5
     $("#qs51")[0].checked=false;
     $("#qs52")[0].checked=false;
@@ -81,13 +79,13 @@ function start() {
     $("#q814")[0].checked=false;
     $("#q815")[0].checked=false;
 
-    //Single Cell In Silicio Experiments
+    //Single Cell In Silico Experiments
     $("#q816")[0].checked=false;
 
-    //Small Cell In Silicio Experiments
+    //Small Cell In Silico Experiments
     $("#q817")[0].checked=false;
 
-    //Brain Area Circuit In Silicio Experiments
+    //Brain Area Circuit In Silico Experiments
     $("#q818")[0].checked=false;
     $("#q819")[0].checked=false;
 
@@ -132,6 +130,54 @@ function start() {
     $("#q13")[0].value='';
 
 
+}
+function step1(){
+  document.getElementById('step_bar').style.width= '14.28%';
+  document.getElementById('step_bar').innerHTML= 'step 1 of 7';
+  document.getElementById('step1').style.display = 'block';
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step3').style.display = 'none';
+}
+function step2(){
+  document.getElementById('step_bar').style.width= '28.56%';
+  document.getElementById('step_bar').innerHTML= 'step 2 of 7';
+  document.getElementById('step2').style.display = 'block';
+  document.getElementById('step1').style.display = 'none';
+  document.getElementById('step3').style.display = 'none';
+}
+function step3(){
+  document.getElementById('step_bar').style.width= '42.84%';
+  document.getElementById('step_bar').innerHTML= 'step 3 of 7';
+  document.getElementById('step3').style.display = 'block';
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step4').style.display = 'none';
+}
+function step4(){
+  document.getElementById('step_bar').style.width= '57.12%';
+  document.getElementById('step_bar').innerHTML= 'step 4 of 7';
+  document.getElementById('step4').style.display = 'block';
+  document.getElementById('step3').style.display = 'none';
+  document.getElementById('step5').style.display = 'none';
+}
+function step5(){
+  document.getElementById('step_bar').style.width= '71.4%';
+  document.getElementById('step_bar').innerHTML= 'step 5 of 7';
+  document.getElementById('step5').style.display = 'block';
+  document.getElementById('step4').style.display = 'none';
+  document.getElementById('step6').style.display = 'none';
+}
+function step6(){
+  document.getElementById('step_bar').style.width= '85.68%';
+  document.getElementById('step_bar').innerHTML= 'step 6 of 7';
+  document.getElementById('step6').style.display = 'block';
+  document.getElementById('step7').style.display = 'none';
+  document.getElementById('step5').style.display = 'none';
+}
+function step7(){
+  document.getElementById('step_bar').style.width= '100%';
+  document.getElementById('step_bar').innerHTML= 'step 7 of 7';
+  document.getElementById('step7').style.display = 'block';
+  document.getElementById('step6').style.display = 'none';
 }
 /*
 function end(){
