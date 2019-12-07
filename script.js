@@ -132,52 +132,94 @@ function start() {
 
 }
 function step1(){
-  document.getElementById('step_bar').style.width= '14.28%';
-  document.getElementById('step_bar').innerHTML= 'step 1 of 7';
+  document.getElementById('step_bar').style.width= '7.69%';
+  document.getElementById('step_bar').innerHTML= 'step 1 of 13';
   document.getElementById('step1').style.display = 'block';
   document.getElementById('step2').style.display = 'none';
   document.getElementById('step3').style.display = 'none';
 }
 function step2(){
-  document.getElementById('step_bar').style.width= '28.56%';
-  document.getElementById('step_bar').innerHTML= 'step 2 of 7';
+  document.getElementById('step_bar').style.width= '15.38%';
+  document.getElementById('step_bar').innerHTML= 'step 2 of 13';
   document.getElementById('step2').style.display = 'block';
   document.getElementById('step1').style.display = 'none';
   document.getElementById('step3').style.display = 'none';
 }
 function step3(){
-  document.getElementById('step_bar').style.width= '42.84%';
-  document.getElementById('step_bar').innerHTML= 'step 3 of 7';
+  document.getElementById('step_bar').style.width= '23.07%';
+  document.getElementById('step_bar').innerHTML= 'step 3 of 13';
   document.getElementById('step3').style.display = 'block';
   document.getElementById('step2').style.display = 'none';
   document.getElementById('step4').style.display = 'none';
 }
 function step4(){
-  document.getElementById('step_bar').style.width= '57.12%';
-  document.getElementById('step_bar').innerHTML= 'step 4 of 7';
+  document.getElementById('step_bar').style.width= '30.76%';
+  document.getElementById('step_bar').innerHTML= 'step 4 of 13';
   document.getElementById('step4').style.display = 'block';
   document.getElementById('step3').style.display = 'none';
   document.getElementById('step5').style.display = 'none';
 }
 function step5(){
-  document.getElementById('step_bar').style.width= '71.4%';
-  document.getElementById('step_bar').innerHTML= 'step 5 of 7';
+  document.getElementById('step_bar').style.width= '38.45%';
+  document.getElementById('step_bar').innerHTML= 'step 5 of 13';
   document.getElementById('step5').style.display = 'block';
   document.getElementById('step4').style.display = 'none';
   document.getElementById('step6').style.display = 'none';
 }
 function step6(){
-  document.getElementById('step_bar').style.width= '85.68%';
-  document.getElementById('step_bar').innerHTML= 'step 6 of 7';
+  document.getElementById('step_bar').style.width= '46.14%';
+  document.getElementById('step_bar').innerHTML= 'step 6 of 13';
   document.getElementById('step6').style.display = 'block';
   document.getElementById('step7').style.display = 'none';
   document.getElementById('step5').style.display = 'none';
 }
 function step7(){
-  document.getElementById('step_bar').style.width= '100%';
-  document.getElementById('step_bar').innerHTML= 'step 7 of 7';
+  document.getElementById('step_bar').style.width= '53.83%';
+  document.getElementById('step_bar').innerHTML= 'step 7 of 13';
   document.getElementById('step7').style.display = 'block';
   document.getElementById('step6').style.display = 'none';
+  document.getElementById('step8').style.display = 'none';
+}
+function step8(){
+  document.getElementById('step_bar').style.width= '61.52%';
+  document.getElementById('step_bar').innerHTML= 'step 8 of 13';
+  document.getElementById('step8').style.display = 'block';
+  document.getElementById('step7').style.display = 'none';
+  document.getElementById('step9').style.display = 'none';
+}
+function step9(){
+  document.getElementById('step_bar').style.width= '69.21%';
+  document.getElementById('step_bar').innerHTML= 'step 9 of 13';
+  document.getElementById('step9').style.display = 'block';
+  document.getElementById('step8').style.display = 'none';
+  document.getElementById('step10').style.display = 'none';
+}
+function step10(){
+  document.getElementById('step_bar').style.width= '76.9%';
+  document.getElementById('step_bar').innerHTML= 'step 10 of 13';
+  document.getElementById('step10').style.display = 'block';
+  document.getElementById('step9').style.display = 'none';
+  document.getElementById('step11').style.display = 'none';
+}
+function step11(){
+  document.getElementById('step_bar').style.width= '84.59%';
+  document.getElementById('step_bar').innerHTML= 'step 11 of 13';
+  document.getElementById('step11').style.display = 'block';
+  document.getElementById('step10').style.display = 'none';
+  document.getElementById('step12').style.display = 'none';
+}
+function step12(){
+  document.getElementById('step_bar').style.width= '92.28%';
+  document.getElementById('step_bar').innerHTML= 'step 12 of 13';
+  document.getElementById('step12').style.display = 'block';
+  document.getElementById('step11').style.display = 'none';
+  document.getElementById('step13').style.display = 'none';
+}
+function step13(){
+  document.getElementById('step_bar').style.width= '100%';
+  document.getElementById('step_bar').innerHTML= 'step 13 of 13';
+  document.getElementById('step13').style.display = 'block';
+  document.getElementById('step12').style.display = 'none';
 }
 /*
 function end(){
@@ -233,7 +275,6 @@ function getOption(v){
         const div = document.querySelector('.moji');
         const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
         div.textContent = mojis[v.value];
-        console.log(v.value);
         return v.value;
 }
         
