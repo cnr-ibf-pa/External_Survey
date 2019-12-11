@@ -154,6 +154,8 @@ function postContactToGoogle() {
 
     var IpAdress=$('#ip_address').val();
 
+    var browser=$('#browser').val();
+
     //Question n°8 split
     //Molecular_Level
     var ML1=document.getElementById("q827").onchange = function() {var ML1=checkMenu("q827"); return ML1;};
@@ -236,7 +238,8 @@ function postContactToGoogle() {
       "entry_363719983":MV3,"entry_840494516":MV4,"entry_1006444071":MV5,"entry_1691163079":NSG,"entry_1556173154":jureca,
       "entry_1527194443":pizD,"entry_152105565":marconi,"entry_825970456":F_ML,"entry_1973597846":F_SM,"entry_389249447":F_TA,
       "entry_275038741":F_MA,"entry_569020820":F_SCB,"entry_2060872419":F_CB,"entry_1738577912":F_SCISE,"entry_1692693658":F_SmCISE,
-      "entry_1545394113":F_BACISE,"entry_1064567374":F_MV,"entry_650601249":F_HIW,"entry_650664193":HIW1,"entry_1573033199":IpAdress},
+      "entry_1545394113":F_BACISE,"entry_1064567374":F_MV,"entry_650601249":F_HIW,"entry_650664193":HIW1,"entry_1573033199":IpAdress,
+      "entry_224041548":browser},
       type:"POST",dataType:"xml",statusCode: {0:function() { 
         window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
       });
@@ -245,10 +248,10 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
-    
+    var sBrowser=browser_detect();
+    document.getElementById("browser").innerHTML=sBrowser;
     getUserIP(function(ip){
     document.getElementById("ip_address").innerHTML=ip;
-    //alert("Got IP! :" + ip);
     });
     }
 }
@@ -295,9 +298,39 @@ function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
     };
 }
 
+function browser_detect(){
+    var sBrowser, sUsrAg = navigator.userAgent;
+
+    // The order matters here, and this may report false positives for unlisted browsers.
+
+    if (sUsrAg.indexOf("Firefox") > -1) {
+        sBrowser = "Mozilla Firefox";
+    // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
+    } else if (sUsrAg.indexOf("SamsungBrowser") > -1) {
+        sBrowser = "Samsung Internet";
+    // "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36
+    } else if (sUsrAg.indexOf("Opera") > -1 || sUsrAg.indexOf("OPR") > -1) {
+        sBrowser = "Opera";
+    // "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106"
+    } else if (sUsrAg.indexOf("Trident") > -1) {
+        sBrowser = "Microsoft Internet Explorer";
+    // "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko"
+    } else if (sUsrAg.indexOf("Edge") > -1) {
+        sBrowser = "Microsoft Edge";
+    // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+    } else if (sUsrAg.indexOf("Chrome") > -1) {
+        sBrowser = "Google Chrome or Chromium";
+    // "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36"
+    } else if (sUsrAg.indexOf("Safari") > -1) {
+        sBrowser = "Apple Safari";
+    // "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306"
+    } else {
+        sBrowser = "unknown";
+    }
+    return sBrowser;
+}
 
 $(document).ready(function () {
     WhereIs();
-    // Usage
 });
 
