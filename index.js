@@ -252,6 +252,7 @@ function WhereIs(){
     document.getElementById("browser").innerHTML=sBrowser;
     getUserIP(function(ip){
     document.getElementById("ip_address").innerHTML=ip;
+    console.log(ip);
     });
     }
 }
