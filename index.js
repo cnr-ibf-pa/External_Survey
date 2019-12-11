@@ -244,7 +244,13 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window != top){
-    init();}
+    init();
+    
+    getUserIP(function(ip){
+    document.getElementById("ip_address").innerHTML=ip;
+    //alert("Got IP! :" + ip);
+    });
+    }
 }
 /**
  * Get the user IP throught the webkitRTCPeerConnection
@@ -293,10 +299,5 @@ function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
 $(document).ready(function () {
     WhereIs();
     // Usage
-
-getUserIP(function(ip){
-    document.getElementById("ip_address").innerHTML=ip;
-    //alert("Got IP! :" + ip);
-});
 });
 
