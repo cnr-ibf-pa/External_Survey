@@ -68,10 +68,18 @@ function postContactToGoogle() {
     //Question n°2
     var slider = document.getElementById("q2");
     var output = slider.value;
-    /*
-      slider.oninput = function() {
-      output = this.value;
-    }*/
+    var smile;
+    if(output==0){
+        smile="🤢 very bad";
+    }else if(output==1){
+        smile="😣 bad";
+    }else if(output==2){
+        smile="😐 fair";
+    }else if(output==3){
+        smile="🙂 good";
+    }else if(output==4){
+        smile="😄 excellent";
+    }
 
     //Question n°3
     var r3 = document.getElementsByName('q3');
@@ -224,7 +232,7 @@ function postContactToGoogle() {
  
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScFXH_d30T8hw2yBSfigGywzv2UpUcN9BqfUdOtiG69XX-iWQ/formResponse",
-      data:{"entry_587568546":q1,"entry_1167509473":output,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,
+      data:{"entry_587568546":q1,"entry_1167509473":smile,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,
       "entry_155614927":c4,"entry_449077188":q5,"entry_905444161":c5,"entry_1976011584":q6,"entry_1828737890":c6,
       "entry_180333328":q7,"entry_871783456":c7,"entry_1693291241":MLevel,"entry_2037577938":SLevel,"entry_850321543":TAnalysis,
       "entry_196612701":MAnalysis,"entry_340839207":CSBuilding,"entry_1600241950":CBuilding,"entry_210607341":SingleCSE,

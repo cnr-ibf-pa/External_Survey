@@ -9,7 +9,7 @@ function start() {
 
     //questio n°2
     //console.log($("#q2")[0].value);
-    $("#q2")[0].value=0;
+    $("#q2")[0].value=4;
     //question n°3
     $("#qs31")[0].checked=false;
     $("#qs32")[0].checked=false;
@@ -273,7 +273,8 @@ function myFunction() {
 function getOption(v){
         const range = document.querySelector('input.inputImage ');
         const div = document.querySelector('.moji');
-        const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
+        //const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
+        const mojis = ['🤢 very bad','😣 bad','😐 fair','🙂 good','😄 excellent'];
         div.textContent = mojis[v.value];
         return v.value;
 }
