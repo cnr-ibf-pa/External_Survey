@@ -350,10 +350,14 @@ function formSubmitted(status) {
 }
 
 function SplashInCollab() {
-  if(window != top)
+  if(window != top){
     $('#collab').show();
-  else
+    console.log("dentro");
+  }
+  else{
     $('#collab').hide();
+    console.log("fuori");
+  }
 }
 
 
