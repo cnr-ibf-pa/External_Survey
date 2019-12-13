@@ -272,6 +272,7 @@
                   <div class="session">
                     <h3 class="question">8. Which tools do you use most frequently?</h3>
                     <ul style="padding-left:25px;display: inline-block;padding-top:20px;">
+                      <!--*****************************   Molecular Level   *************************************-->
            	          <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MolecularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 34.5%;border-radius:25px;">Molecular Level&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="MolecularLevel">
                         <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
@@ -301,6 +302,7 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Subcellular Level   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SubcellularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 34%;border-radius:25px;">Subcellular Level&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SubcellularLevel">
                         <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
@@ -308,6 +310,7 @@
                                 <input type="checkbox" name="SLevel" id="q826" value="KappaNEURON demonstration">
                                 <span class="checkmark"></span>
                       </div>
+                      <!--*****************************   Trace Analysis   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#TraceAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 35.3%;border-radius:25px;">Trace Analysis&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="TraceAnalysis">
                         <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
@@ -329,6 +332,7 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Morphology Analysis   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MorphologyAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 32%;border-radius:25px;">Morphology Analysis&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="MorphologyAnalysis">
                         <ul class="check" style="padding-top:7px;"> 
@@ -342,6 +346,7 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Single Circuit Building   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 31.5%;border-radius:25px;">Single Circuit Building&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SingleCircuitBuilding">
                         <ul class="checkSub"> 
@@ -375,31 +380,49 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Circuit Building   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#CircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 35%;border-radius:25px;">Circuit Building&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="CircuitBuilding">
                         <ul class="checkSub" style="padding-top:7px;"> 
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Cells placement - Rat Cerebellum volume
-                                <input type="checkbox" name="CBuilding" id="q814" value="cells placement-rat cerebellum volume">
-                                <span class="checkmark"></span>
-                              </label></li>
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Cells placement - Rat hippocampus CA1
-                                <input type="checkbox" name="CBuilding" id="q815" value="cells placement-rat hippocampus CA1">
-                                <span class="checkmark"></span>
-                              </label></li>
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Cells placement - Striatum microcircuitry
-                                <input type="checkbox" name="CBuilding" id="q815" value="cells placement-striatum microcircuitry">
-                                <span class="checkmark"></span>
-                              </label></li>
-                           <li><label class="container" style="font-size:16px;padding-left: 50px;">Connectome - Rat Cerebellum volume
-                                <input type="checkbox" name="CBuilding" id="q815" value="connectome-rat cerebellum volume">
-                                <span class="checkmark"></span>
-                              </label></li>
-                            <li><label class="container" style="font-size:16px;padding-left: 50px;">Connectome - Striatum microcircuitry
-                                <input type="checkbox" name="CBuilding" id="q815" value="connectome-striatum microcircuitry">
-                                <span class="checkmark"></span>
-                              </label></li>
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Cells placement
+                              <input type="checkbox" id="qs8_1" value="Cells placement" onclick="ShowCellPlacement()">
+                              <span class="checkmark"></span>
+                              <div id="menu_CellsPlacement" style="display:none;">
+                                <ul class="check2">
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Rat Cerebellum volume
+                                        <input type="checkbox" id="q8_14" name="CBuilding" value="cells placement-rat cerebellum volume">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Rat hippocampus CA1
+                                        <input type="checkbox" id="q8_15" name="CBuilding" value="cells placement-rat hippocampus CA1">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Striatum microcircuitry
+                                        <input type="checkbox"  id="q8_16" name="CBuilding" value="cells placement-striatum microcircuitry">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                </ul>
+                              </div>
+                          </label></li>
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Connectome
+                              <input type="checkbox" id="qs8_2" value="Connectome" onchange="ShowConnectome()">
+                              <span class="checkmark"></span>
+                              <div id="menu_connectome" style="display:none;">
+                                <ul class="check2">
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Rat Cerebellum volume
+                                        <input type="checkbox" id="q8_17" name="CBuilding" value="connectome-rat cerebellum volume">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Striatum microcircuitry
+                                        <input type="checkbox" id="q8_18" name="CBuilding" value="connectome-striatum microcircuitry">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                </ul>
+                              </div>
+                          </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Single Cell In Silico Experiments   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 26%;border-radius:25px;">Single Cell In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SingleCellInSilicoExperiments">
                         <ul class="checkSub"> 
@@ -409,6 +432,7 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Small Cell In Silico Experiments   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 26.4%;border-radius:25px;">Small Cell In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SmallCellInSilicoExperiments">
                         <ul class="checkSub"> 
@@ -418,6 +442,7 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Brain Area Circuit In Silico Experiments   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 22.3%;border-radius:25px;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="BrainAreaCircuitInSilicoExperiments">
                         <ul class="check" style="padding-top:7px;"> 
@@ -431,6 +456,7 @@
                               </label></li>
                         </ul>
                       </div>
+                       <!--*****************************   Model Validation   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#ModelValidation"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 34.5%;border-radius:25px;">Model Validation&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="ModelValidation">
                         <ul class="checkSub"> 
@@ -456,6 +482,7 @@
                               </label></li>
                         </ul>
                       </div>
+                      <!--*****************************   Highly Integrated Workflows   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#HighlyIntegratedWorkflows"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 28%;border-radius:25px;">Highly Integrated Workflows&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="HighlyIntegratedWorkflows">
                         <ul class="check2"> 

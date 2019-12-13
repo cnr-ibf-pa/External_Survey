@@ -76,8 +76,13 @@ function start() {
     $("#q813")[0].checked=false;
 
     //Circuit Building
-    $("#q814")[0].checked=false;
-    $("#q815")[0].checked=false;
+    $("#qs8_1")[0].checked=false;
+    $("#qs8_2")[0].checked=false;
+    $("#q8_14")[0].checked=false;
+    $("#q8_15")[0].checked=false;
+    $("#q8_16")[0].checked=false;
+    $("#q8_17")[0].checked=false;
+    $("#q8_18")[0].checked=false;
 
     //Single Cell In Silico Experiments
     $("#q816")[0].checked=false;
@@ -295,9 +300,24 @@ function hide(){
   document.getElementById("check5").checked = false;
   document.getElementById("check6").checked = false;
 }
-
 function show(){
   document.getElementById('menu').style.display = 'block';
+}
+
+function ShowCellPlacement(){
+  document.getElementById("CellsPlacement").style.display="block";
+}
+function ShowCellPlacement(){
+  if($("#qs8_1").is(":checked"))
+    $("#menu_CellsPlacement").show();
+  else
+    $("#menu_CellsPlacement").hide();
+}
+function ShowConnectome(){
+  if($("#qs8_2").is(":checked"))
+    $("#menu_connectome").show();
+  else
+    $("#menu_connectome").hide();
 }
 
 function formSubmitted(status) {
