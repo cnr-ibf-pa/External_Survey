@@ -87,12 +87,17 @@ function start() {
     //Single Cell In Silico Experiments
     $("#q816")[0].checked=false;
 
-    //Small Cell In Silico Experiments
-    $("#q817")[0].checked=false;
+    //Small Circuit In Silico Experiments
+    $("#qs8_3")[0].checked=false;
+    $("#q8_19")[0].checked=false;
+    $("#q8_20")[0].checked=false;
 
     //Brain Area Circuit In Silico Experiments
-    $("#q818")[0].checked=false;
-    $("#q819")[0].checked=false;
+    $("#qs8_4")[0].checked=false;
+    $("#qs8_5")[0].checked=false;
+    $("#q8_21")[0].checked=false;
+    $("#q8_22")[0].checked=false;
+    $("#q8_23")[0].checked=false;
 
     //Model Validation
     $("#q820")[0].checked=false;
@@ -319,7 +324,24 @@ function ShowConnectome(){
   else
     $("#menu_connectome").hide();
 }
-
+function ShowSmallCircuit(){
+  if($("#qs8_3").is(":checked"))
+    $("#menu_SmallCircuit").show();
+  else
+    $("#menu_SmallCircuit").hide();
+}
+function ShowHippocampus(){
+  if($("#qs8_4").is(":checked"))
+    $("#menu_Hippocampus").show();
+  else
+    $("#menu_Hippocampus").hide();
+}
+function ShowCerebellum(){
+  if($("#qs8_5").is(":checked"))
+    $("#menu_cerebellum").show();
+  else
+    $("#menu_cerebellum").hide();
+}
 function formSubmitted(status) {
   $('#genericForm').hide();//matches your form name or whatever you want to disappear post-submission
   $("#bottone").hide();

@@ -385,7 +385,7 @@
                       <div class="collapse" id="CircuitBuilding">
                         <ul class="checkSub" style="padding-top:7px;"> 
                           <li><label class="container" style="font-size:16px;padding-left: 50px;">Cells placement
-                              <input type="checkbox" id="qs8_1" value="Cells placement" onclick="ShowCellPlacement()">
+                              <input type="checkbox" id="qs8_1" value="Cells placement" onchange="ShowCellPlacement()">
                               <span class="checkmark"></span>
                               <div id="menu_CellsPlacement" style="display:none;">
                                 <ul class="check2">
@@ -433,27 +433,59 @@
                         </ul>
                       </div>
                       <!--*****************************   Small Circuit In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 26.4%;border-radius:25px;">Small Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 25.2%;border-radius:25px;">Small Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SmallCellInSilicoExperiments">
-                        <ul class="checkSub"> 
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">configure and run a small circuit using preconfigured HBP model and data
-                                <input type="checkbox" name="SmallCSE" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
-                                <span class="checkmark"></span>
-                              </label></li>
-                        </ul>
-                      </div>
+                        <ul class="checkSub" style="padding-top:7px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Configure and run a small circuit using preconfigured HBP model and data
+                              <input type="checkbox" id="qs8_3" value="Configure and run a small circuit using preconfigured HBP model and data" onchange="ShowSmallCircuit()">
+                              <span class="checkmark"></span>
+                              <div id="menu_SmallCircuit" style="display:none;">
+                                <ul class="check2">
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Mouse O1-Scaffold Somatosensory Cortex Microcircuit for Mouse
+                                        <input type="checkbox" id="q8_19" name="SmallCSE" value="Mouse O1-Scaffold Somatosensory Cortex Microcircuit for Mouse">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Rat hippocampus CA1
+                                        <input type="checkbox" id="q8_20" name="SmallCSE" value="Rat hippocampus CA1">
+                                        <span class="checkmark"></span>
+                                  </label></li>
+                                </ul>
+                              </div>
+                            </label></li>
+                          </ul>
+                        </div>
                       <!--*****************************   Brain Area Circuit In Silico Experiments   *************************************-->
                       <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 22.3%;border-radius:25px;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="BrainAreaCircuitInSilicoExperiments">
-                        <ul class="check" style="padding-top:7px;"> 
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">hippocampus
-                                <input type="checkbox" name="BACSE" id="q818" value="hippocampus">
-                                <span class="checkmark"></span>
-                              </label></li>
-                          <li><label class="container" style="font-size:16px;padding-left: 50px;">cerebellum
-                                <input type="checkbox" name="BACSE" id="q819" value="cerebellum">
-                                <span class="checkmark"></span>
-                              </label></li>
+                        <ul class="checkSub" style="padding-top:7px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Hippocampus
+                              <input type="checkbox" id="qs8_4" value="Hippocampus" onchange="ShowHippocampus()">
+                              <span class="checkmark"></span>
+                              <div id="menu_Hippocampus" style="display:none;">
+                                <ul class="check2">
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data
+                                        <input type="checkbox" id="q8_21" name="BACSE" value="Hippocampus-Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Configure and run a hippocampus microcircuit
+                                        <input type="checkbox" id="q8_22" name="BACSE" value="Hippocampus-Configure and run a hippocampus microcircuit">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                </ul>
+                              </div>
+                          </label></li>
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Cerebellum
+                              <input type="checkbox" id="qs8_5" value="Connectome" onchange="ShowCerebellum()">
+                              <span class="checkmark"></span>
+                              <div id="menu_cerebellum" style="display:none;">
+                                <ul class="check2">
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Functional Simulation with Point Neurons
+                                        <input type="checkbox" id="q8_23" name="BACSE" value="Cerebellum-Functional Simulation with Point Neurons">
+                                        <span class="checkmark"></span>
+                                      </label></li>
+                                </ul>
+                              </div>
+                          </label></li>
                         </ul>
                       </div>
                        <!--*****************************   Model Validation   *************************************-->
