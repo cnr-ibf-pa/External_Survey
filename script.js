@@ -349,4 +349,11 @@ function formSubmitted(status) {
   document.getElementById('output').innerHTML = status;
 }
 
+function SplashInCollab() {
+  if(window != top)
+    $('#collab').show();
+  else
+    $('#collab').hide();
+}
+
 
