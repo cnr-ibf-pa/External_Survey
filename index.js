@@ -262,9 +262,6 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
-    var sBrowser=browser_detect();
-    document.getElementById("browser").innerHTML=sBrowser;
-    getIPAddress();
     }
 }
 
@@ -309,5 +306,8 @@ function browser_detect(){
 
 $(document).ready(function () {
     WhereIs();
+    var sBrowser=browser_detect();
+    document.getElementById("browser").innerHTML=sBrowser;
+    getIPAddress();
 });
 
