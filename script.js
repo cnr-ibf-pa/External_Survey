@@ -352,11 +352,9 @@ function formSubmitted(status) {
 function SplashInCollab() {
   if(window != top){
     $('#collab').show();
-    console.log("dentro");
   }
   else{
     $('#collab').hide();
-    console.log("fuori");
   }
 }
 
