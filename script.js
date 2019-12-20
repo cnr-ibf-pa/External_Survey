@@ -1,58 +1,290 @@
+function start() {
+    //question n°1
+    $("#qs11")[0].checked=false;
+    $("#qs12")[0].checked=false;
+    $("#qs13")[0].checked=false;
+    $("#qs14")[0].checked=false;
+    $("#qs15")[0].checked=false;
+    $("#qs16")[0].checked=false;
+
+    //questio n°2
+    //console.log($("#q2")[0].value);
+    $("#q2")[0].value=4;
+    //question n°3
+    $("#qs31")[0].checked=false;
+    $("#qs32")[0].checked=false;
+    $("#qs33")[0].checked=false;
+    $("#qs34")[0].checked=false;
+    $("#c3")[0].value='';
+
+    //question n°4
+    $("#qs41")[0].checked=false;
+    $("#qs42")[0].checked=false;
+    $("#qs43")[0].checked=false;
+    $("#qs44")[0].checked=false;
+    $("#c4")[0].value='';
+    //question n°5
+    $("#qs51")[0].checked=false;
+    $("#qs52")[0].checked=false;
+    $("#qs53")[0].checked=false;
+    $("#qs54")[0].checked=false;
+    $("#c5")[0].value='';
+
+    //question n°6
+    $("#qs61")[0].checked=false;
+    $("#qs62")[0].checked=false;
+    $("#qs63")[0].checked=false;
+    $("#qs64")[0].checked=false;
+    $("#c6")[0].value='';
+
+    //question n°7
+    $("#qs71")[0].checked=false;
+    $("#qs72")[0].checked=false;
+    $("#qs73")[0].checked=false;
+    $("#c7")[0].value='';
+
+
+    //question n°8
+    //Molecular Level
+    $("#q827")[0].checked=false;
+    $("#q828")[0].checked=false;
+    $("#q829")[0].checked=false;
+    $("#q830")[0].checked=false;
+    $("#q831")[0].checked=false;
+    $("#q832")[0].checked=false;
+
+    //Subcellular Level
+    $("#q826")[0].checked=false;
+
+    //Trace Analysis
+    $("#q81")[0].checked=false;
+    $("#q82")[0].checked=false;
+    $("#q83")[0].checked=false;
+    $("#q84")[0].checked=false;
+
+    //Morphology Analysis
+    $("#q85")[0].checked=false;
+    $("#q86")[0].checked=false;
+
+    //Single Circuit Building
+    $("#q87")[0].checked=false;
+    $("#q88")[0].checked=false;
+    $("#q89")[0].checked=false;
+    $("#q810")[0].checked=false;
+    $("#q811")[0].checked=false;
+    $("#q812")[0].checked=false;
+    $("#q813")[0].checked=false;
+
+    //Circuit Building
+    $("#qs8_1")[0].checked=false;
+    $("#qs8_2")[0].checked=false;
+    $("#q8_14")[0].checked=false;
+    $("#q8_15")[0].checked=false;
+    $("#q8_16")[0].checked=false;
+    $("#q8_17")[0].checked=false;
+    $("#q8_18")[0].checked=false;
+
+    //Single Cell In Silico Experiments
+    $("#q816")[0].checked=false;
+
+    //Small Circuit In Silico Experiments
+    $("#qs8_3")[0].checked=false;
+    $("#q8_19")[0].checked=false;
+    $("#q8_20")[0].checked=false;
+
+    //Brain Area Circuit In Silico Experiments
+    $("#qs8_4")[0].checked=false;
+    $("#qs8_5")[0].checked=false;
+    $("#q8_21")[0].checked=false;
+    $("#q8_22")[0].checked=false;
+    $("#q8_23")[0].checked=false;
+
+    //Model Validation
+    $("#q820")[0].checked=false;
+    $("#q821")[0].checked=false;
+    $("#q822")[0].checked=false;
+    $("#q823")[0].checked=false;
+    $("#q824")[0].checked=false;
+
+    //Highly Integrated Workflows
+    $("#q825")[0].checked=false;
+
+    //question n°9
+    $("#qs91")[0].checked=false;
+    $("#check1")[0].checked=false;
+    $("#check2")[0].checked=false;
+    $("#check5")[0].checked=false;
+    $("#check6")[0].checked=false;
+    $("#qs92")[0].checked=false;
+
+    //question n°10
+    $("#q10")[0].value='';
+    //question n°11
+    $("#qs111")[0].checked=false;
+    $("#qs112")[0].checked=false;
+    $("#qs113")[0].checked=false;
+    $("#qs114")[0].checked=false;
+    $("#qs115")[0].checked=false;
+    $("#qs116")[0].checked=false;
+    $("#qs117")[0].checked=false;
+    $("#qs118")[0].checked=false;
+    $("#qs119")[0].checked=false;
+    $("#qs1110")[0].checked=false;
+    $("#qs1111")[0].checked=false;
+
+    //question n°12
+    $("#qs121")[0].checked=false;
+    $("#qs122")[0].checked=false;
+
+    //question n°13
+    $("#q13")[0].value='';
+
+
+}
+function step1(){
+  document.getElementById('step_bar').style.width= '7.69%';
+  document.getElementById('step_bar').innerHTML= 'step 1 of 13';
+  document.getElementById('step1').style.display = 'block';
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step3').style.display = 'none';
+}
+function step2(){
+  document.getElementById('step_bar').style.width= '15.38%';
+  document.getElementById('step_bar').innerHTML= 'step 2 of 13';
+  document.getElementById('step2').style.display = 'block';
+  document.getElementById('step1').style.display = 'none';
+  document.getElementById('step3').style.display = 'none';
+}
+function step3(){
+  document.getElementById('step_bar').style.width= '23.07%';
+  document.getElementById('step_bar').innerHTML= 'step 3 of 13';
+  document.getElementById('step3').style.display = 'block';
+  document.getElementById('step2').style.display = 'none';
+  document.getElementById('step4').style.display = 'none';
+}
+function step4(){
+  document.getElementById('step_bar').style.width= '30.76%';
+  document.getElementById('step_bar').innerHTML= 'step 4 of 13';
+  document.getElementById('step4').style.display = 'block';
+  document.getElementById('step3').style.display = 'none';
+  document.getElementById('step5').style.display = 'none';
+}
+function step5(){
+  document.getElementById('step_bar').style.width= '38.45%';
+  document.getElementById('step_bar').innerHTML= 'step 5 of 13';
+  document.getElementById('step5').style.display = 'block';
+  document.getElementById('step4').style.display = 'none';
+  document.getElementById('step6').style.display = 'none';
+}
+function step6(){
+  document.getElementById('step_bar').style.width= '46.14%';
+  document.getElementById('step_bar').innerHTML= 'step 6 of 13';
+  document.getElementById('step6').style.display = 'block';
+  document.getElementById('step7').style.display = 'none';
+  document.getElementById('step5').style.display = 'none';
+}
+function step7(){
+  document.getElementById('step_bar').style.width= '53.83%';
+  document.getElementById('step_bar').innerHTML= 'step 7 of 13';
+  document.getElementById('step7').style.display = 'block';
+  document.getElementById('step6').style.display = 'none';
+  document.getElementById('step8').style.display = 'none';
+}
+function step8(){
+  document.getElementById('step_bar').style.width= '61.52%';
+  document.getElementById('step_bar').innerHTML= 'step 8 of 13';
+  document.getElementById('step8').style.display = 'block';
+  document.getElementById('step7').style.display = 'none';
+  document.getElementById('step9').style.display = 'none';
+}
+function step9(){
+  document.getElementById('step_bar').style.width= '69.21%';
+  document.getElementById('step_bar').innerHTML= 'step 9 of 13';
+  document.getElementById('step9').style.display = 'block';
+  document.getElementById('step8').style.display = 'none';
+  document.getElementById('step10').style.display = 'none';
+}
+function step10(){
+  document.getElementById('step_bar').style.width= '76.9%';
+  document.getElementById('step_bar').innerHTML= 'step 10 of 13';
+  document.getElementById('step10').style.display = 'block';
+  document.getElementById('step9').style.display = 'none';
+  document.getElementById('step11').style.display = 'none';
+}
+function step11(){
+  document.getElementById('step_bar').style.width= '84.59%';
+  document.getElementById('step_bar').innerHTML= 'step 11 of 13';
+  document.getElementById('step11').style.display = 'block';
+  document.getElementById('step10').style.display = 'none';
+  document.getElementById('step12').style.display = 'none';
+}
+function step12(){
+  document.getElementById('step_bar').style.width= '92.28%';
+  document.getElementById('step_bar').innerHTML= 'step 12 of 13';
+  document.getElementById('step12').style.display = 'block';
+  document.getElementById('step11').style.display = 'none';
+  document.getElementById('step13').style.display = 'none';
+}
+function step13(){
+  document.getElementById('step_bar').style.width= '100%';
+  document.getElementById('step_bar').innerHTML= 'step 13 of 13';
+  document.getElementById('step13').style.display = 'block';
+  document.getElementById('step12').style.display = 'none';
+}
+/*
+function end(){
+  if(window == top){
+    document.getElementById('outside').style.display='block';
+    document.getElementById('inside').style.display='none';
+  }else{
+    document.getElementById('outside').style.display='none';
+    document.getElementById('inside').style.display='block';}
+}*/
+
 function checkMenu(id){
-          var r81=document.getElementById(id);
-          if($("#"+id).is(':checked')) {
-          
-          r81=r81.value;
-         // console.log(r81);
-        } else {
-          r81="";
-        //  console.log(r81);
-        }
-      return r81;
-      }
+  var r81=document.getElementById(id);
+  if($("#"+id).is(':checked')) {
+    r81=r81.value;} 
+  else {
+     r81="";}
+  return r81;
+}
 
 function getValueRadio(radios){
-for (var i = 0, length = radios.length; i < length; i++)
-{
-  console.log(radios[i].checked)
- if (radios[i].checked)
- {
-  // do whatever you want with the checked radio
-  var q1=radios[i].value;
-  // only one radio can be logically checked, don't check the rest
-  return q1;
-  break;
- }
-}
+  for (var i = 0, length = radios.length; i < length; i++){
+    if (radios[i].checked){
+      var q1=radios[i].value;
+      return q1;
+      break;
+    }
+  }
 }
 
 function printChecked(items){
-
-    var selectedItems=[];
-    for(var i=0; i<items.length; i++){
-      if(items[i].type=='checkbox' && items[i].checked==true)
-        selectedItems.push(items[i].value+"\t");
+  var selectedItems=[];
+  for(var i=0; i<items.length; i++){
+    if(items[i].type=='checkbox' && items[i].checked==true)
+      selectedItems.push(items[i].value+"\t");
     }
     return selectedItems;
-  }   
+}   
 
 function myFunction() {
-
-         window.onscroll = function() { myFunction()};
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
-            
-         if (window.pageYOffset > sticky) {
-             header.classList.add("sticky");
-         } else {
-             header.classList.remove("sticky");
-         }
+  window.onscroll = function() { myFunction()};
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+ 
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");} 
+  else {
+    header.classList.remove("sticky");}
 }
 
 function getOption(v){
         const range = document.querySelector('input.inputImage ');
         const div = document.querySelector('.moji');
-        const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
+        //const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
+        const mojis = ['🤢 very bad','😣 bad','😐 fair','🙂 good','😄 excellent'];
         div.textContent = mojis[v.value];
         return v.value;
 }
@@ -61,139 +293,69 @@ function show1(){
   document.getElementById('shcompany').style.display ='none';
   document.getElementById("other").value = ""; 
 }
+
 function show2(){
   document.getElementById('shcompany').style.display = 'block';
 }
+
 function hide(){
-         document.getElementById('menu').style.display ='none';
-         document.getElementById("check1").checked = false;
-         document.getElementById("check2").checked = false;
-         document.getElementById("check3").checked = false;
-         document.getElementById("check4").checked = false;
-         document.getElementById("check5").checked = false;
-         document.getElementById("check6").checked = false;
+  document.getElementById('menu').style.display ='none';
+  document.getElementById("check1").checked = false;
+  document.getElementById("check2").checked = false;
+  document.getElementById("check5").checked = false;
+  document.getElementById("check6").checked = false;
 }
 function show(){
-         document.getElementById('menu').style.display = 'block';
+  document.getElementById('menu').style.display = 'block';
+}
+
+function ShowCellPlacement(){
+  document.getElementById("CellsPlacement").style.display="block";
+}
+function ShowCellPlacement(){
+  if($("#qs8_1").is(":checked"))
+    $("#menu_CellsPlacement").show();
+  else
+    $("#menu_CellsPlacement").hide();
+}
+function ShowConnectome(){
+  if($("#qs8_2").is(":checked"))
+    $("#menu_connectome").show();
+  else
+    $("#menu_connectome").hide();
+}
+function ShowSmallCircuit(){
+  if($("#qs8_3").is(":checked"))
+    $("#menu_SmallCircuit").show();
+  else
+    $("#menu_SmallCircuit").hide();
+}
+function ShowHippocampus(){
+  if($("#qs8_4").is(":checked"))
+    $("#menu_Hippocampus").show();
+  else
+    $("#menu_Hippocampus").hide();
+}
+function ShowCerebellum(){
+  if($("#qs8_5").is(":checked"))
+    $("#menu_cerebellum").show();
+  else
+    $("#menu_cerebellum").hide();
 }
 function formSubmitted(status) {
-           $('#genericForm').hide();//matches your form name or whatever you want to disappear post-submission
-           $("#bottone").hide();
-           //$("#bottone").attr('value', 'Recorded');
-           $("#output").show();
-            document.getElementById('output').innerHTML = status; //displays in item with the 'output' id
+  $('#genericForm').hide();//matches your form name or whatever you want to disappear post-submission
+  $("#bottone").hide();
+  $("#output").show();
+  document.getElementById('output').innerHTML = status;
 }
 
-function find_answer(checkboxes){
-   		var vals = "";
-
-		for (var i=0, n=checkboxes.length;i<n;i++) {
-    		if (checkboxes[i].checked){
-        		//vals.push(checkboxes[i].value);
-        		vals +='\n'+checkboxes[i].value;
-    		}
-		}
-		if (vals) vals = vals.substring(1);
-		return vals;
-   	}
-
-function postContactToGoogle() {
-      //Question n°1
-    var radios = document.getElementsByName('q1');
-    var q1=getValueRadio(radios);
-    if(q1=='other'){
-      q1=$('#other').val();
-    }
-    //Question n°2
-    var slider = document.getElementById("q2");
-        var output = slider.value;
-        slider.oninput = function() {
-      output = this.value;
-    }
-    //Question n°3
-    var r3 = document.getElementsByName('q3');
-    var q3=getValueRadio(r3);
-    var c3 = $('#c3').val();
-    //Question n°4
-    var r4 = document.getElementsByName('q4');
-    var q4=getValueRadio(r4);
-    var c4 = $('#c4').val();
-
-    //Question n°5
-    var r5 = document.getElementsByName('q5');
-    var q5=getValueRadio(r5);
-    var c5 = $('#c5').val();
-
-    //Question n°6
-    var r6 = document.getElementsByName('q6');
-    var q6=getValueRadio(r5);
-    var c6 = $('#c6').val();
-
-    //Question n°7
-    var r7 = document.getElementsByName('q7');
-    var q7=getValueRadio(r5);
-    var c7 = $('#c7').val();
-
-    //Question n°8
-    //Molecular Level
-    var check1 = document.getElementsByName('MLevel');
-    var MLevel=find_answer(check1);
-    //Subcellular Level
-    var check2 = document.getElementsByName('SLevel');
-    var SLevel=find_answer(check2);
-    //Trace Analysis
-    var check3 = document.getElementsByName('TAnalysis');
-    var TAnalysis=find_answer(check3);
-    //Morphology Analysis
-    var check4 = document.getElementsByName('MAnalysis');
-    var MAnalysis=find_answer(check4);
-    //Single Circuit Building
-    var check5 = document.getElementsByName('CSBuilding');
-    var CSBuilding=find_answer(check5);
-    //Circuit Building
-    var check6 = document.getElementsByName('CBuilding');
-    var CBuilding=find_answer(check6);
-    //Single Cell In Silicio Experiments
-    var check7 = document.getElementsByName('SingleCSE');
-    var SingleCSE=find_answer(check7);    
-    //Small Cell In Silicio Experiments
-    var check8 = document.getElementsByName('SmallCSE');
-    var SmallCSE=find_answer(check8);     
-    //Brain Area Circuit In Silicio Experiments
-    var check9 = document.getElementsByName('BACSE');
-    var BACSE=find_answer(check9); 
-    //Model Validation
-    var check10 = document.getElementsByName('MValidation');
-    var MValidation=find_answer(check10);  
-    //Highly integrated workflow
-    var check11 = document.getElementsByName('HIW');
-    var HIW=find_answer(check11);
-
-    //Question n°9
-    var checkq9 = document.getElementsByName('question9');
-    var question9=find_answer(checkq9);
-
-    //Question n°10
-    var q10 = $('#q10').val();
-
-    //Question n°11
-    var checkq11 = document.getElementsByName('question11');
-    var question11=find_answer(checkq11);
-
-    //Question n°12
-    var radio12 = document.getElementsByName('q12');
-    var q12=getValueRadio(radio12);
-
-    //Question n°13
-    var q13 = $('#q13').val();
-
-    //UserID
-    var userId=$('#hbp-user-id').val();
+function SplashInCollab() {
+  if(window != top){
+    $('#collab').show();
+  }
+  else{
+    $('#collab').hide();
+  }
+}
 
 
-    $.ajax({
-      url:"https://docs.google.com/forms/d/e/1FAIpQLScrkqvArLDFhmdaOfO-3KnlLxk3GxARuQnO107fQE1Qbp8fdg/formResponse",
-      data:{"entry_2141102757":q1,"entry_1729822952":output,"entry_45035854":q3,"entry_441286483":c3,"entry_640263239":q4,"entry_1649417599":c4,"entry_2061316548":q5,"entry_2109633509":c5,"entry_1375495796":q6,"entry_2068203809":c6,"entry_833030924":q7,"entry_1771949641":c7,"entry_1103050806":MLevel,"entry_598021954":SLevel,"entry_1908334161":TAnalysis,"entry_192619608":MAnalysis,"entry_890913335":CSBuilding,"entry_2123397204":CBuilding,"entry_1756343296":SingleCSE,"entry_238455488":SmallCSE,"entry_1337809265":BACSE,"entry_1445287737":MValidation,"entry_482587187":HIW,"entry_447457858":question9,"entry_1374176472":q10,"entry_397120109":question11,"entry_1425954529":q12,"entry_1297381760":q13,"entry_1866933738":userId},
-      type:"POST",dataType:"xml",statusCode: {0:function() { window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
-      });
-    }
