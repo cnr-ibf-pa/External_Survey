@@ -140,13 +140,13 @@
   padding: 0 25px;
   text-align: center;
 }
-.container {
+.sub-style{
   display: block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: normal;
   font-family: Tahoma,sans-serif;
   -webkit-user-select: none;
@@ -173,13 +173,26 @@ h2{
   font-size:16px;
   padding-left: 50px;
 }
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: normal;
+  font-family: Tahoma,sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
@@ -191,12 +204,10 @@ h2{
   border: 0.3px solid;
   background-color: #eee;
 }
-
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #2196F3;
@@ -250,6 +261,7 @@ h2{
   color:rgb(1, 134, 179);
 }
 .other{
+  display:none;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
@@ -258,6 +270,12 @@ h2{
   font-weight: normal;
   font-family: Tahoma,sans-serif;
     /*color:rgb(1, 134, 179);*/
+  padding-bottom:15px;
+}
+.other-input{
+  position: absolute;
+  margin-left:680px; 
+  height:35px;
 }
 .interline{
   display: inline-block;
@@ -274,10 +292,31 @@ h2{
   margin: 4px 2px;
   cursor: pointer;
 }
+.b-text{
+  font-size:21px;
+  font-family: Tahoma,sans-serif;
+  margin-left:25px;
+  border-radius:25px;
+}
 .b-style{
   margin-top: 50px;
   background:#008CBA;
   color: white;width:90px;
+}
+.end{
+  margin-top:50px;
+  height: 150px; 
+  text-align: center;
+}
+.btn-home{
+  background:white;
+  color: #008CBA;
+  border: none;
+  margin-right: 15px;
+  font-size: 17px;
+}
+.dta-style{
+  padding-left:25px;
 }
 .buttonPosition{
   display: flex;
@@ -302,6 +341,13 @@ ul.check li {
   display:inline-block;
   width:20em;
 }
+ul.check-m li { 
+  padding-left:25px;
+  padding-top:10px;
+  border: 1px transparent solid; 
+  display:inline-block;
+  width:18em;
+}
 ul.checkDue li { 
   padding-top:20px;
   padding-bottom: 5px;
@@ -323,7 +369,14 @@ ul.check1 li {
   padding-left:0px;
   border: 1px transparent solid;
   display:inline-block;
-  width:10em;
+  width:11em;
+}
+.CS-style{
+  padding-top:15px;
+  padding-bottom: 10px;
+}
+.label-style{
+  font-size: 20px;font-family: sans-serif;font-weight: normal;
 }
 .commentStyle{
   padding-left:21px;
@@ -376,7 +429,7 @@ ul.check2 li {
   color:#618685;
   text-align:center;
   border: 1px solid;
-  /*box-shadow: 5px 10px 18px #888888;*/
+  /*box-: 5px 10px 18px #888888;*/
   width:100%;
   padding: 8px;
 }
@@ -429,6 +482,10 @@ ul.check2 li {
 .shadow-textarea textarea.form-control {
   padding-left: 0.8rem;
 }
+.ta-style{
+  width: 90%;
+  min-height: 70px;
+}
 .quantumWizButtonPaperbuttonEl {
   cursor: pointer;
   font-size: 14px;
@@ -437,7 +494,8 @@ ul.check2 li {
   text-transform: uppercase;
 }
 .moji {
-  font-size: 8em;
+  padding-top:20px;
+  font-size:55px; 
   text-align: center;
 }
 .inputImage {
@@ -447,13 +505,24 @@ ul.check2 li {
 .slider {
   display: flex;
   justify-content: space-between;
+  width: 500px;
+  margin: 2rem auto 0;
+  padding-bottom:5px;
 }
 .smile {
   font-weight: bold;
   color: #5fcf80;
+  font-size:16px;
 }
 .fine {
   color: tomato;
+  white-space: nowrap;
+  font-size:16px;
+}
+.multi-qst{
+  padding-left:25px;
+  display: inline-block;
+  padding-top:20px;
 }
 textarea:focus {
   background-color: #e0edf9;

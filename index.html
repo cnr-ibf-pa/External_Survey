@@ -70,8 +70,8 @@
                             <span class="checkmark"></span>   
                           </label></li>  
                     </ul>
-                    <div id="shcompany" class ="other" style="display:none; padding-bottom:10px;">
-                      <input type="text" id="other" style="position: absolute;margin-left:680px; height:35px;" cols="15" placeholder="other...">
+                    <div id="shcompany" class ="other">
+                      <input class="other-input"type="text" id="other" cols="15" placeholder="other...">
                     </div> 
                   </div>
                 </div>
@@ -84,11 +84,11 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">2. What was your first impression of the BSP?</h3>
-                    <div class="moji" style="font-size:55px; padding-top:20px;">😄 excellent</div>
-                    <div class="slider" style="width: 500px;margin: 2rem auto 0;padding-bottom:5px;">
-                      <span class="smile" style="font-size:16px;">Very&nbsp;bad</span>
+                    <div class="moji">😄 excellent</div>
+                    <div class="slider">
+                      <span class="smile">Very&nbsp;bad</span>
                       <input class="inputImage" id="q2" type="range" value="0" min="0" max="4" step="-1" oninput="getOption(this)" onchange="getOption(this)" >
-                      <span class="fine" style="white-space: nowrap;font-size:16px;">Excellent!</span>
+                      <span class="fine">Excellent!</span>
                     </div>
                   </div>
                 </div>
@@ -122,8 +122,8 @@
                           </label></li>
                     </ul>
                     <label class="com">Comments</label>
-                    <div class="form-group shadow-textarea" style="padding-left:25px;">
-                      <textarea id="c3" style="width: 90%;min-height: 70px;" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea dta-style">
+                      <textarea class="ta-style" id="c3" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
@@ -156,8 +156,8 @@
                           </label></li>
                     </ul>
                     <label class="com" >Comments</label>
-                    <div class="form-group shadow-textarea" style="padding-left:25px;">
-                      <textarea id="c4" style="width: 90%;min-height: 70px;" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea dta-style">
+                      <textarea class="ta-style"id="c4"placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
@@ -190,8 +190,8 @@
                           </label></li>
                     </ul>
                     <label class="com" >Comments</label>
-                    <div class="form-group shadow-textarea" style="padding-left:25px;">
-                      <textarea id="c5" style="width: 90%;min-height: 70px;" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea dta-style">
+                      <textarea class="ta-style"id="c5" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
@@ -224,8 +224,8 @@
                           </label></li>
                     </ul>
                     <label class="com">Comments</label>
-                    <div class="form-group shadow-textarea" style="padding-left:25px;">
-                      <textarea id="c6" style="width: 90%;min-height: 70px;" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea dta-style">
+                      <textarea class="ta-style" id="c6" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
@@ -255,8 +255,8 @@
                           </label></li>
                     </ul>
                     <label class="com">Comments</label>
-                    <div class="form-group shadow-textarea" style="padding-left:25px;">
-                      <textarea id="c7" style="width: 90%;min-height: 70px;" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea dta-style">
+                      <textarea class="ta-style"id="c7" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
@@ -270,11 +270,11 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">8. Which tools do you use most frequently?</h3>
-                    <ul style="padding-left:25px;display: inline-block;padding-top:20px;">
+                    <ul class="multi-qst">
                       <!--*****************************   Molecular Level   *************************************-->
-           	          <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MolecularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 34.5%;border-radius:25px;">Molecular Level&ensp;<span class="caret"></span></a>
+           	          <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#MolecularLevel" style="padding:8px 34.5%;">Molecular Level&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="MolecularLevel">
-                        <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants
                                 <input type="checkbox" name="MLevel" id="q827" value="Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants">
                                 <span class="checkmark"></span>
@@ -302,17 +302,17 @@
                         </ul>
                       </div>
                       <!--*****************************   Subcellular Level   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SubcellularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 34%;border-radius:25px;">Subcellular Level&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SubcellularLevel" style="padding:8px 34%;">Subcellular Level&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SubcellularLevel">
-                        <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">KappaNEURON demonstration
                                 <input type="checkbox" name="SLevel" id="q826" value="KappaNEURON demonstration">
                                 <span class="checkmark"></span>
                       </div>
                       <!--*****************************   Trace Analysis   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#TraceAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 35.3%;border-radius:25px;">Trace Analysis&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#TraceAnalysis" style="padding:8px 35.3%;">Trace Analysis&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="TraceAnalysis">
-                        <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Feature extraction
                                 <input type="checkbox" name="TAnalysis" id="q81" value="Feature extraction">
                                 <span class="checkmark"></span>
@@ -332,9 +332,9 @@
                         </ul>
                       </div>
                       <!--*****************************   Morphology Analysis   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MorphologyAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 32%;border-radius:25px;">Morphology Analysis&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#MorphologyAnalysis" style="padding:8px 32%;">Morphology Analysis&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="MorphologyAnalysis">
-                        <ul class="check" style="padding-top:7px;"> 
+                        <ul class="check-m CS-style"> 
                           <li><label class="container" style="font-size:16px;">Morphology analysis
                                 <input type="checkbox" name="MAnalysis" id="q85" value="Morphology analysis">
                                 <span class="checkmark"></span>
@@ -346,9 +346,9 @@
                         </ul>
                       </div>
                       <!--*****************************   Single Circuit Building   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 31.5%;border-radius:25px;">Single Circuit Building&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="padding:8px 31.5%;">Single Circuit Building&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SingleCircuitBuilding">
-                        <ul class="checkSub"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Hodgkin-Huxley Neuron Builder
                                 <input type="checkbox" name="CSBuilding" id="q87" value="Hodgkin-Huxley Neuron Builder">
                                 <span class="checkmark"></span>
@@ -384,14 +384,14 @@
                         </ul>
                       </div>
                       <!--*****************************   Circuit Building   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#CircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 35%;border-radius:25px;">Circuit Building&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#CircuitBuilding"style="padding:8px 35%;">Circuit Building&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="CircuitBuilding">
-                        <ul class="checkSub" style="padding-top:7px;"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Cells placement
                               <input type="checkbox" id="qs8_1" value="Cells placement" onchange="ShowCellPlacement()">
                               <span class="checkmark"></span>
                               <div id="menu_CellsPlacement" style="display:none;">
-                                <ul class="check2">
+                                <ul class="check2 CS-style">
                                   <li><label class="container" style="font-size:16px;">Rat Cerebellum volume
                                         <input type="checkbox" id="q8_14" name="CBuilding" value="Cells placement-Rat Cerebellum volume">
                                         <span class="checkmark"></span>
@@ -411,7 +411,7 @@
                               <input type="checkbox" id="qs8_2" value="Connectome" onchange="ShowConnectome()">
                               <span class="checkmark"></span>
                               <div id="menu_connectome" style="display:none;">
-                                <ul class="check2">
+                                <ul class="check2 CS-style">
                                   <li><label class="container" style="font-size:16px;">Rat Cerebellum volume
                                         <input type="checkbox" id="q8_17" name="CBuilding" value="Connectome-Rat Cerebellum volume">
                                         <span class="checkmark"></span>
@@ -426,9 +426,9 @@
                         </ul>
                       </div>
                       <!--*****************************   Single Cell In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 26%;border-radius:25px;">Single Cell In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SingleCellInSilicoExperiments"style="padding:8px 26%;">Single Cell In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SingleCellInSilicoExperiments">
-                        <ul class="checkSub"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Single cell in silico experiments under current clamp
                                 <input type="checkbox" name="SingleCSE" id="q816" value="Single cell in silico experiments under current clamp">
                                 <span class="checkmark"></span>
@@ -436,9 +436,9 @@
                         </ul>
                       </div>
                       <!--*****************************   Small Circuit In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 25.2%;border-radius:25px;">Small Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="padding:8px 25.2%;">Small Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SmallCellInSilicoExperiments">
-                        <ul class="checkSub" style="padding-top:7px;"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Configure and run a small circuit using preconfigured HBP model and data
                               <input type="checkbox" id="qs8_3" value="Configure and run a small circuit using preconfigured HBP model and data" onchange="ShowSmallCircuit()">
                               <span class="checkmark"></span>
@@ -458,14 +458,14 @@
                           </ul>
                         </div>
                       <!--*****************************   Brain Area Circuit In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 22.3%;border-radius:25px;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="padding:8px 22.3%;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="BrainAreaCircuitInSilicoExperiments">
-                        <ul class="checkSub" style="padding-top:7px;"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Hippocampus
                               <input type="checkbox" id="qs8_4" value="Hippocampus" onchange="ShowHippocampus()">
                               <span class="checkmark"></span>
                               <div id="menu_Hippocampus" style="display:none;">
-                                <ul class="check2">
+                                <ul class="check2 CS-style">
                                   <li><label class="container" style="font-size:16px;">Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data
                                         <input type="checkbox" id="q8_21" name="BACSE" value="Hippocampus-Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data">
                                         <span class="checkmark"></span>
@@ -481,7 +481,7 @@
                               <input type="checkbox" id="qs8_5" value="Connectome" onchange="ShowCerebellum()">
                               <span class="checkmark"></span>
                               <div id="menu_cerebellum" style="display:none;">
-                                <ul class="check2">
+                                <ul class="check2 CS-style">
                                   <li><label class="container" style="font-size:16px;">Functional Simulation with Point Neurons
                                         <input type="checkbox" id="q8_23" name="BACSE" value="Cerebellum-Functional Simulation with Point Neurons">
                                         <span class="checkmark"></span>
@@ -492,9 +492,9 @@
                         </ul>
                       </div>
                        <!--*****************************   Model Validation   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#ModelValidation"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 34.5%;border-radius:25px;">Model Validation&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#ModelValidation"style="padding:8px 34.5%;">Model Validation&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="ModelValidation">
-                        <ul class="checkSub"> 
+                        <ul class="checkSub CS-style"> 
                           <li><label class="container" style="font-size:16px;">Validation Framework Demo (Walkthrough)
                                 <input type="checkbox" name="MValidation" id="q820" value="Validation Framework Demo (Walkthrough)">
                                 <span class="checkmark"></span>
@@ -518,9 +518,9 @@
                         </ul>
                       </div>
                       <!--*****************************   Highly Integrated Workflows   *************************************-->
-                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#HighlyIntegratedWorkflows"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 28%;border-radius:25px;">Highly Integrated Workflows&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#HighlyIntegratedWorkflows"style="padding:8px 28%;">Highly Integrated Workflows&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="HighlyIntegratedWorkflows">
-                        <ul class="check2"> 
+                        <ul class="check2 CS-style"> 
                           <li><label class="container" style="font-size:16px;">Hodgkin-Huxley Neuron Builder
                                 <input type="checkbox" name="HIW" id="q825" value="Hodgkin-Huxley Neuron Builder">
                                 <span class="checkmark"></span>
@@ -540,13 +540,13 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">9. Do you use any HPC system?</h3>
-                      <ul class="checkSub">
+                      <ul class="checkSub CS-style">
                         <li><label class="container">yes
                               <input type="radio" id="qs91"name="q9" value="yes" onclick="show()">
                               <span class="checkmark"></span>
                               <div id="menu" style="display:none;">
-                                <label style="font-size: 20px;font-family: sans-serif;font-weight: normal;">Select the systems you are using:</label>
-                                <ul class="check1">
+                                <label class="label-style">Select the systems you are using:</label>
+                                <ul class="check1 CS-style">
                                   <li><label class="container" style="font-size:16px;">NSG
                                         <input type="checkbox" id="check1" name="question9" value="NSG">
                                         <span class="checkmark"></span>
@@ -583,8 +583,8 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">10. What do you like/don’t like about the platform?</h3>
-                      <div class="form-group shadow-textarea" style="padding-left:25px;padding-top:20px;">
-                        <textarea id="q10" style="width: 90%;min-height: 100px;" placeholder="your answer..."></textarea>
+                      <div class="form-group shadow-textarea dta-style" style="padding-top:20px;">
+                        <textarea class="ta-style" id="q10" style="min-height: 100px;" placeholder="your answer..."></textarea>
                       </div>
                     </div>
                   </div>
@@ -679,8 +679,8 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">13.How can we improve it? Send us your ideas and suggestions</h3>
-                      <div class="form-group shadow-textarea" style="padding-left:25px;padding-top:20px;">
-                        <textarea id="q13" style="width: 90%;min-height: 100px;" placeholder="your answer..."></textarea>
+                      <div class="form-group shadow-textarea dta-style" style="padding-top:20px;">
+                        <textarea class="ta-style"id="q13" style="min-height: 100px;" placeholder="your answer..."></textarea>
                       </div>
                     </div>
                   </div>
