@@ -1,3 +1,4 @@
+
 let client = new jso.JSO({
   providerID: "HBP",
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
@@ -5,8 +6,8 @@ let client = new jso.JSO({
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })  
 
-function init() {
 
+function init() {
   try {
     client.callback();
   } catch (e) {
