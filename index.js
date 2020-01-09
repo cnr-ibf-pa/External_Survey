@@ -14,7 +14,6 @@ function init() {
   }
 
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
-console.log(auth);
 
 auth.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
@@ -29,11 +28,11 @@ $.ajax({
     method: 'GET',
     success: function(data){     
         document.getElementById("hbp-user-id").innerHTML = data.id;
-        console.log(data);
+        //console.log(data);
     }
 });
 }); 
-
+    return auth;
 }
 
 
@@ -263,10 +262,6 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
-    console.log("sono dentro");
-    }
-    else{
-        console.log("sono fuori");
     }
 }
 
