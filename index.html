@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-
+  
   <base target="_top">
 </head>
 <body style="background:#f4f9fd; overflow-x:hidden;" onload="start()">
@@ -19,11 +20,11 @@
     <div>
       <div class="header" id="myHeader">
         <div class="freebirdFormviewerViewFormBanner freebirdHeaderMast">
-          <h1>Brain Simulation Platform</h1>
+          <h1 style="padding-left: 25px;font-size: 70px;font-family: Tahoma,sans-serif;padding-top:16px;overflow: hidden;white-space: nowrap;">Brain Simulation Platform</h1>
           <div>
-            <h2> User Survey</h2> 
+            <h2 style="padding-left: 25px;font-family: Tahoma,sans-serif; padding-top:20px;color:black; overflow: hidden;white-space: nowrap;"> User Survey</h2> 
             <div style="padding-top: 0px;">
-              <div class="progress" style="box-shadow: 10px 10px 5px #aaaaaa;">
+              <div class="progress">
                 <div id="step_bar" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10"
                       aria-valuemin="0" aria-valuemax="100" style="width:14.28%; background:#008CBA;">
                       step 1 of 13
@@ -34,7 +35,7 @@
         </div>
       </div>
                
-      <div class="sep"></div>          
+      <div class="sep" style="margin-top:40px;"></div>          
         <div class="freebirdFormviewerViewCenteredContent">
           <div class="freebirdFormviewerViewFormCard">
             <form  action="#" method="POST" style="border-style: hidden;">
@@ -45,38 +46,38 @@
                   <div class="session">
                     <h3 class="question">1. How did you first learn about the Brain Simulation Platform (BSP)?</h3>
                     <ul class="check" style=" padding-top:20px;padding-bottom: 2px;"> 
-                      <li><label class="container">workshop / school
+                      <li><label class="container" style="padding-left: 50px;">workshop / school
                             <input type="radio" id="qs11" name="q1" value="workshop / school" onclick="show1();">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">conference
+                      <li><label class="container" style="padding-left: 50px">conference
                             <input type="radio" id="qs12" name="q1" value="conference" onclick="show1();">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">meeting
+                      <li><label class="container" style="padding-left: 50px">meeting
                             <input type="radio" id="qs13" name="q1" value="meeting" onclick="show1();">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">colleagues
+                      <li><label class="container" style="padding-left: 50px">colleagues
                             <input type="radio" id="qs14" name="q1" value="colleagues" onclick="show1();">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">web
+                      <li><label class="container" style="padding-left: 50px">web
                             <input type="radio" id="qs15" name="q1" value="web" onclick="show1();">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">other
+                      <li><label class="container" style="padding-left: 50px;">other
                             <input type="radio" id="qs16" name="q1" value="other" onclick="show2();">
                             <span class="checkmark"></span>   
                           </label></li>  
                     </ul>
-                    <div id="shcompany" class ="other">
-                      <input class="other-input"type="text" id="other" cols="15" placeholder="other...">
+                    <div id="shcompany" class ="other" style="display:none; padding-bottom:10px;">
+                      <input type="text" id="other" style="position: absolute;margin-left:680px; height:35px;" cols="15" placeholder="other...">
                     </div> 
                   </div>
                 </div>
                 <center>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" id="first_next" onclick="step2();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" id="first_next" onclick="step2();" value="Next"/>
                 </center> 
               </div>  
                  <!--****************   Step 2   *******************-->
@@ -84,17 +85,17 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">2. What was your first impression of the BSP?</h3>
-                    <div class="moji">😄 excellent</div>
-                    <div class="slider">
-                      <span class="smile">Very&nbsp;bad</span>
-                      <input class="inputImage" id="q2" type="range" value="0" min="0" max="4" step="-1" oninput="getOption(this)" onchange="getOption(this)" >
-                      <span class="fine">Excellent!</span>
+                    <div class="moji" style="font-size:55px; padding-top:20px;">😄 excellent</div>
+                    <div class="slider" style="width: 500px;margin: 2rem auto 0;padding-bottom:5px;">
+                      <span class="smile" style="font-size:16px;">Excellent!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      <input class="inputImage" id="q2" type="range" value="0" min="0" max="4" step="1" oninput="getOption(this)" onchange="getOption(this)" >
+                      <span class="fine" style="white-space: nowrap;font-size:16px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Very bad</span>
                     </div>
                   </div>
                 </div>
                  <center>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step1();" value="Back"/>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step3();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step1();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step3();" value="Next"/>
                 </center> 
               </div>
 
@@ -103,33 +104,33 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">3. How do you find the platform?</h3>
-                    <ul class="checkDue"> 
-                      <li><label class="container">very friendly
+                    <ul class="checkDue" style=" padding-top:20px;padding-bottom: 5px;"> 
+                      <li><label class="container" style="padding-left: 50px;">very friendly
                             <input type="radio" id="qs31"name="q3" value="very friendly">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">friendly
+                      <li><label class="container" style="padding-left: 50px;">friendly
                             <input type="radio" id="qs32"name="q3" value="friendly">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">not very friendly
+                      <li><label class="container" style="padding-left: 50px;">not very friendly
                             <input type="radio" id="qs33"name="q3" value="not very friendly">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">not at all friendly
+                      <li><label class="container" style="padding-left: 50px;">not at all friendly
                             <input type="radio" id="qs34"name="q3" value="not at all friendly">
                             <span class="checkmark"></span>
                           </label></li>
                     </ul>
-                    <label class="com">Comments</label>
-                    <div class="form-group shadow-textarea dta-style">
-                      <textarea class="ta-style" id="c3" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea" style="padding-left:25px;">
+                      <label class="com" >Comments</label>
+                      <textarea id="c3" rows="2" cols="100" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
                 <center>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step2();" value="Back"/>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step4();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step2();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step4();" value="Next"/>
                 </center> 
               </div>
               <!--****************   Step 4   *******************-->
@@ -137,33 +138,33 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">4. How easy was it to find what you were looking for?</h3>
-                    <ul class="checkDue"> 
-                      <li><label class="container">very simple
+                    <ul class="checkDue" style=" padding-top:20px;padding-bottom: 5px;"> 
+                      <li><label class="container" style="padding-left: 50px;">very simple
                             <input type="radio" id="qs41"name="q4" value="very simple">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">simple
+                      <li><label class="container" style="padding-left: 50px;">simple
                             <input type="radio" id="qs42"name="q4" value="simple">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">difficult
+                      <li><label class="container" style="padding-left: 50px;">difficult
                             <input type="radio" id="qs43"name="q4" value="difficult">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">very difficult
+                      <li><label class="container" style="padding-left: 50px;">very difficult
                             <input type="radio" id="qs44"name="q4" value="very difficult">
                             <span class="checkmark"></span>
                           </label></li>
                     </ul>
-                    <label class="com" >Comments</label>
-                    <div class="form-group shadow-textarea dta-style">
-                      <textarea class="ta-style"id="c4"placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea" style="padding-left:25px;">
+                      <label class="com" >Comments</label>
+                      <textarea id="c4" rows="2" cols="100" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
                 <center>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style"onclick="step3();" value="Back"/>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style"onclick="step5();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step3();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step5();" value="Next"/>
                 </center> 
               </div>
               <!--****************   Step 5   *******************-->   
@@ -171,33 +172,33 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">5. How clear is the guidebook?</h3>
-                    <ul class="checkDue"> 
-                      <li><label class="container">very clear
+                    <ul class="checkDue" style=" padding-top:20px;padding-bottom: 5px;"> 
+                      <li><label class="container" style="padding-left: 50px;">very clear
                             <input type="radio" id="qs51" name="q5" value="very clear">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">clear
+                      <li><label class="container" style="padding-left: 50px;">clear
                             <input type="radio" id="qs52"name="q5" value="clear">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">not very clear
+                      <li><label class="container" style="padding-left: 50px;">not very clear
                             <input type="radio" id="qs53"name="q5" value="not very clear">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">not at all clear
+                      <li><label class="container" style="padding-left: 50px;">not at all clear
                             <input type="radio" id="qs54"name="q5" value="not at all clear">
                             <span class="checkmark"></span>
                           </label></li>
                     </ul>
-                    <label class="com" >Comments</label>
-                    <div class="form-group shadow-textarea dta-style">
-                      <textarea class="ta-style"id="c5" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea" style="padding-left:25px;">
+                      <label class="com" >Comments</label>
+                      <textarea id="c5" rows="2" cols="100" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
                 <center>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step4();" value="Back"/>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step6();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step4();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step6();" value="Next"/>
                 </center> 
               </div>
                <!--****************   Step 6   *******************-->
@@ -205,33 +206,33 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">6. How easy is it to use the tools available on the BSP?</h3>
-                    <ul class="checkDue"> 
-                      <li><label class="container">very simple
+                    <ul class="checkDue" style=" padding-top:20px;padding-bottom: 5px;"> 
+                      <li><label class="container" style="padding-left: 50px;">very simple
                             <input type="radio" id="qs61" name="q6" value="very simple">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">simple
+                      <li><label class="container" style="padding-left: 50px;">simple
                             <input type="radio" id="qs62"name="q6" value="simple">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">difficult
+                      <li><label class="container" style="padding-left: 50px;">difficult
                             <input type="radio" id="qs63"name="q6" value="difficult">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">very difficult
+                      <li><label class="container" style="padding-left: 50px;">very difficult
                             <input type="radio" id="qs64"name="q6" value="very difficult">
                             <span class="checkmark"></span>
                           </label></li>
                     </ul>
-                    <label class="com">Comments</label>
-                    <div class="form-group shadow-textarea dta-style">
-                      <textarea class="ta-style" id="c6" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea" style="padding-left:25px;">
+                      <label class="com" >Comments</label>
+                      <textarea id="c6" rows="2" cols="100" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
                 <center>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step5();" value="Back"/>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step7();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step5();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step7();" value="Next"/>
                 </center> 
               </div>
 
@@ -241,28 +242,28 @@
                   <div class="session">
                     <h3 class="question">7. How often do you use the platform?</h3>
                     <ul class="check" style=" padding-top:20px;padding-bottom: 5px;"> 
-                      <li><label class="container">occasionally
+                      <li><label class="container" style="padding-left: 50px;">occasionally
                             <input type="radio" id="qs71" name="q7" value="occasionally">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">regularly
+                      <li><label class="container" style="padding-left: 50px;">regularly
                             <input type="radio" id="qs72"name="q7" value="regularly">
                             <span class="checkmark"></span>
                           </label></li>
-                      <li><label class="container">frequently
+                      <li><label class="container" style="padding-left: 50px;">frequently
                             <input type="radio" id="qs73"name="q7" value="frequently">
                             <span class="checkmark"></span>
                           </label></li>
                     </ul>
-                    <label class="com">Comments</label>
-                    <div class="form-group shadow-textarea dta-style">
-                      <textarea class="ta-style"id="c7" placeholder="your comment..."></textarea>
+                    <div class="form-group shadow-textarea" style="padding-left:25px;">
+                      <label class="com" >Comments</label>
+                      <textarea id="c7" rows="2" cols="100" placeholder="your comment..."></textarea>
                     </div>
                   </div>
                 </div>
                 <center>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step6();" value="Back"/>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step8();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step6();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step8();" value="Next"/>
                 </center> 
               </div>
               <!--****************   Step 8   *******************-->
@@ -270,259 +271,184 @@
                 <div class="box">
                   <div class="session">
                     <h3 class="question">8. Which tools do you use most frequently?</h3>
-                    <ul class="multi-qst">
-                      <!--*****************************   Molecular Level   *************************************-->
-           	          <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#MolecularLevel" style="padding:8px 34.5%;">Molecular Level&ensp;<span class="caret"></span></a>
+                    <ul style="padding-left:25px;display: inline-block;padding-top:20px;">
+           	          <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MolecularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 295px;border-radius:25px;">Molecular Level&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="MolecularLevel">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants
+                        <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants
                                 <input type="checkbox" name="MLevel" id="q827" value="Analyse the results of a Brownian dynamics simulation for calculating protein-protein association rate constants">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Calculate the electrostatic potential of a protein from its atomic structure
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Calculate the electrostatic potential of a protein from its atomic structure
                                 <input type="checkbox" name="MLevel" id="q828" value="Calculate the electrostatic potential of a protein from its atomic structure">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Predict protein interaction surface with the ARDOCK server
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Predict protein interaction surface with the ARDOCK server
                                 <input type="checkbox" name="MLevel" id="q829" value="Predict protein interaction surface with the ARDOCK server">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Preparing a protein to run an atomistic Molecular Dynamics simulation
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Preparing a protein to run an atomistic Molecular Dynamics simulation
                                 <input type="checkbox" name="MLevel" id="q830" value="Preparing a protein to run an atomistic Molecular Dynamics simulation">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Small molecule force field parameterization for atomistic Molecular Dynamics simulations
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Small molecule force field parameterization for atomistic Molecular Dynamics simulations
                                 <input type="checkbox" name="MLevel" id="q831" value="Small molecule force field parameterization for atomistic Molecular Dynamics simulations">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation
                                 <input type="checkbox" name="MLevel" id="q832" value="Preparing a protein-ligand complex to run an atomistic Molecular Dynamics Simulation">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Subcellular Level   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SubcellularLevel" style="padding:8px 34%;">Subcellular Level&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SubcellularLevel" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 288px;border-radius:25px;">Subcellular Level&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SubcellularLevel">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">KappaNEURON demonstration
+                        <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">KappaNEURON demonstration
                                 <input type="checkbox" name="SLevel" id="q826" value="KappaNEURON demonstration">
                                 <span class="checkmark"></span>
                       </div>
-                      <!--*****************************   Trace Analysis   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#TraceAnalysis" style="padding:8px 35.3%;">Trace Analysis&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#TraceAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 300px;border-radius:25px;">Trace Analysis&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="TraceAnalysis">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Feature extraction
-                                <input type="checkbox" name="TAnalysis" id="q81" value="Feature extraction">
+                        <ul class="checkSub" style=" padding-top:20px;padding-bottom: 10px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">feature extraction
+                                <input type="checkbox" name="TAnalysis" id="q81" value="feature extraction">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Synaptic events fitting
-                                <input type="checkbox" name="TAnalysis" id="q82" value="Synaptic events fitting">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">synaptic events fitting
+                                <input type="checkbox" name="TAnalysis" id="q82" value="synaptic events fitting">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Synaptic events fitting with user model
-                                <input type="checkbox" name="TAnalysis" id="q83" value="Synaptic events fitting with user model">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">synaptic events fitting with user model
+                                <input type="checkbox" name="TAnalysis" id="q83" value="synaptic events fitting with user model">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Synaptic events fitting with user data
-                                <input type="checkbox" name="TAnalysis" id="q84" value="Synaptic events fitting with user data">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">synaptic events fitting with user data
+                                <input type="checkbox" name="TAnalysis" id="q84" value="synaptic events fitting with user data">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Morphology Analysis   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#MorphologyAnalysis" style="padding:8px 32%;">Morphology Analysis&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#MorphologyAnalysis" style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 270px;border-radius:25px;">Morphology Analysis&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="MorphologyAnalysis">
-                        <ul class="check-m CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Morphology analysis
-                                <input type="checkbox" name="MAnalysis" id="q85" value="Morphology analysis">
+                        <ul class="check" style="padding-top:7px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">morphology analysis
+                                <input type="checkbox" name="MAnalysis" id="q85" value="morphology analysis">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Morphology visualization
-                                <input type="checkbox"  name="MAnalysis" id="q86" value="Morphology visualization">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">morphology visualization
+                                <input type="checkbox"  name="MAnalysis" id="q86" value="morphology visualization">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Single Circuit Building   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="padding:8px 31.5%;">Single Circuit Building&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 264.5px;border-radius:25px;">Single Circuit Building&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SingleCircuitBuilding">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Hodgkin-Huxley Neuron Builder
-                                <input type="checkbox" name="CSBuilding" id="q87" value="Hodgkin-Huxley Neuron Builder">
+                        <ul class="checkSub"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">hodgkin-huxley neuron builder
+                                <input type="checkbox" name="CSBuilding" id="q87" value="hodgkin-huxley neuron builder">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Rebuild an existing single hippocampal cell model
-                                <input type="checkbox" name="CSBuilding" id="q88" value="Rebuild an existing single hippocampal cell model">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">rebuild an existing single hippocampal cell model
+                                <input type="checkbox" name="CSBuilding" id="q88" value="rebuild an existing single hippocampal cell model">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Build your own single hippocampal cell model using HBP data
-                                <input type="checkbox" name="CSBuilding" id="q89" value="Build your own single hippocampal cell model using HBP data">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">build your own single hippocampal cell model using HBP data
+                                <input type="checkbox" name="CSBuilding" id="q89" value="build your own single hippocampal cell model using HBP data">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Mono compartmental Cerebellar Granule cell optimization
-                                <input type="checkbox" name="CSBuilding" id="q810" value="Mono compartmental Cerebellar Granule cell optimization">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">optimize a cerebellar granule cell model composed by a single section
+                                <input type="checkbox" name="CSBuilding" id="q810" value="optimize a cerebellar granule cell model composed by a single section">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Multi compartmental Cerebellar Granule cell optimization
-                                <input type="checkbox" name="CSBuilding" id="q811" value="Multi compartmental Cerebellar Granule cell optimization"
-                                ><span class="checkmark"></span>
-                              </label></li>
-                           <li><label class="container" style="font-size:16px;">Custom Axon Cerebellar Granule cell simulation
-                                <input type="checkbox" name="CSBuilding" id="q8_11" value="Custom Axon Cerebellar Granule cell simulation"
-                                ><span class="checkmark"></span>
-                              </label></li>
-                          <li><label class="container" style="font-size:16px;">Simulation and validation of a mouse Purkinje cell multicompartmental model
-                                <input type="checkbox" name="CSBuilding" id="q812" value="Simulation and validation of a mouse Purkinje cell multicompartmental model">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">optimize a cerebellar granule cell multicompartmental model
+                                <input type="checkbox" name="CSBuilding" id="q811" value="optimize a cerebellar granule cell multicompartmental model">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Optimize a striatal fast-spiking interneuron
-                                <input type="checkbox" name="CSBuilding" id="q813" value="Optimize a striatal fast-spiking interneuron">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">simulation and validation of a mouse Purkinje cell multicompartmental model
+                                <input type="checkbox" name="CSBuilding" id="q812" value="simulation and validation of a mouse Purkinje cell multicompartmental model">
+                                <span class="checkmark"></span>
+                              </label></li>
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">optimize a striatal fast-spiking interneuron
+                                <input type="checkbox" name="CSBuilding" id="q813" value="optimize a striatal fast-spiking interneuron">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Circuit Building   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#CircuitBuilding"style="padding:8px 35%;">Circuit Building&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#CircuitBuilding"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 297px;border-radius:25px;">Circuit Building&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="CircuitBuilding">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Cells placement
-                              <input type="checkbox" id="qs8_1" value="Cells placement" onchange="ShowCellPlacement()">
-                              <span class="checkmark"></span>
-                              <div id="menu_CellsPlacement" style="display:none;">
-                                <ul class="check2 CS-style">
-                                  <li><label class="container" style="font-size:16px;">Rat Cerebellum volume
-                                        <input type="checkbox" id="q8_14" name="CBuilding" value="Cells placement-Rat Cerebellum volume">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                  <li><label class="container" style="font-size:16px;">Rat hippocampus CA1
-                                        <input type="checkbox" id="q8_15" name="CBuilding" value="Cells placement-Rat hippocampus CA1">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                  <li><label class="container" style="font-size:16px;">Striatum microcircuitry
-                                        <input type="checkbox"  id="q8_16" name="CBuilding" value="Cells placement-Striatum microcircuitry">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                </ul>
-                              </div>
-                          </label></li>
-                          <li><label class="container" style="font-size:16px;">Connectome
-                              <input type="checkbox" id="qs8_2" value="Connectome" onchange="ShowConnectome()">
-                              <span class="checkmark"></span>
-                              <div id="menu_connectome" style="display:none;">
-                                <ul class="check2 CS-style">
-                                  <li><label class="container" style="font-size:16px;">Rat Cerebellum volume
-                                        <input type="checkbox" id="q8_17" name="CBuilding" value="Connectome-Rat Cerebellum volume">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                  <li><label class="container" style="font-size:16px;">Striatum microcircuitry
-                                        <input type="checkbox" id="q8_18" name="CBuilding" value="Connectome-Striatum microcircuitry">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                </ul>
-                              </div>
-                          </label></li>
+                        <ul class="check" style="padding-top:7px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">cells placement
+                                <input type="checkbox" name="CBuilding" id="q814" value="cells placement">
+                                <span class="checkmark"></span>
+                              </label></li>
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">connectome
+                                <input type="checkbox" name="CBuilding" id="q815" value="connectome">
+                                <span class="checkmark"></span>
+                              </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Single Cell In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SingleCellInSilicoExperiments"style="padding:8px 26%;">Single Cell In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SingleCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 215px;border-radius:25px;">Single Cell In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SingleCellInSilicoExperiments">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Single cell in silico experiments under current clamp
-                                <input type="checkbox" name="SingleCSE" id="q816" value="Single cell in silico experiments under current clamp">
+                        <ul class="checkSub"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">single cell in silico experiments under current clamp
+                                <input type="checkbox" name="SingleCSE" id="q816" value="single cell in silico experiments under current clamp">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Small Circuit In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="padding:8px 25.2%;">Small Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#SmallCellInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 217.5px;border-radius:25px;">Small Cell In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="SmallCellInSilicoExperiments">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Configure and run a small circuit using preconfigured HBP model and data
-                              <input type="checkbox" id="qs8_3" value="Configure and run a small circuit using preconfigured HBP model and data" onchange="ShowSmallCircuit()">
-                              <span class="checkmark"></span>
-                              <div id="menu_SmallCircuit" style="display:none;">
-                                <ul class="check2">
-                                  <li><label class="container" style="font-size:16px;">Mouse O1-Scaffold Somatosensory Cortex Microcircuit for Mouse
-                                        <input type="checkbox" id="q8_19" name="SmallCSE" value="Configure and run a small circuit using preconfigured HBP model and data-Mouse O1-Scaffold Somatosensory Cortex Microcircuit for Mouse">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                  <li><label class="container" style="font-size:16px;">Rat hippocampus CA1
-                                        <input type="checkbox" id="q8_20" name="SmallCSE" value="Configure and run a small circuit using preconfigured HBP model and data-Rat hippocampus CA1">
-                                        <span class="checkmark"></span>
-                                  </label></li>
-                                </ul>
-                              </div>
-                            </label></li>
-                          </ul>
-                        </div>
-                      <!--*****************************   Brain Area Circuit In Silico Experiments   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="padding:8px 22.3%;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
+                        <ul class="checkSub"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">configure and run a small circuit using preconfigured HBP model and data
+                                <input type="checkbox" name="SmallCSE" id="q817" value="configure and run a small circuit using preconfigured HBP model and data">
+                                <span class="checkmark"></span>
+                              </label></li>
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#BrainAreaCircuitInSilicoExperiments"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 183px;border-radius:25px;">Brain Area Circuit In Silico Experiments&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="BrainAreaCircuitInSilicoExperiments">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Hippocampus
-                              <input type="checkbox" id="qs8_4" value="Hippocampus" onchange="ShowHippocampus()">
-                              <span class="checkmark"></span>
-                              <div id="menu_Hippocampus" style="display:none;">
-                                <ul class="check2 CS-style">
-                                  <li><label class="container" style="font-size:16px;">Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data
-                                        <input type="checkbox" id="q8_21" name="BACSE" value="Hippocampus-Configure and run a rat hippocampus CA1 region using preconfigured HBP model and data">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                  <li><label class="container" style="font-size:16px;">Configure and run a hippocampus microcircuit
-                                        <input type="checkbox" id="q8_22" name="BACSE" value="Hippocampus-Configure and run a hippocampus microcircuit">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                </ul>
-                              </div>
-                          </label></li>
-                          <li><label class="container" style="font-size:16px;">Cerebellum
-                              <input type="checkbox" id="qs8_5" value="Connectome" onchange="ShowCerebellum()">
-                              <span class="checkmark"></span>
-                              <div id="menu_cerebellum" style="display:none;">
-                                <ul class="check2 CS-style">
-                                  <li><label class="container" style="font-size:16px;">Functional Simulation with Point Neurons
-                                        <input type="checkbox" id="q8_23" name="BACSE" value="Cerebellum-Functional Simulation with Point Neurons">
-                                        <span class="checkmark"></span>
-                                      </label></li>
-                                </ul>
-                              </div>
-                          </label></li>
+                        <ul class="check" style="padding-top:7px;"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">hippocampus
+                                <input type="checkbox" name="BACSE" id="q818" value="hippocampus">
+                                <span class="checkmark"></span>
+                              </label></li>
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">cerebellum
+                                <input type="checkbox" name="BACSE" id="q819" value="cerebellum">
+                                <span class="checkmark"></span>
+                              </label></li>
                         </ul>
                       </div>
-                       <!--*****************************   Model Validation   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#ModelValidation"style="padding:8px 34.5%;">Model Validation&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#ModelValidation"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 292px;border-radius:25px;">Model Validation&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="ModelValidation">
-                        <ul class="checkSub CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Validation Framework Demo (Walkthrough)
-                                <input type="checkbox" name="MValidation" id="q820" value="Validation Framework Demo (Walkthrough)">
+                        <ul class="checkSub"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">validation framework demo (walkthrough)
+                                <input type="checkbox" name="MValidation" id="q820" value="validation framework demo (walkthrough)">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Hippocampus Single Cell Model Validation
-                                <input type="checkbox" name="MValidation" id="q821" value="Hippocampus Single Cell Model Validation">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">basal ganglia - BluePyOpt optimized model validation-multiple HOF
+                                <input type="checkbox" name="MValidation" id="q821" value="basal ganglia - BluePyOpt optimized model validation-multiple HOF">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Basal Ganglia Single Cell Validation
-                                <input type="checkbox" name="MValidation" id="q822" value="Basal Ganglia Single Cell Validation">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">basal ganglia morphology validation
+                                <input type="checkbox" name="MValidation" id="q822" value="basal ganglia morphology validation">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">BluePyOpt Optimized Model Validation
-                                <input type="checkbox" name="MValidation" id="q823" value="BluePyOpt Optimized Model Validation">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">generic - BluePyOpt optimized model validation
+                                <input type="checkbox" name="MValidation" id="q823" value="generic - BluePyOpt optimized model validation">
                                 <span class="checkmark"></span>
                               </label></li>
-                          <li><label class="container" style="font-size:16px;">Basal Ganglia Morphology Validation
-                                <input type="checkbox" name="MValidation" id="q824" value="Basal Ganglia Morphology Validation">
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">hippocampus single cell - BluePyOpt optimized model validation
+                                <input type="checkbox" name="MValidation" id="q824" value="hippocampus single cell - BluePyOpt optimized model validation">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
                       </div>
-                      <!--*****************************   Highly Integrated Workflows   *************************************-->
-                      <a type="button" class="btn btn-default b-text" data-toggle="collapse" data-target="#HighlyIntegratedWorkflows"style="padding:8px 28%;">Highly Integrated Workflows&ensp;<span class="caret"></span></a>
+                      <a type="button" class="btn btn-default" data-toggle="collapse" data-target="#HighlyIntegratedWorkflows"style="font-size:21px;font-family: Tahoma,sans-serif;margin-left:25px;padding:8px 237px;border-radius:25px;">Highly Integrated Workflows&ensp;<span class="caret"></span></a>
                       <div class="collapse" id="HighlyIntegratedWorkflows">
-                        <ul class="check2 CS-style"> 
-                          <li><label class="container" style="font-size:16px;">Hodgkin-Huxley Neuron Builder
-                                <input type="checkbox" name="HIW" id="q825" value="Hodgkin-Huxley Neuron Builder">
+                        <ul class="check2"> 
+                          <li><label class="container" style="font-size:16px;padding-left: 50px;">hodgkin-huxley neuron builder
+                                <input type="checkbox" name="HIW" id="q825" value="hodgkin-huxley neuron builder">
                                 <span class="checkmark"></span>
                               </label></li>
                         </ul>
@@ -531,8 +457,8 @@
                   </div>
                 </div>
                 <center>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step7();" value="Back"/>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step9();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step7();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step9();" value="Next"/>
                 </center>
               </div>
                 <!--****************   Step 9   *******************-->
@@ -540,33 +466,33 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">9. Do you use any HPC system?</h3>
-                      <ul class="checkSub CS-style">
-                        <li><label class="container">yes
+                      <ul class="checkSub">
+                        <li><label class="container" style="padding-left: 50px;">yes
                               <input type="radio" id="qs91"name="q9" value="yes" onclick="show()">
                               <span class="checkmark"></span>
                               <div id="menu" style="display:none;">
-                                <label class="label-style">Select the systems you are using:</label>
-                                <ul class="check1 CS-style">
-                                  <li><label class="container" style="font-size:16px;">NSG
+                                <label style="font-size: 20px;font-family: sans-serif;font-weight: normal;">Select the systems you are using:</label>
+                                <ul class="check1">
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">NSG
                                         <input type="checkbox" id="check1" name="question9" value="NSG">
                                         <span class="checkmark"></span>
                                       </label></li>
-                                  <li><label class="container" style="font-size:16px;">Jureca
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Jureca
                                         <input type="checkbox" id="check2" name="question9" value="Jureca">
                                         <span class="checkmark"></span>
                                       </label></li>
-                                  <li><label class="container" style="font-size:16px;">Piz Daint
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Piz Daint
                                         <input type="checkbox"  id="check5" name="question9" value="Piz Daint">
                                         <span class="checkmark"></span>
                                       </label></li>
-                                  <li><label class="container" style="font-size:16px;">Marconi
+                                  <li><label class="container" style="font-size:16px;padding-left: 50px;">Marconi
                                         <input type="checkbox" id="check6" name="question9" value="Marconi">
                                         <span class="checkmark"></span>
                                   </label></li>
                                 </ul>
                               </div>
                             </label></li>
-                        <li><label class="container">no
+                        <li><label class="container" style="padding-left: 50px;">no
                               <input type="radio" id="qs92"name="q9" value="no" onclick="hide()">
                               <span class="checkmark"></span>
                             </label></li>    
@@ -574,8 +500,8 @@
                     </div>
                   </div>
                   <center>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step8();" value="Back"/>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step10();" value="Next"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step8();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step10();" value="Next"/>
                 </center>
                 </div>
                 <!--****************   Step 10   *******************-->
@@ -583,14 +509,14 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">10. What do you like/don’t like about the platform?</h3>
-                      <div class="form-group shadow-textarea dta-style" style="padding-top:20px;">
-                        <textarea class="ta-style" id="q10" style="min-height: 100px;" placeholder="your answer..."></textarea>
+                      <div class="form-group shadow-textarea" style="padding-left:25px;padding-top:20px;">
+                        <textarea id="q10" rows="4" cols="100" placeholder="your answer..."></textarea>
                       </div>
                     </div>
                   </div>
                   <center>
-                    <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step9();" value="Back"/>
-                    <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step11();" value="Next"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step9();" value="Back"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step11();" value="Next"/>
                   </center>
                 </div>
                    
@@ -600,47 +526,47 @@
                     <div class="session">
                       <h3 class="question">11. Which use cases are more important for your work?</h3>
                       <ul class="check2"style=" padding-top:20px;padding-bottom: 5px;">
-                        <li><label class="container">Molecular Level 
+                        <li><label class="container" style="padding-left: 50px;">Molecular Level 
                               <input type="checkbox" id="qs111"name="question11" value="Molecular Level">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Subcellular Level
+                        <li><label class="container" style="padding-left: 50px;">Subcellular Level
                               <input type="checkbox" id="qs112" name="question11" value="Subcellular Level">
                               <span class="checkmark"></span>
                             </label></li>  
-                        <li><label class="container">Trace Analysis
+                        <li><label class="container" style="padding-left: 50px;">Trace Analysis
                               <input type="checkbox" id="qs113"name="question11" value="Trace Analysis">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Morphology Analysis
+                        <li><label class="container" style="padding-left: 50px;">Morphology Analysis
                               <input type="checkbox" id="qs114"name="question11" value="Morphology Analysis">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Single Circuit Building
+                        <li><label class="container" style="padding-left: 50px;">Single Circuit Building
                               <input type="checkbox" id="qs115" name="question11"value="Single Circuit Building">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Circuit Building
+                        <li><label class="container" style="padding-left: 50px;">Circuit Building
                               <input type="checkbox" id="qs116"name="question11"value="Circuit Building">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Single Cell In Silico Experiments
+                        <li><label class="container" style="padding-left: 50px;">Single Cell In Silico Experiments
                               <input type="checkbox" id="qs117" name="question11" value="Single Cell In Silico Experiments">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Small Circuit In Silico Experiments
+                        <li><label class="container" style="padding-left: 50px;">Small Circuit In Silico Experiments
                               <input type="checkbox" id="qs118" name="question11"value="Small Circuit In Silico Experiments">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Brain Area Circuit In Silico Experiments
+                        <li><label class="container" style="padding-left: 50px;">Brain Area Circuit In Silico Experiments
                               <input type="checkbox" id="qs119"name="question11"value="Brain Area Circuit In Silico Experiments">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Model Validation
+                        <li><label class="container" style="padding-left: 50px;">Model Validation
                               <input type="checkbox" id="qs1110" name="question11" value="Model Validation">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">Highly Integrated Workflows
+                        <li><label class="container" style="padding-left: 50px;">Highly Integrated Workflows
                               <input type="checkbox" id="qs1111"name="question11" value="Highly Integrated Workflows">
                               <span class="checkmark"></span>
                             </label></li>
@@ -648,8 +574,8 @@
                     </div>
                   </div>
                   <center>
-                    <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" onclick="step10();" value="Back"/>
-                    <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step12();" value="Next"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step10();" value="Back"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;"  onclick="step12();" value="Next"/>
                   </center>
                 </div>
                 <!--****************   Step 12   *******************-->  
@@ -657,12 +583,12 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">12. Would you recommend BSP to a friend or colleague?</h3>
-                      <ul class="checkDue"> 
-                        <li><label class="container">yes
+                      <ul class="checkDue" style=" padding-top:20px;padding-bottom: 5px;"> 
+                        <li><label class="container" style="padding-left: 50px;">yes
                               <input type="radio" id="qs121" name="q12" value="yes">
                               <span class="checkmark"></span>
                             </label></li>
-                        <li><label class="container">no
+                        <li><label class="container" style="padding-left: 50px;">no
                               <input type="radio"  id="qs122" name="q12" value="no">
                               <span class="checkmark"></span>
                             </label></li>
@@ -670,8 +596,8 @@
                     </div>
                   </div>
                   <center>
-                    <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step11();" value="Back"/>
-                    <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step13();" value="Next"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;"  onclick="step11();" value="Back"/>
+                    <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;"  onclick="step13();" value="Next"/>
                   </center>
                 </div>
                 <!--****************   Step 13   *******************-->  
@@ -679,14 +605,14 @@
                   <div class="box">
                     <div class="session">
                       <h3 class="question">13.How can we improve it? Send us your ideas and suggestions</h3>
-                      <div class="form-group shadow-textarea dta-style" style="padding-top:20px;">
-                        <textarea class="ta-style"id="q13" style="min-height: 100px;" placeholder="your answer..."></textarea>
+                      <div class="form-group shadow-textarea" style="padding-left:25px;padding-top:20px;">
+                        <textarea id="q13" rows="4" cols="100" placeholder="your answer..."></textarea>
                       </div>
                     </div>
                   </div>
                 <center>
-                  <input type="button"class="quantumWizButtonPaperbuttonEl button b-style" onclick="step12();" value="Back"/>
-                  <input type="button" class="quantumWizButtonPaperbuttonEl button b-style" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" onclick="step12();" value="Back"/>
+                  <input class="quantumWizButtonPaperbuttonEl button" style="margin-top: 50px;background:#008CBA;color: white;width:90px;" name="Submit" id="Submit" onclick="postContactToGoogle()" value="Send"/>
                 </center>
             </div>
             </form>

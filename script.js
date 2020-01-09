@@ -9,7 +9,7 @@ function start() {
 
     //questio n°2
     //console.log($("#q2")[0].value);
-    $("#q2")[0].value=4;
+    $("#q2")[0].value=0;
     //question n°3
     $("#qs31")[0].checked=false;
     $("#qs32")[0].checked=false;
@@ -76,28 +76,18 @@ function start() {
     $("#q813")[0].checked=false;
 
     //Circuit Building
-    $("#qs8_1")[0].checked=false;
-    $("#qs8_2")[0].checked=false;
-    $("#q8_14")[0].checked=false;
-    $("#q8_15")[0].checked=false;
-    $("#q8_16")[0].checked=false;
-    $("#q8_17")[0].checked=false;
-    $("#q8_18")[0].checked=false;
+    $("#q814")[0].checked=false;
+    $("#q815")[0].checked=false;
 
     //Single Cell In Silico Experiments
     $("#q816")[0].checked=false;
 
-    //Small Circuit In Silico Experiments
-    $("#qs8_3")[0].checked=false;
-    $("#q8_19")[0].checked=false;
-    $("#q8_20")[0].checked=false;
+    //Small Cell In Silico Experiments
+    $("#q817")[0].checked=false;
 
     //Brain Area Circuit In Silico Experiments
-    $("#qs8_4")[0].checked=false;
-    $("#qs8_5")[0].checked=false;
-    $("#q8_21")[0].checked=false;
-    $("#q8_22")[0].checked=false;
-    $("#q8_23")[0].checked=false;
+    $("#q818")[0].checked=false;
+    $("#q819")[0].checked=false;
 
     //Model Validation
     $("#q820")[0].checked=false;
@@ -283,8 +273,7 @@ function myFunction() {
 function getOption(v){
         const range = document.querySelector('input.inputImage ');
         const div = document.querySelector('.moji');
-        //const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
-        const mojis = ['🤢 very bad','😣 bad','😐 fair','🙂 good','😄 excellent'];
+        const mojis = ['😄 excellent','🙂 good','😐 fair','😣 bad','🤢 very bad'];
         div.textContent = mojis[v.value];
         return v.value;
 }
@@ -305,57 +294,16 @@ function hide(){
   document.getElementById("check5").checked = false;
   document.getElementById("check6").checked = false;
 }
+
 function show(){
   document.getElementById('menu').style.display = 'block';
 }
 
-function ShowCellPlacement(){
-  document.getElementById("CellsPlacement").style.display="block";
-}
-function ShowCellPlacement(){
-  if($("#qs8_1").is(":checked"))
-    $("#menu_CellsPlacement").show();
-  else
-    $("#menu_CellsPlacement").hide();
-}
-function ShowConnectome(){
-  if($("#qs8_2").is(":checked"))
-    $("#menu_connectome").show();
-  else
-    $("#menu_connectome").hide();
-}
-function ShowSmallCircuit(){
-  if($("#qs8_3").is(":checked"))
-    $("#menu_SmallCircuit").show();
-  else
-    $("#menu_SmallCircuit").hide();
-}
-function ShowHippocampus(){
-  if($("#qs8_4").is(":checked"))
-    $("#menu_Hippocampus").show();
-  else
-    $("#menu_Hippocampus").hide();
-}
-function ShowCerebellum(){
-  if($("#qs8_5").is(":checked"))
-    $("#menu_cerebellum").show();
-  else
-    $("#menu_cerebellum").hide();
-}
 function formSubmitted(status) {
   $('#genericForm').hide();//matches your form name or whatever you want to disappear post-submission
   $("#bottone").hide();
   $("#output").show();
   document.getElementById('output').innerHTML = status;
-}
-
-function SplashInCollab() {
-  if(window != top){
-    $('#collab').show();
-  }
-  else{
-    $('#collab').hide();
-  }
 }
 
 
