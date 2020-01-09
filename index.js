@@ -299,7 +299,7 @@ function browser_detect(){
     }
     return sBrowser;
 }
-
+ 
  var getIPAddress = function() {
       $.getJSON("https://jsonip.com?callback=?", function(data) {
         document.getElementById("ip_address").innerHTML=data.ip;
@@ -310,6 +310,7 @@ $(document).ready(function () {
     WhereIs();
     var sBrowser=browser_detect();
     document.getElementById("browser").innerHTML=sBrowser;
-    getIPAddress();
+   // getIPAddress();
+
 });
 
