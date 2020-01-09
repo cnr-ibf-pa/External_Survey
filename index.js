@@ -310,7 +310,7 @@ $(document).ready(function () {
     WhereIs();
     var sBrowser=browser_detect();
     document.getElementById("browser").innerHTML=sBrowser;
-   // getIPAddress();
+    getIPAddress();
 
 });
 
