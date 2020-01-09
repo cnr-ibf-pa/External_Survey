@@ -1,22 +1,22 @@
 
-let client = new jso.JSO({
+function init() {
+  let client = new jso.JSO({
   providerID: "HBP",
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
 })  
 
-
-function init() {
-  console.log(client);
-  try {
+    try {
     client.callback();
   } catch (e) {
+    console.log('########errore############');
     console.warn('Issue decoding the token');
   }
 
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
 var auth = client.getToken();
+console.log(auth);
 
 auth.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
@@ -35,7 +35,7 @@ $.ajax({
     }
 });
 }); 
-    return auth;
+    //return auth;
 }
 
 
@@ -265,6 +265,10 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
+    console.log("sono dentro");
+    }
+    else{
+        console.log("sono fuori");
     }
 }
 
@@ -312,6 +316,5 @@ $(document).ready(function () {
     var sBrowser=browser_detect();
     document.getElementById("browser").innerHTML=sBrowser;
     getIPAddress();
-
 });
 
