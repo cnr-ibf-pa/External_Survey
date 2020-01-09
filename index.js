@@ -8,6 +8,7 @@ let client = new jso.JSO({
 
 
 function init() {
+  console.log(client);
   try {
     client.callback();
   } catch (e) {
@@ -161,7 +162,7 @@ function postContactToGoogle() {
     //UserID
     var userId=$('#hbp-user-id').val();
 
-    //var IpAddress=$('#ip_address').val();
+    var IpAddress=$('#ip_address').val();
 
     var browser=$('#browser').val();
 
@@ -254,7 +255,7 @@ function postContactToGoogle() {
       "entry_363719983":MV3,"entry_840494516":MV4,"entry_1006444071":MV5,"entry_1691163079":NSG,"entry_1556173154":jureca,
       "entry_1527194443":pizD,"entry_152105565":marconi,"entry_825970456":F_ML,"entry_1973597846":F_SM,"entry_389249447":F_TA,
       "entry_275038741":F_MA,"entry_569020820":F_SCB,"entry_2060872419":F_CB,"entry_1738577912":F_SCISE,"entry_1692693658":F_SmCISE,
-      "entry_1545394113":F_BACISE,"entry_1064567374":F_MV,"entry_650601249":F_HIW,"entry_650664193":HIW1,/*"entry_1573033199":IpAddress,*/
+      "entry_1545394113":F_BACISE,"entry_1064567374":F_MV,"entry_650601249":F_HIW,"entry_650664193":HIW1,"entry_1573033199":IpAddress,
       "entry_224041548":browser},
       type:"POST",dataType:"xml",statusCode: {0:function() { 
         window.location.replace("thankyou.html");},200:function(){window.location.replace("thankyou.html");}}
@@ -300,17 +301,17 @@ function browser_detect(){
     return sBrowser;
 }
  
- /*var getIPAddress = function() {
+ var getIPAddress = function() {
       $.getJSON("https://jsonip.com?callback=?", function(data) {
         document.getElementById("ip_address").innerHTML=data.ip;
       });
-    };*/
+    };
 
 $(document).ready(function () {
     WhereIs();
     var sBrowser=browser_detect();
     document.getElementById("browser").innerHTML=sBrowser;
-    //getIPAddress();
+    getIPAddress();
 
 });
 
