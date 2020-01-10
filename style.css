@@ -1,19 +1,15 @@
 <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- BootstrapValidator CSS -->
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
-
 <style>
-     html, body {
-       overflow-x: hidden;
-       background:#f4f9fd;
-       
-     }
+  html, body {
+    overflow-x: hidden;
+    background:#f4f9fd;  
+  }
 .freebirdHeaderMast {
-    background-image: url(https://lh3.googleusercontent.com/vtd5p2LEiP6qCXfICvNAwqbpQSPNdTrOmaK3_W9TWTAvzTtrWIJTC4VVwY6VHAKIrzCmJSchvw=w1048);
-    background-size: cover;
-    background-position: center;
-    color: rgba(255, 255, 255, 1);
+  background-image: url(https://lh3.googleusercontent.com/vtd5p2LEiP6qCXfICvNAwqbpQSPNdTrOmaK3_W9TWTAvzTtrWIJTC4VVwY6VHAKIrzCmJSchvw=w1048);
+  background-size: cover;
+  background-position: center;
+  color: rgba(255, 255, 255, 1);
 }
 .header{
  border: 10px solid; 
@@ -30,260 +26,314 @@
  position:fixed; 
  width: 100%;
  }
- .content {
+.content {
   padding: 16px;
 }
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
 .sticky + .content {
   padding-top: 102px;
 }
 .freebirdFormviewerViewFormBanner {
-    height: 130px;
+  height: 130px;
 }
 .freebirdAccentBackground {
-    background-color: rgb(1, 134, 179);
-    color: rgba(255, 255, 255, 1);
+  background-color: rgb(1, 134, 179);
+  color: rgba(255, 255, 255, 1);
 }
 .freebirdMaterialIconIconEl {
-    direction: ltr;
-    text-align: left;
-    height: 24px;
-    overflow: hidden;
-    width: 24px;
-    display: inline-block;
-    position: relative;
-    overflow:hidden;
+  direction: ltr;
+  text-align: left;
+  height: 24px;
+  overflow: hidden;
+  width: 24px;
+  display: inline-block;
+  position: relative;
+  overflow:hidden;
 }
 .freebirdDarkIconOnThemedBackground {
-    display: none;
+  display: none;
 }
 .freebirdMaterialIconIconImage {
-    position: absolute;
+  position: absolute;
 }
 .freebird-qp-icon-edit-pencil-b {
-    left: 0;
-    top: -1008px;
+  left: 0;
+  top: -1008px;
 }
 .freebirdFormviewerViewFormContentWrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    flex-direction: column;
-    background:#f4f9fd;
-    border-style: hidden;
-    border-width:0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  flex-direction: column;
+  background:#f4f9fd;
+  border-style: hidden;
+  border-width:0;
 }
 .freebirdFormviewerViewCenteredContent {
-
-    margin: auto;
-    width: 910px;
+  margin: auto;
+  width: 910px;
 }
-
 .freebirdFormviewerViewFormCard {
-    margin-bottom: 48px;
-  /* -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
-    padding-bottom: 6px;*/
-    word-wrap: break-word;
-    margin-top: 180px;
-    /*border-radius:25px;*/
-    background:#f4f9fd;
-    border-style: hidden;
-    border-width:0px 0px;
+  margin-bottom: 48px;
+  word-wrap: break-word;
+  margin-top: 180px;
+  background:#f4f9fd;
+  border-style: hidden;
+  border-width:0px 0px;
 }
 .freebirdFormviewerViewAccentBanner {
-    height: 8px;
+  height: 8px;
 }
 .freebirdAccentBackground {
-    background-color: rgb(1, 134, 179);
-    color: rgba(255, 255, 255, 1);
-}.freebirdFormviewerViewFormContent {
-    color: rgba(0,0,0,.87);
-    padding: 30px 0;
+  background-color: rgb(1, 134, 179);
+  color: rgba(255, 255, 255, 1);
+}
+.freebirdFormviewerViewFormContent {
+  color: rgba(0,0,0,.87);
+  padding: 30px 0;
 }
 .freebirdFormviewerViewNoPadding {
-    padding: 0;
+  padding: 0;
 }
 .freebirdFormviewerViewHeaderHeader {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .freebirdFormviewerViewHeaderTitleRow {
-    -moz-box-align: center;
-    box-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -moz-flex-wrap: wrap;
-    flex-wrap: wrap;
-    box-pack: justify;
-    justify-content: space-between;
+  -moz-box-align: center;
+  box-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-pack: justify;
+  justify-content: space-between;
 }
 .freebirdFormviewerViewHeaderTitle {
-    box-sizing: border-box;
-    font-size: 34px;
-    line-height: 135%;
-    max-width: 100%;
-    min-width: 0%;
-    padding-top:100px;
+  box-sizing: border-box;
+  font-size: 34px;
+  line-height: 135%;
+  max-width: 100%;
+  min-width: 0%;
+  padding-top:100px;
 }
 .freebirdCommonViewSecurequizSecureQuizBannerContainer {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 .freebirdDisclaimerColor{
-    color: rgba(0, 0, 0, 0.66);
+  color: rgba(0, 0, 0, 0.66);
 }
 .freebirdFormviewerViewFooterDisclaimer {
-    font: 400 12px Tahoma,sans-serif;
-    margin: 25px 0;
-    padding: 0 25px;
-    text-align: center;
+  font: 400 12px Tahoma,sans-serif;
+  margin: 25px 0;
+  padding: 0 25px;
+  text-align: center;
 }
-
+.sub-style{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Tahoma,sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h1{
+  padding-left: 25px;
+  font-size: 70px;
+  font-family: Tahoma,sans-serif;
+  padding-top:18px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+h2{
+  padding-left: 25px;
+  font-family: Tahoma,sans-serif; 
+  padding-top:20px;color:black; 
+  overflow: hidden;
+  white-space: nowrap;
+}
+.qst_txt{
+  font-size:16px;
+  padding-left: 50px;
+}
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 21px;
-    font-weight: normal;
-    font-family: Tahoma,sans-serif;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: normal;
+  font-family: Tahoma,sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
 /* Hide the browser's default checkbox */
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
-
 /* Create a custom checkbox */
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border-radius: 25%;
-    border: 0.3px solid;
-    background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 25%;
+  border: 0.3px solid;
+  background-color: #eee;
 }
-
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-    background-color: #ccc;
+  background-color: #ccc;
 }
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+  background-color: #2196F3;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
-    display: block;
+  display: block;
 }
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .question{
-    padding-top:20px;
-    word-wrap: break-word;
-    box-sizing: border-box;
-    font-size-adjust: 0.58;
-    padding-left: 25px;
-    padding-right: 9px;
-    font-size: 25px;
-    line-height: 1.8;
-    font-family: Tahoma,sans-serif;
-    color:rgb(1, 134, 179);
+  padding-top:20px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-size-adjust: 0.58;
+  padding-left: 25px;
+  padding-right: 9px;
+  font-size: 25px;
+  line-height: 1.8;
+  font-family: Tahoma,sans-serif;
+  color:rgb(1, 134, 179);
 }
 .com{
-    box-sizing: border-box;
-    font-size-adjust: 0.58;
-    padding-left: 5px;
-    padding-top: 25px;
-    padding-right: 9px;
-    font-size: 25px;
-    font-weight: normal;
-    font-family: Tahoma,sans-serif;
-    color:rgb(1, 134, 179);
+  box-sizing: border-box;
+  font-size-adjust: 0.58;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 9px;
+  font-size: 25px;
+  font-weight: normal;
+  font-family: Tahoma,sans-serif;
+  color:rgb(1, 134, 179);
 }
 .other{
-     overflow: hidden;
-     white-space: nowrap;
-     box-sizing: border-box;
+  display:none;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
      
-    font-size-adjust: 0.58;
-    font-weight: normal;
-    font-family: Tahoma,sans-serif;
+  font-size-adjust: 0.58;
+  font-weight: normal;
+  font-family: Tahoma,sans-serif;
     /*color:rgb(1, 134, 179);*/
+  padding-bottom:15px;
+}
+.other-input{
+  position: absolute;
+  margin-left:680px; 
+  height:35px;
 }
 .interline{
-    display: inline-block;
+  display: inline-block;
 }
 .button {
-    background-color: #e6e6e6; /* Grey */
-    border: none;
-    color: black;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: #e6e6e6; /* Grey */
+  border: none;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.b-text{
+  font-size:21px;
+  font-family: Tahoma,sans-serif;
+  margin-left:25px;
+  border-radius:25px;
+}
+.b-style{
+  margin-top: 50px;
+  background:#008CBA;
+  color: white;width:90px;
+}
+.end{
+  margin-top:50px;
+  height: 150px; 
+  text-align: center;
+}
+.btn-home{
+  background:white;
+  color: #008CBA;
+  border: none;
+  margin-right: 15px;
+  font-size: 17px;
+}
+.dta-style{
+  padding-left:25px;
 }
 .buttonPosition{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 input[type=submit] {
-    background-color: #e6e6e6; /* Grey */
-    border: none;
-    color: black;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    }
+  background-color: #e6e6e6; /* Grey */
+  border: none;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 ul.check li { 
   padding-left:25px;
   padding-top:10px;
@@ -291,9 +341,17 @@ ul.check li {
   display:inline-block;
   width:20em;
 }
-ul.checkDue li { 
+ul.check-m li { 
   padding-left:25px;
   padding-top:10px;
+  border: 1px transparent solid; 
+  display:inline-block;
+  width:18em;
+}
+ul.checkDue li { 
+  padding-top:20px;
+  padding-bottom: 5px;
+  padding-left:25px;
   border: 1px transparent solid; 
   display:inline-block;
   width:30em;
@@ -311,7 +369,14 @@ ul.check1 li {
   padding-left:0px;
   border: 1px transparent solid;
   display:inline-block;
-  width:10em;
+  width:11em;
+}
+.CS-style{
+  padding-top:15px;
+  padding-bottom: 10px;
+}
+.label-style{
+  font-size: 20px;font-family: sans-serif;font-weight: normal;
 }
 .commentStyle{
   padding-left:21px;
@@ -322,38 +387,38 @@ ul.check1 li {
   border-bottom-width: 2px;
 }
 .dropdown-menu > li > .dropdown-menu-item {
-   clear: both;
-    color: #333;
-    display: block;
-    padding: 3px 20px;
-    white-space: normal;
-    margin: 5px 0;
-    width: 100%;
-    padding-bottom:5px;
-    padding-right:5px;
-    text-align: left;
-    text-decoration: none;
-    word-wrap: break-word;
-    outline: none;
-    cursor: pointer;
-    -moz-user-select: none;
-    user-select: none;
+  clear: both;
+  color: #333;
+  display: block;
+  padding: 3px 20px;
+  white-space: normal;
+  margin: 5px 0;
+  width: 100%;
+  padding-bottom:5px;
+  padding-right:5px;
+  text-align: left;
+  text-decoration: none;
+  word-wrap: break-word;
+  outline: none;
+  cursor: pointer;
+  -moz-user-select: none;
+  user-select: none;
 }
 .dropdown-menu > li:hover .dropdown-menu-item,
 .dropdown-menu > li:focus .dropdown-menu-item{
-    background-color: #f5f5f5;
-    color: #262625;
+  background-color: #f5f5f5;
+  color: #262625;
 }
 .dropdown-menu > li > .dropdown-menu-item.checkbox {
-    margin: 12;
-    padding-right:12px;
-    font-weight: normal;
+  margin: 12;
+  padding-right:12px;
+  font-weight: normal;
 }
 .dropdown-menu > li > .dropdown-menu-item.checkbox input {
-    display: none;
+  display: none;
 }
 ul.check2 li { 
- padding-left:25px;
+  padding-left:25px;
   padding-top:7px;
   border: 1px transparent solid; 
   display:block;
@@ -364,24 +429,24 @@ ul.check2 li {
   color:#618685;
   text-align:center;
   border: 1px solid;
-  /*box-shadow: 5px 10px 18px #888888;*/
+  /*box-: 5px 10px 18px #888888;*/
   width:100%;
   padding: 8px;
 }
 .toggle-text{
   padding: 5px 0;
   border: 1px solid;
- }
+}
  .session{
- border-radius: 25px;
- width: 910px;
- border: 1px solid; 
- border-color: #f2f2f2;
- box-shadow: 12px 12px 10px #aaaaaa;
- padding-bottom: 40px;
- padding-left: 20px;
- background: #fff;
- }
+  border-radius: 25px;
+  width: 910px;
+  border: 1px solid; 
+  border-color: #f2f2f2;
+  box-shadow: 12px 12px 10px #aaaaaa;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  background: #fff;
+}
  .form-group:hover .box{
   zoom: 1;
   filter: alpha(opacity=45);
@@ -409,24 +474,28 @@ ul.check2 li {
  .sep{
   border:none;
   padding: 10px;
-  margin-top:10px;
+  margin-top:40px;
  }
 .shadow-textarea textarea.form-control::placeholder {
-    font-weight: 300;
+  font-weight: 300;
 }
 .shadow-textarea textarea.form-control {
-    padding-left: 0.8rem;
+  padding-left: 0.8rem;
+}
+.ta-style{
+  width: 90%;
+  min-height: 70px;
 }
 .quantumWizButtonPaperbuttonEl {
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
 }
-
 .moji {
-  font-size: 8em;
+  padding-top:20px;
+  font-size:55px; 
   text-align: center;
 }
 .inputImage {
@@ -436,27 +505,38 @@ ul.check2 li {
 .slider {
   display: flex;
   justify-content: space-between;
+  width: 500px;
+  margin: 2rem auto 0;
+  padding-bottom:5px;
 }
 .smile {
   font-weight: bold;
   color: #5fcf80;
+  font-size:16px;
 }
 .fine {
   color: tomato;
+  white-space: nowrap;
+  font-size:16px;
+}
+.multi-qst{
+  padding-left:25px;
+  display: inline-block;
+  padding-top:20px;
 }
 textarea:focus {
-    background-color: #e0edf9;
+  background-color: #e0edf9;
 }
 input[type="range"]::-moz-range-track {
   padding: 0 30px;
   height:5px;
-  background: repeating-linear-gradient(to right, 
+  background: repeating-linear-gradient(to left, 
     #ccc,
     #ccc 10%, 
-    #000 10%, 
-    #000 11%, 
-    #ccc 11%, 
-    #ccc 20%);
+    #000 2%, 
+    #000 3%, 
+    #ccc 1%, 
+    #ccc 1%);
 }
 input[type="range"]::-webkit-range-track {
   padding: 0 30px;
@@ -464,25 +544,25 @@ input[type="range"]::-webkit-range-track {
   background: repeating-linear-gradient(to right, 
     #ccc,
     #ccc 10%, 
-    #000 10%, 
-    #000 11%, 
-    #ccc 11%, 
-    #ccc 20%);
+    #000 2%, 
+    #000 3%, 
+    #ccc 1%, 
+    #ccc 1%);
 }
 .SplashBox{
   border: 1px solid;
   margin: auto;
-    width: 600px;
-   -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.37);
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.37);
-    padding-bottom: 6px;
-    word-wrap: break-word;
-    margin-top: 180px;
-    border-radius:25px;
-    background: #fff;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+  width: 600px;
+  -moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,0.37);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.37);
+  padding-bottom: 6px;
+  word-wrap: break-word;
+  margin-top: 180px;
+  border-radius:25px;
+  background: #fff;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 input[type=text]:focus{
   background-color: rgb(1, 134, 179,0.15);

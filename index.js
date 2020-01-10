@@ -54,7 +54,6 @@ var slider = document.getElementById("q2");
      slider.oninput = function() {
       output = this.value;
     }
-console.log(output);
 
 
 function postContactToGoogle() {
@@ -68,10 +67,18 @@ function postContactToGoogle() {
     //Question n°2
     var slider = document.getElementById("q2");
     var output = slider.value;
-    /*
-      slider.oninput = function() {
-      output = this.value;
-    }*/
+    var smile;
+    if(output==0){
+        smile="very bad";
+    }else if(output==1){
+        smile="bad";
+    }else if(output==2){
+        smile="fair";
+    }else if(output==3){
+        smile="good";
+    }else if(output==4){
+        smile="excellent";
+    }
 
     //Question n°3
     var r3 = document.getElementsByName('q3');
@@ -119,7 +126,7 @@ function postContactToGoogle() {
     //Single Cell In Silico Experiments
     var check7 = document.getElementsByName('SingleCSE');
     var SingleCSE=find_answer(check7);    
-    //Small Cell In Silico Experiments
+    //Small Circuit In Silico Experiments
     var check8 = document.getElementsByName('SmallCSE');
     var SmallCSE=find_answer(check8);     
     //Brain Area Circuit In Silico Experiments
@@ -183,16 +190,22 @@ function postContactToGoogle() {
     var SCB5=document.getElementById("q811").onchange = function() {var SCB5=checkMenu("q811"); return SCB5;};
     var SCB6=document.getElementById("q812").onchange = function() {var SCB6=checkMenu("q812"); return SCB6;};
     var SCB7=document.getElementById("q813").onchange = function() {var SCB7=checkMenu("q813"); return SCB7;};
+    var SCB8=document.getElementById("q8_11").onchange = function() {var SCB8=checkMenu("q8_11"); return SCB8;};
     //Circuit Building
-    var CB1=document.getElementById("q814").onchange = function() {var CB1=checkMenu("q814"); return CB1;};
-    var CB2=document.getElementById("q815").onchange = function() {var CB2=checkMenu("q815"); return CB2;};
+    var CB1=document.getElementById("q8_14").onchange = function() {var CB1=checkMenu("q8_14"); return CB1;};
+    var CB2=document.getElementById("q8_15").onchange = function() {var CB2=checkMenu("q8_15"); return CB2;};
+    var CB3=document.getElementById("q8_16").onchange = function() {var CB3=checkMenu("q8_16"); return CB3;};
+    var CB4=document.getElementById("q8_17").onchange = function() {var CB4=checkMenu("q8_17"); return CB4;};
+    var CB5=document.getElementById("q8_18").onchange = function() {var CB5=checkMenu("q8_18"); return CB5;};
     //Single Cell In Silico Experiments
     var SCISE1=document.getElementById("q816").onchange = function() {var SCISE1=checkMenu("q816"); return SCISE1;};
-    //Small Cell In Silico Experiments
-    var SmCISE1=document.getElementById("q817").onchange = function() {var SmCISE1=checkMenu("q817"); return SmCISE1;};
+    //Small Circuit In Silico Experiments
+    var SmCISE1=document.getElementById("q8_19").onchange = function() {var SmCISE1=checkMenu("q8_19"); return SmCISE1;};
+    var SmCISE2=document.getElementById("q8_20").onchange = function() {var SmCISE2=checkMenu("q8_20"); return SmCISE2;};
     //Brain Area Circuit In Silico Experiments
-    var BACISE1=document.getElementById("q818").onchange = function() {var BACISE1=checkMenu("q818"); return BACISE1;};
-    var BACISE2=document.getElementById("q819").onchange = function() {var BACISE2=checkMenu("q819"); return BACISE2;};
+    var BACISE1=document.getElementById("q8_21").onchange = function() {var BACISE1=checkMenu("q8_21"); return BACISE1;};
+    var BACISE2=document.getElementById("q8_22").onchange = function() {var BACISE2=checkMenu("q8_22"); return BACISE2;};
+    var BACISE3=document.getElementById("q8_23").onchange = function() {var BACISE3=checkMenu("q8_23"); return BACISE3;};
     //Model Validation
     var MV1=document.getElementById("q820").onchange=function(){var MV1=checkMenu("q820"); return MV1;};
     var MV2=document.getElementById("q821").onchange=function(){var MV2=checkMenu("q821"); return MV2;};
@@ -224,7 +237,7 @@ function postContactToGoogle() {
  
     $.ajax({
       url:"https://docs.google.com/forms/d/e/1FAIpQLScFXH_d30T8hw2yBSfigGywzv2UpUcN9BqfUdOtiG69XX-iWQ/formResponse",
-      data:{"entry_587568546":q1,"entry_1167509473":output,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,
+      data:{"entry_587568546":q1,"entry_1167509473":smile,"entry_1156354609":q3,"entry_1899290130":c3,"entry_1722887222":q4,
       "entry_155614927":c4,"entry_449077188":q5,"entry_905444161":c5,"entry_1976011584":q6,"entry_1828737890":c6,
       "entry_180333328":q7,"entry_871783456":c7,"entry_1693291241":MLevel,"entry_2037577938":SLevel,"entry_850321543":TAnalysis,
       "entry_196612701":MAnalysis,"entry_340839207":CSBuilding,"entry_1600241950":CBuilding,"entry_210607341":SingleCSE,
@@ -234,8 +247,9 @@ function postContactToGoogle() {
       "entry_1911509855":ML4,"entry_1065085873":ML5,"entry_1863260336":ML6,"entry_1913919192":SM1,"entry_452269751":TA1,
       "entry_1450206951":TA2,"entry_477100591":TA3,"entry_1761938093":TA4,"entry_327690400":MA1,"entry_1952646707":MA2,
       "entry_459518937":SCB1,"entry_331063060":SCB2,"entry_131983045":SCB3,"entry_436303741":SCB4,"entry_1847116799":SCB5,
-      "entry_871928451":SCB6,"entry_631239213":SCB7,"entry_81766860":CB1,"entry_688575088":CB2,"entry_726476328":SCISE1,
-      "entry_2131065365":SmCISE1,"entry_884256587":BACISE1,"entry_1704655576":BACISE2,"entry_346730992":MV1,"entry_54534745":MV2,
+      "entry_871928451":SCB6,"entry_631239213":SCB7,"entr_1165892681":SCB8,"entry_81766860":CB1,"entry_1363594569":CB2,"entry_1101765145":CB3,
+      "entry_688575088":CB4,"entry_1150827936":CB5,"entry_726476328":SCISE1,"entry_2131065365":SmCISE1,"entry_242230759":SmCISE2,
+      "entry_884256587":BACISE1,"entry_741421943":BACISE2,"entry_1704655576":BACISE3,"entry_346730992":MV1,"entry_54534745":MV2,
       "entry_363719983":MV3,"entry_840494516":MV4,"entry_1006444071":MV5,"entry_1691163079":NSG,"entry_1556173154":jureca,
       "entry_1527194443":pizD,"entry_152105565":marconi,"entry_825970456":F_ML,"entry_1973597846":F_SM,"entry_389249447":F_TA,
       "entry_275038741":F_MA,"entry_569020820":F_SCB,"entry_2060872419":F_CB,"entry_1738577912":F_SCISE,"entry_1692693658":F_SmCISE,
@@ -249,9 +263,6 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
-    var sBrowser=browser_detect();
-    document.getElementById("browser").innerHTML=sBrowser;
-    getIPAddress();
     }
 }
 
@@ -296,5 +307,8 @@ function browser_detect(){
 
 $(document).ready(function () {
     WhereIs();
+    var sBrowser=browser_detect();
+    document.getElementById("browser").innerHTML=sBrowser;
+    getIPAddress();
 });
 
