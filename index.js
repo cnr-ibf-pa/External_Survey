@@ -7,8 +7,12 @@ let client = new jso.JSO({
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",}) 
-console.log(client.config.redirect_uri);
+
 function init() {
+if(pathArray[1]=='hbp-bsp-user-survey-dev'){
+    let cl=client;
+    console.log(cl);
+}
     try {
     client.callback();
   } catch (e) {
