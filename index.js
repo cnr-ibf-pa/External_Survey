@@ -5,7 +5,7 @@ function init() {
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
   redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",
-})  
+}) 
 
     try {
     client.callback();
@@ -263,6 +263,7 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
+    console.log(window);
     }
 }
 
