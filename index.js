@@ -1,6 +1,4 @@
-
 var pathArray = window.location.pathname.split('/');
-console.log(pathArray[1]);
 
 let client = new jso.JSO({
   providerID: "HBP",
@@ -9,18 +7,19 @@ let client = new jso.JSO({
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",}) 
 
 function init() {
+
 if(pathArray[1]=='hbp-bsp-user-survey-dev'){
     let cl=client;
     console.log(cl);
 }
     try {
-    client.callback();
+    cl.callback();
   } catch (e) {
     console.warn('Issue decoding the token');
   }
 
 const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
-var auth = client.getToken();
+var auth = cl.getToken();
 
 auth.then((session) => {
 var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
