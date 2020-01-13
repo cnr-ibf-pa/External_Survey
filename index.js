@@ -264,7 +264,8 @@ function WhereIs(){
   if(window != top){
     init();
     x=window.location.pathname;
-    console.log(x);
+    y=window.location.href;
+    console.log(x, y);
     }else{
         x=window.location.pathname;
         console.log(x);
