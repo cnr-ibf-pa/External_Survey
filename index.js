@@ -1,5 +1,5 @@
 
-if (window.location.href == 'https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/'){
+if (window.location.href == 'https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/index.js'){
        let client = new jso.JSO({
   providerID: "HBP",
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
