@@ -8,6 +8,8 @@ let client = new jso.JSO({
   redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",}) 
 
+console.log(client);
+
 function init() {
     try {
     client.callback();
