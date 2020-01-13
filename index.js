@@ -1,4 +1,6 @@
 
+function init() {
+
 var pathArray = window.location.pathname.split('/');
 console.log(pathArray[1]);
 if(pathArray[1]=='hbp-bsp-user-survey-dev'){
@@ -9,7 +11,6 @@ let client = new jso.JSO({
   redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
   authorization: "https://services.humanbrainproject.eu/oidc/authorize",}) 
 }
-function init() {
     try {
     client.callback();
   } catch (e) {
