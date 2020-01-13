@@ -263,10 +263,10 @@ function postContactToGoogle() {
 function WhereIs(){
   if(window != top){
     init();
-    x=window.location.host;
+    x=window.location.pathname;
     console.log(x);
     }else{
-        x=window.location.host;
+        x=window.location.pathname;
         console.log(x);
     }
 }
