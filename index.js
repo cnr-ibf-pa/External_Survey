@@ -264,7 +264,11 @@ function WhereIs(){
   if(window != top){
     init();
     x=window.location.pathname;
+    path='/hbp-bsp-user-survey-dev/index.html'
     y=window.location.href;
+    if(x==path){
+        console.log('uguali');
+    }
     console.log(x, y);
     }else{
         x=window.location.pathname;
