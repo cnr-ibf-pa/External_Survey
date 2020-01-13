@@ -8,6 +8,43 @@ function init_dev() {
         redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
         authorization: "https://services.humanbrainproject.eu/oidc/authorize",})
 
+  try {
+    client.callback();
+  } catch (e) {
+    console.warn('Issue decoding the token');
+  }
+
+const USER_API = 'https://services.humanbrainproject.eu/idm/v1/api/user/me';
+var auth = client.getToken();
+
+auth.then((session) => {
+var header = {'headers' : {Authorization: 'Bearer ' + session.access_token}};
+
+
+$.ajax({
+    url: USER_API,
+    headers: {
+        'Authorization':'Bearer ' + session.access_token,
+        'Content-Type':'application/json'
+    },
+    method: 'GET',
+    success: function(data){     
+        document.getElementById("hbp-user-id").innerHTML = data.id;
+        //console.log(data);
+    }
+});
+}); 
+    return auth;
+}
+
+function init_prod() {
+
+    let client = new jso.JSO({
+        providerID: "",
+        client_id: "",
+        redirect_uri: "", // The URL where you is redirected back, and where you perform run the callback() function.
+        authorization: "",})
+
     try {
     client.callback();
   } catch (e) {
