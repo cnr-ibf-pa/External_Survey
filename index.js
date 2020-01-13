@@ -1,14 +1,4 @@
-var pathArray = window.location.pathname.split('/');
 
-if (pathArray[1]=='hbp-bsp-user-survey-dev'){
-    console.log(pathArray[1]);
-
-    let client = new jso.JSO({
-    providerID: "HBP",
-    client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
-    redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
-    authorization: "https://services.humanbrainproject.eu/oidc/authorize",})
-}
  
 function init() {
     try {
@@ -266,6 +256,15 @@ function postContactToGoogle() {
 
 function WhereIs(){
   if(window != top){
+    var pathArray = window.location.pathname.split('/');
+    if (pathArray[1]=='hbp-bsp-user-survey-dev'){
+        let client = new jso.JSO({
+        providerID: "HBP",
+        client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
+        redirect_uri: "https://cnr-ibf-pa.github.io/hbp-bsp-user-survey-dev/", // The URL where you is redirected back, and where you perform run the callback() function.
+        authorization: "https://services.humanbrainproject.eu/oidc/authorize",})
+    }
+
     init();
     }
 }
