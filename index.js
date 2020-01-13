@@ -1,7 +1,8 @@
 
 var pathArray = window.location.pathname.split('/');
-console.log(pathArray);
+console.log(pathArray[1]);
 if(pathArray[1]=='hbp-bsp-user-survey-dev'){
+console.log('entro');
 let client = new jso.JSO({
   providerID: "HBP",
   client_id: "9d55e588-19c9-4fce-b72d-3820a0eddee0",
