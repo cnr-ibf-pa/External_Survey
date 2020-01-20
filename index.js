@@ -1,6 +1,4 @@
-
- 
-function init_dev() {
+ function init_dev() {
 
     let client = new jso.JSO({
         providerID: "HBP",

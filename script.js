@@ -305,42 +305,116 @@ function hide(){
   document.getElementById("check5").checked = false;
   document.getElementById("check6").checked = false;
 }
-function show(){
-  document.getElementById('menu').style.display = 'block';
+function show_menu(){
+  if($("#qs91").is(":checked")){
+    $("#menu").show();
+    $("#check1")[0].checked = true;
+    $("#check2")[0].checked = true;
+    $("#check5")[0].checked = true;
+    $("#check6")[0].checked = true;
+    $('#check1,#check2,#check5,#check6').on('change', function() {
+      if($('#check1')[0].checked==false && $('#check2')[0].checked==false && $('#check5')[0].checked==false && $('#check6')[0].checked==false){
+        $("#qs91")[0].checked=false;
+        $("#qs92")[0].checked=true;
+        $("#menu").hide();}
+    });
+  }
+  else{
+    $("#menu").hide();
+    $("#check1")[0].checked = false;
+    $("#check2")[0].checked = false;
+    $("#check5")[0].checked = false;
+    $("#check6")[0].checked = false;
+  }
 }
 
 function ShowCellPlacement(){
   document.getElementById("CellsPlacement").style.display="block";
 }
 function ShowCellPlacement(){
-  if($("#qs8_1").is(":checked"))
+  if($("#qs8_1").is(":checked")){
     $("#menu_CellsPlacement").show();
-  else
+    $("#q8_14")[0].checked = true;
+    $("#q8_15")[0].checked = true;
+    $("#q8_16")[0].checked = true;
+    $('#q8_14,#q8_15,#q8_16').on('change', function() {
+      if($('#q8_14')[0].checked==false && $('#q8_15')[0].checked==false && $('#q8_16')[0].checked==false){
+        $("#qs8_1")[0].checked=false;
+        $("#menu_CellsPlacement").hide();}
+    });
+  }
+  else{
     $("#menu_CellsPlacement").hide();
+    $("#q8_14")[0].checked = false;
+    $("#q8_15")[0].checked = false;
+    $("#q8_16")[0].checked = false;
+  }
 }
 function ShowConnectome(){
-  if($("#qs8_2").is(":checked"))
+  if($("#qs8_2").is(":checked")){
     $("#menu_connectome").show();
-  else
+    $("#q8_17")[0].checked = true;
+    $("#q8_18")[0].checked = true;
+    $('#q8_17,#q8_18').on('change', function() {
+      if($('#q8_17')[0].checked==false && $('#q8_18')[0].checked==false){
+        $("#qs8_2")[0].checked=false;
+        $("#menu_connectome").hide();}
+    });
+    }
+  else{
     $("#menu_connectome").hide();
+    $("#q8_17")[0].checked = false;
+    $("#q8_18")[0].checked = false;
+  }
 }
 function ShowSmallCircuit(){
-  if($("#qs8_3").is(":checked"))
+  if($("#qs8_3").is(":checked")){
     $("#menu_SmallCircuit").show();
-  else
+    $("#q8_19")[0].checked = true;
+    $("#q8_20")[0].checked = true;
+    $('#q8_19,#q8_20').on('change', function() {
+      if($('#q8_19')[0].checked==false && $('#q8_20')[0].checked==false){
+        $("#qs8_3")[0].checked=false;
+        $("#menu_SmallCircuit").hide();}
+    });
+    }
+  else{
     $("#menu_SmallCircuit").hide();
+    $("#q8_19")[0].checked = false;
+    $("#q8_20")[0].checked = false;
+  }
 }
 function ShowHippocampus(){
-  if($("#qs8_4").is(":checked"))
+  if($("#qs8_4").is(":checked")){
     $("#menu_Hippocampus").show();
-  else
+    $("#q8_21")[0].checked = true;
+    $("#q8_22")[0].checked = true;
+    $('#q8_21,#q8_22').on('change', function() {
+      if($('#q8_21')[0].checked==false && $('#q8_22')[0].checked==false){
+        $("#qs8_4")[0].checked=false;
+        $("#menu_Hippocampus").hide();}
+    });
+    }
+  else{
     $("#menu_Hippocampus").hide();
+    $("#q8_21")[0].checked = false;
+    $("#q8_22")[0].checked = false;
+  }
 }
 function ShowCerebellum(){
-  if($("#qs8_5").is(":checked"))
+  if($("#qs8_5").is(":checked")){
     $("#menu_cerebellum").show();
-  else
+    $("#q8_23")[0].checked = true;
+    $('#q8_23').on('change', function() {
+      if($('#q8_23')[0].checked==false){
+        $("#qs8_5")[0].checked=false;
+        $("#menu_cerebellum").hide();}
+    });
+  }
+  else{
     $("#menu_cerebellum").hide();
+    $("#q8_23")[0].checked = false;
+  }
 }
 function formSubmitted(status) {
   $('#genericForm').hide();//matches your form name or whatever you want to disappear post-submission
