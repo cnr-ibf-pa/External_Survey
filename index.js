@@ -176,9 +176,15 @@ function postContactToGoogle() {
     var HIW=find_answer(check11);
 
     //Question n°9
+    var question9;
+    if($("#qs91").is(":checked")){
     var checkq9 = document.getElementsByName('question9');
-    var question9=find_answer(checkq9);
-
+     question9=find_answer(checkq9);}
+    else 
+      if($("#qs92").is(":checked")){
+     question9= document.getElementById("qs92").value;
+    }
+    
     //Question n°10
     var q10 = $('#q10').val();
 
