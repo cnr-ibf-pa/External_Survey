@@ -1,146 +1,82 @@
+
 function start() {
     //question n°1
-    $("#qs11")[0].checked=false;
-    $("#qs12")[0].checked=false;
-    $("#qs13")[0].checked=false;
-    $("#qs14")[0].checked=false;
-    $("#qs15")[0].checked=false;
-    $("#qs16")[0].checked=false;
+    $('input[name="q1"]').prop('checked',false);
 
     //questio n°2
-    //console.log($("#q2")[0].value);
     $("#q2")[0].value=4;
+
     //question n°3
-    $("#qs31")[0].checked=false;
-    $("#qs32")[0].checked=false;
-    $("#qs33")[0].checked=false;
-    $("#qs34")[0].checked=false;
+    $('input[name="q3"]').prop('checked',false);
     $("#c3")[0].value='';
 
     //question n°4
-    $("#qs41")[0].checked=false;
-    $("#qs42")[0].checked=false;
-    $("#qs43")[0].checked=false;
-    $("#qs44")[0].checked=false;
+    $('input[name="q4"]').prop('checked',false);
     $("#c4")[0].value='';
+
     //question n°5
-    $("#qs51")[0].checked=false;
-    $("#qs52")[0].checked=false;
-    $("#qs53")[0].checked=false;
-    $("#qs54")[0].checked=false;
+    $('input[name="q5"]').prop('checked',false);
     $("#c5")[0].value='';
 
     //question n°6
-    $("#qs61")[0].checked=false;
-    $("#qs62")[0].checked=false;
-    $("#qs63")[0].checked=false;
-    $("#qs64")[0].checked=false;
+    $('input[name="q6"]').prop('checked',false);
     $("#c6")[0].value='';
 
     //question n°7
-    $("#qs71")[0].checked=false;
-    $("#qs72")[0].checked=false;
-    $("#qs73")[0].checked=false;
+    $('input[name="q7"]').prop('checked',false);
     $("#c7")[0].value='';
 
 
     //question n°8
     //Molecular Level
-    $("#q827")[0].checked=false;
-    $("#q828")[0].checked=false;
-    $("#q829")[0].checked=false;
-    $("#q830")[0].checked=false;
-    $("#q831")[0].checked=false;
-    $("#q832")[0].checked=false;
+    $('input[name="MLevel"]').prop('checked',false);
 
     //Subcellular Level
     $("#q826")[0].checked=false;
 
     //Trace Analysis
-    $("#q81")[0].checked=false;
-    $("#q82")[0].checked=false;
-    $("#q83")[0].checked=false;
-    $("#q84")[0].checked=false;
+    $('input[name="TAnalysis"]').prop('checked',false);
 
     //Morphology Analysis
-    $("#q85")[0].checked=false;
-    $("#q86")[0].checked=false;
+    $('input[name="MAnalysis"]').prop('checked',false);
 
     //Single Circuit Building
-    $("#q87")[0].checked=false;
-    $("#q88")[0].checked=false;
-    $("#q89")[0].checked=false;
-    $("#q810")[0].checked=false;
-    $("#q811")[0].checked=false;
-    $("#q812")[0].checked=false;
-    $("#q813")[0].checked=false;
+    $('input[name="CSBuilding"]').prop('checked',false);
 
     //Circuit Building
-    $("#qs8_1")[0].checked=false;
-    $("#qs8_2")[0].checked=false;
-    $("#q8_14")[0].checked=false;
-    $("#q8_15")[0].checked=false;
-    $("#q8_16")[0].checked=false;
-    $("#q8_17")[0].checked=false;
-    $("#q8_18")[0].checked=false;
+    $('input[name="CBuilding"]').prop('checked',false);
 
     //Single Cell In Silico Experiments
     $("#q816")[0].checked=false;
 
     //Small Circuit In Silico Experiments
-    $("#qs8_3")[0].checked=false;
-    $("#q8_19")[0].checked=false;
-    $("#q8_20")[0].checked=false;
+    $('input[name="SmallCSE"]').prop('checked',false);
 
     //Brain Area Circuit In Silico Experiments
-    $("#qs8_4")[0].checked=false;
-    $("#qs8_5")[0].checked=false;
-    $("#q8_21")[0].checked=false;
-    $("#q8_22")[0].checked=false;
-    $("#q8_23")[0].checked=false;
+    $('input[name="BACSE"]').prop('checked',false);
 
     //Model Validation
-    $("#q820")[0].checked=false;
-    $("#q821")[0].checked=false;
-    $("#q822")[0].checked=false;
-    $("#q823")[0].checked=false;
-    $("#q824")[0].checked=false;
+    $('input[name="MValidation"]').prop('checked',false);
 
     //Highly Integrated Workflows
     $("#q825")[0].checked=false;
 
     //question n°9
-    $("#qs91")[0].checked=false;
-    $("#check1")[0].checked=false;
-    $("#check2")[0].checked=false;
-    $("#check5")[0].checked=false;
-    $("#check6")[0].checked=false;
-    $("#qs92")[0].checked=false;
+    $('input[name="question9"]').prop('checked',false);
+    $('input[name="q9"]').prop('checked',false);
 
     //question n°10
     $("#q10")[0].value='';
     //question n°11
-    $("#qs111")[0].checked=false;
-    $("#qs112")[0].checked=false;
-    $("#qs113")[0].checked=false;
-    $("#qs114")[0].checked=false;
-    $("#qs115")[0].checked=false;
-    $("#qs116")[0].checked=false;
-    $("#qs117")[0].checked=false;
-    $("#qs118")[0].checked=false;
-    $("#qs119")[0].checked=false;
-    $("#qs1110")[0].checked=false;
-    $("#qs1111")[0].checked=false;
+    $('input[name="question11"]').prop('checked',false);
 
     //question n°12
-    $("#qs121")[0].checked=false;
-    $("#qs122")[0].checked=false;
+    $('input[name="q12"]').prop('checked',false);
 
     //question n°13
     $("#q13")[0].value='';
-
-
 }
+
 function step1(){
   document.getElementById('step_bar').style.width= '7.69%';
   document.getElementById('step_bar').innerHTML= 'step 1 of 13';
@@ -231,15 +167,6 @@ function step13(){
   document.getElementById('step13').style.display = 'block';
   document.getElementById('step12').style.display = 'none';
 }
-/*
-function end(){
-  if(window == top){
-    document.getElementById('outside').style.display='block';
-    document.getElementById('inside').style.display='none';
-  }else{
-    document.getElementById('outside').style.display='none';
-    document.getElementById('inside').style.display='block';}
-}*/
 
 function checkMenu(id){
   var r81=document.getElementById(id);
@@ -291,27 +218,59 @@ function getOption(v){
         
 function show1(){
   document.getElementById('shcompany').style.display ='none';
-  document.getElementById("other").value = ""; 
+  document.getElementById("other").value = "";
+        $('input[name="q1"]').on('change', function() {
+          $('input[name="q1"]').not(this).prop('checked', false);  
+    });
 }
 
 function show2(){
   document.getElementById('shcompany').style.display = 'block';
 }
 
+function qst3(){
+  $('input[name="q3"]').on('change',function(){
+    $('input[name="q3"]').not(this).prop('checked',false);
+  });
+}
+function qst4(){
+$('input[name="q4"]').on('change',function(){
+    $('input[name="q4"]').not(this).prop('checked',false);
+  });
+}
+function qst5(){
+  $('input[name="q5"]').on('change',function(){
+    $('input[name="q5"]').not(this).prop('checked',false);
+  });
+}
+function qst6(){
+  $('input[name="q6"]').on('change',function(){
+    $('input[name="q6"]').not(this).prop('checked',false);
+  });
+}
+function qst7(){
+  $('input[name="q7"]').on('change',function(){
+    $('input[name="q7"]').not(this).prop('checked',false);
+  });
+}
+function qst12(){
+  $('input[name="q12"]').on('change',function(){
+    $('input[name="q12"]').not(this).prop('checked',false);
+  });
+}
 function hide(){
   document.getElementById('menu').style.display ='none';
-  document.getElementById("check1").checked = false;
-  document.getElementById("check2").checked = false;
-  document.getElementById("check5").checked = false;
-  document.getElementById("check6").checked = false;
+  $('input[name="qestion9"]').prop('checked',false);
 }
+
 function show_menu(){
+  $('input[name="q9"]').on('change',function(){
+    $('input[name="q9"]').not(this).prop('checked',false);
+  });
+
   if($("#qs91").is(":checked")){
     $("#menu").show();
-    $("#check1")[0].checked = true;
-    $("#check2")[0].checked = true;
-    $("#check5")[0].checked = true;
-    $("#check6")[0].checked = true;
+    $('input[name="question9"]').prop('checked',true);
     $('#check1,#check2,#check5,#check6').on('change', function() {
       if($('#check1')[0].checked==false && $('#check2')[0].checked==false && $('#check5')[0].checked==false && $('#check6')[0].checked==false){
         $("#qs91")[0].checked=false;
@@ -321,10 +280,7 @@ function show_menu(){
   }
   else{
     $("#menu").hide();
-    $("#check1")[0].checked = false;
-    $("#check2")[0].checked = false;
-    $("#check5")[0].checked = false;
-    $("#check6")[0].checked = false;
+    $('input[name="question9"]').prop('checked',false);
   }
 }
 

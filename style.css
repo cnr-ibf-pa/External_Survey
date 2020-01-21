@@ -261,7 +261,7 @@ h2{
   color:rgb(1, 134, 179);
 }
 .other{
-  display:none;
+  display: none;
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
